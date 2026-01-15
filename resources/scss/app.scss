@@ -1,0 +1,13 @@
+@import "bootstrap/scss/bootstrap";
+
+body {
+    font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+}
+
+.card {
+    border-radius: 0.75rem;
+}
+
+.table thead th {
+    white-space: nowrap;
+}
