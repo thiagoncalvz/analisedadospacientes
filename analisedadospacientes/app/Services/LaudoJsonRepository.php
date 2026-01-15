@@ -10,6 +10,16 @@ class LaudoJsonRepository
     public function all(): Collection
     {
         $path = 'dadospacientes.json';
+        $disk = Storage::build([
+            'driver' => 'local',
+            'root' => storage_path('app'),
+        ]);
+
+        if (!$disk->exists($path)) {
+            return collect();
+        }
+
+        $data = $disk->json($path);
 
         if (!Storage::exists($path)) {
             return collect();

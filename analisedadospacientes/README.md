@@ -65,6 +65,8 @@ O arquivo é editado manualmente e deve permanecer em:
 storage/app/dadospacientes.json
 ```
 
+> Observação: o Laravel 11 usa `storage/app/private` como disco local padrão. O repositório lê diretamente de `storage/app` para respeitar o caminho exigido.
+
 ### Exemplo de JSON
 
 ```json
