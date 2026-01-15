@@ -32,6 +32,7 @@ class LaudoAnalyzer
                 'prontuario' => $pacienteEstruturado['prontuario'] ?? $pacienteLiteral['prontuario'] ?? null,
                 'sexo' => $pacienteEstruturado['sexo'] ?? $pacienteEstruturado['genero'] ?? $pacienteLiteral['sexo'] ?? $pacienteLiteral['genero'] ?? null,
             ];
+            $item['paciente_literal'] = is_array($pacienteLiteral) ? $pacienteLiteral : [];
 
             $item['laudo'] = [
                 'peca' => $laudoLiteralCompleto['numero_peca'] ?? $laudo['peca'] ?? null,
