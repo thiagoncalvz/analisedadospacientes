@@ -51,6 +51,7 @@
                                 <th>Nome</th>
                                 <th>Idade</th>
                                 <th>Sexo</th>
+                                <th>Dados literais do paciente</th>
                                 <th>Peça</th>
                                 <th>Data do laudo</th>
                                 <th>CID</th>
@@ -70,6 +71,20 @@
                                     <td>{{ $item['paciente']['nome'] ?? 'Não informado' }}</td>
                                     <td>{{ $item['paciente']['idade'] ?? 'Não informado' }}</td>
                                     <td>{{ $item['paciente']['sexo'] ?? 'Não informado' }}</td>
+                                    <td>
+                                        @if (!empty($item['paciente_literal']))
+                                            <div class="d-flex flex-column gap-1">
+                                                @foreach ($item['paciente_literal'] as $campo => $valor)
+                                                    <div>
+                                                        <strong>{{ ucfirst(str_replace('_', ' ', $campo)) }}:</strong>
+                                                        {{ is_array($valor) ? json_encode($valor, JSON_UNESCAPED_UNICODE) : ($valor ?? 'Não informado') }}
+                                                    </div>
+                                                @endforeach
+                                            </div>
+                                        @else
+                                            Não informado
+                                        @endif
+                                    </td>
                                     <td>{{ $item['laudo']['peca'] ?? 'Não informado' }}</td>
                                     <td>{{ $item['laudo']['data'] ?? 'Não informado' }}</td>
                                     <td>{{ $item['laudo']['cid'] ?? 'Não informado' }}</td>
@@ -105,7 +120,7 @@
                                 </tr>
                             @empty
                                 <tr>
-                                    <td colspan="14" class="text-center text-muted">Nenhum registro encontrado no JSON.</td>
+                                    <td colspan="15" class="text-center text-muted">Nenhum registro encontrado no JSON.</td>
                                 </tr>
                             @endforelse
                         </tbody>
