@@ -11,3 +11,18 @@ body {
 .table-responsive {
     max-height: 600px;
 }
+
+.general-table-wrapper {
+    overflow-x: hidden;
+}
+
+#generalTable {
+    table-layout: fixed;
+    width: 100%;
+}
+
+#generalTable th,
+#generalTable td {
+    white-space: normal;
+    word-break: break-word;
+}
