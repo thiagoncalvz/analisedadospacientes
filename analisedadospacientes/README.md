@@ -1,59 +1,187 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Análise de Dados de Pacientes (Laravel 11 + Blade + Bootstrap 5)
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Sistema web para análise epidemiológica/histopatológica de laudos armazenados **exclusivamente** em JSON (`storage/app/dadospacientes.json`). O dashboard normaliza os dados em memória (Collections), permite visualizar tabelas e estatísticas e inclui parser robusto de tamanho de pólipos.
 
-## About Laravel
+## Objetivo
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- Ler o JSON e gerar dashboards/tabelas de análise epidemiológica/histopatológica.
+- Normalizar múltiplos laudos por paciente e múltiplos diagnósticos por registro.
+- Classificar histologia, atipia/displasia e tamanho de pólipos em memória.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Stack
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- Laravel 11
+- Blade
+- Bootstrap 5 (via Vite)
+- Sem banco SQL, sem migrations
 
-## Learning Laravel
+## Estrutura principal
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+```
+app/
+  Http/Controllers/
+    DashboardController.php
+  Services/
+    LaudoJsonRepository.php
+    LaudoAnalyzer.php
+resources/
+  views/
+    layouts/app.blade.php
+    dashboard.blade.php
+  scss/app.scss
+routes/
+  web.php
+storage/
+  app/dadospacientes.json
+```
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Como executar
 
-## Laravel Sponsors
+> **Pré-requisitos:** PHP 8.2+, Composer, Node.js 18+
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+1. Instale dependências PHP:
+   ```bash
+   composer install
+   ```
+2. Instale dependências front-end:
+   ```bash
+   npm install
+   ```
+3. Gere o build de assets:
+   ```bash
+   npm run dev
+   ```
+4. Inicie o servidor:
+   ```bash
+   php artisan serve
+   ```
+5. Acesse: `http://localhost:8000/dashboard`
 
-### Premium Partners
+## Dataset (JSON)
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+O arquivo é editado manualmente e deve permanecer em:
 
-## Contributing
+```
+storage/app/dadospacientes.json
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+> Observação: o Laravel 11 usa `storage/app/private` como disco local padrão. O repositório tenta ler primeiro de `storage/app/dadospacientes.json` e, se não encontrar, faz fallback para `storage/app/private/dadospacientes.json`.
 
-## Code of Conduct
+### Exemplo de JSON
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+```json
+[
+  {
+    "paciente": {
+      "nome": "Maria Souza",
+      "idade": 54,
+      "prontuario": "12345",
+      "sexo": "Feminino"
+    },
+    "laudo": {
+      "peca": "Polipectomia",
+      "data": "2024-06-12",
+      "cid": "D12"
+    },
+    "material": "Peça polipoide com 8 mm.",
+    "localizacao": "Cólon descendente",
+    "diagnosticos": [
+      "Adenoma tubular com displasia de baixo grau",
+      "Margens livres"
+    ],
+    "atipia": "Ausente",
+    "displasia": "Baixo grau"
+  }
+]
+```
 
-## Security Vulnerabilities
+### Campos aceitos (por registro)
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+- `paciente`: `{ nome, idade, prontuario, sexo }`
+- `laudo`: `{ peca, data, cid }`
+- `material`: string
+- `localizacao`: string
+- `diagnostico`: string (opcional)
+- `diagnosticos`: array de strings (opcional)
+- `atipia`: string (opcional)
+- `displasia`: string (opcional)
+- outros campos textuais (opcionais)
 
-## License
+> **Observação:** quando existir `diagnosticos`, ele tem prioridade. Caso contrário, `diagnostico` é convertido para array.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Rotas
+
+- `/` → redireciona para `/dashboard`
+- `/dashboard` → painel principal
+
+## Funcionalidades do dashboard
+
+1. **Tabela Geral**
+   - Listagem completa com diagnóstico(s), atipia/displasia, classificação histológica, grau de atipia e tamanho do pólipo.
+   - Busca client-side simples.
+   - Paginação simples com `LengthAwarePaginator`.
+
+2. **Tabela por Sexo**
+   - Percentuais de polipectomias por sexo.
+   - Mostra alerta caso o dataset não tenha sexo em todos os registros.
+
+3. **Tabela de Idade**
+   - Média, mediana, mais jovem, mais velho e total de pacientes únicos.
+   - Consolidação por prontuário (ou nome quando prontuário não existe).
+
+4. **Tabela de Tipo Histológico**
+   - Classes: **Pólipo**, **Inflamatório/Não neoplásico**, **Adenocarcinoma/Câncer**, **Indefinido**.
+   - Percentuais sobre o total geral e sobre registros com lesões.
+
+5. **Tabela de Graus de Atipia**
+   - Classes: **Alto**, **Moderado**, **Baixo**, **Ausente**, **Não informado**.
+
+## Regras de classificação
+
+### Histologia (resumo)
+
+- **Adenocarcinoma/Câncer**: termos como `adenocarcinoma`, `carcinoma`, `neoplasia maligna`.
+- **Pólipo**: termos como `pólipo`, `polipectomia`, `mucosectomia`, `adenoma`.
+- **Inflamatório/Não neoplásico**: termos como `gastrite`, `inflam`, `mucosa`, `hiperplasia`, `colite`.
+
+### Atipia/Displasia (resumo)
+
+- **Ausente**: `ausente`, `sem atipia`.
+- **Alto grau**: `alto grau`, `pouco diferenciado`.
+- **Moderado**: `moderada`, `moderadamente diferenciado`, `médio`.
+- **Baixo grau**: `leve`, `baixo grau`, `bem diferenciado`.
+
+### Tamanho do pólipo (maior eixo)
+
+O parser busca **todas** as medidas em `mm` ou `cm` em qualquer campo textual do item, por exemplo:
+- `8 mm`, `08mm`
+- `03 mm x 04 mm x 08 mm`
+- `3x4x8mm`
+- `1,2 cm`
+
+Sempre usa o **maior valor** encontrado (convertendo cm para mm).
+
+**Categorias:**
+- `2.1 até 5 mm`
+- `5 a 9 mm`
+- `10 mm ou mais`
+- `Não informado` (quando nada é encontrado)
+
+## Bootstrap + Vite
+
+O Bootstrap 5 é carregado via Vite, com SCSS em `resources/scss/app.scss` e entry JS em `resources/js/app.js`. O layout principal está em `resources/views/layouts/app.blade.php`.
+
+## Observações importantes
+
+- Sem banco de dados: todo processamento é feito em memória.
+- Se o JSON estiver vazio ou inválido, o dashboard mostra a tabela vazia.
+- O sistema é resiliente a campos ausentes.
+
+## Dicas de manutenção
+
+- Sempre mantenha o JSON válido (sem vírgulas extras).
+- Para testes rápidos, substitua o conteúdo do arquivo em `storage/app/dadospacientes.json`.
+
+## Licença
+
+MIT.

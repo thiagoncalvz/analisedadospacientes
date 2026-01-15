@@ -1,0 +1,59 @@
+[
+    {
+        "paciente": {
+            "nome": "Maria Souza",
+            "idade": 54,
+            "prontuario": "12345",
+            "sexo": "Feminino"
+        },
+        "laudo": {
+            "peca": "Polipectomia",
+            "data": "2024-06-12",
+            "cid": "D12"
+        },
+        "material": "Peça polipoide com 8 mm.",
+        "localizacao": "Cólon descendente",
+        "diagnosticos": [
+            "Adenoma tubular com displasia de baixo grau",
+            "Margens livres"
+        ],
+        "atipia": "Ausente",
+        "displasia": "Baixo grau"
+    },
+    {
+        "paciente": {
+            "nome": "João Pereira",
+            "idade": 67,
+            "prontuario": "67890",
+            "sexo": "Masculino"
+        },
+        "laudo": {
+            "peca": "Biópsia",
+            "data": "2024-07-03",
+            "cid": "C18"
+        },
+        "material": "Fragmentos medindo 0,6 cm x 0,4 cm x 0,3 cm.",
+        "localizacao": "Sigmoide",
+        "diagnostico": "Adenocarcinoma moderadamente diferenciado",
+        "displasia": "Alto grau"
+    },
+    {
+        "paciente": {
+            "nome": "Ana Lima",
+            "idade": 41,
+            "prontuario": "11223"
+        },
+        "laudo": {
+            "peca": "Mucosectomia",
+            "data": "2024-08-15",
+            "cid": "K52"
+        },
+        "material": "Foram recebidas peças 3x4x8mm.",
+        "localizacao": "Reto",
+        "diagnosticos": [
+            "Mucosa com infiltrado inflamatório crônico",
+            "Hiperplasia" 
+        ],
+        "atipia": "Não observada"
+    }
+]
