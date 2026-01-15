@@ -47,30 +47,41 @@
                     <table class="table table-striped align-middle" id="generalTable">
                         <thead class="table-light">
                             <tr>
-                                <th>Prontuário</th>
-                                <th>Nome</th>
-                                <th>Idade</th>
-                                <th>Sexo</th>
-                                <th>Dados literais do paciente</th>
-                                <th>Peça</th>
-                                <th>Data do laudo</th>
-                                <th>CID</th>
-                                <th>Material</th>
-                                <th>Localização</th>
-                                <th>Diagnóstico(s)</th>
-                                <th>Atipia/Displasia</th>
-                                <th>Classificação Histológica</th>
-                                <th>Grau de Atipia</th>
-                                <th>Tamanho do pólipo</th>
+                                <th>Campo</th>
+                                <th>Valor</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            @forelse ($items as $item)
+                        @forelse ($items as $item)
+                            <tbody data-item>
+                                <tr class="table-primary">
+                                    <th colspan="2">
+                                        <div class="fw-semibold">Registro {{ $loop->iteration + (($items->currentPage() - 1) * $items->perPage()) }}</div>
+                                        <small class="text-muted">
+                                            {{ $item['paciente']['nome'] ?? 'Paciente não informado' }}
+                                            @if (!empty($item['paciente']['prontuario']))
+                                                • Prontuário {{ $item['paciente']['prontuario'] }}
+                                            @endif
+                                        </small>
+                                    </th>
+                                </tr>
                                 <tr>
+                                    <th scope="row">Prontuário</th>
                                     <td>{{ $item['paciente']['prontuario'] ?? 'Não informado' }}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Nome</th>
                                     <td>{{ $item['paciente']['nome'] ?? 'Não informado' }}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Idade</th>
                                     <td>{{ $item['paciente']['idade'] ?? 'Não informado' }}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Sexo</th>
                                     <td>{{ $item['paciente']['sexo'] ?? 'Não informado' }}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Dados literais do paciente</th>
                                     <td>
                                         @if (!empty($item['paciente_literal']))
                                             <div class="d-flex flex-column gap-1">
@@ -85,11 +96,62 @@
                                             Não informado
                                         @endif
                                     </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Peças histológicas</th>
+                                    <td>
+                                        @if (!empty($item['pecas_histologicas']))
+                                            <div class="d-flex flex-column gap-2">
+                                                @foreach ($item['pecas_histologicas'] as $peca)
+                                                    @php
+                                                        $pecaValores = collect($peca)
+                                                            ->flatten()
+                                                            ->filter(fn ($valor) => is_scalar($valor) && $valor !== '')
+                                                            ->map(fn ($valor) => (string) $valor)
+                                                            ->unique()
+                                                            ->values();
+                                                    @endphp
+                                                    <div class="border rounded p-2 bg-light">
+                                                        <div class="fw-semibold">Peça {{ $loop->iteration }}</div>
+                                                        @if ($pecaValores->isNotEmpty())
+                                                            <ul class="mb-0 ps-3 small">
+                                                                @foreach ($pecaValores as $valor)
+                                                                    <li>{{ $valor }}</li>
+                                                                @endforeach
+                                                            </ul>
+                                                        @else
+                                                            <div class="text-muted small">Nenhum valor informado.</div>
+                                                        @endif
+                                                    </div>
+                                                @endforeach
+                                            </div>
+                                        @else
+                                            Não informado
+                                        @endif
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Peça (laudo)</th>
                                     <td>{{ $item['laudo']['peca'] ?? 'Não informado' }}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Data do laudo</th>
                                     <td>{{ $item['laudo']['data'] ?? 'Não informado' }}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">CID</th>
                                     <td>{{ $item['laudo']['cid'] ?? 'Não informado' }}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Material</th>
                                     <td>{{ $item['material'] ?? 'Não informado' }}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Localização</th>
                                     <td>{{ $item['localizacao'] ?? 'Não informado' }}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Diagnóstico(s)</th>
                                     <td>
                                         @if (!empty($item['diagnosticos']))
                                             <ul class="mb-0 ps-3">
@@ -101,16 +163,24 @@
                                             Não informado
                                         @endif
                                     </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Atipia/Displasia</th>
                                     <td>
                                         <div><strong>Atipia:</strong> {{ $item['atipia'] ?? 'Não informado' }}</div>
                                         <div><strong>Displasia:</strong> {{ $item['displasia'] ?? 'Não informado' }}</div>
                                     </td>
-                                    <td>
-                                        <span class="badge text-bg-info">{{ $item['histology'] }}</span>
-                                    </td>
-                                    <td>
-                                        <span class="badge text-bg-secondary">{{ $item['atypia_class'] }}</span>
-                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Classificação Histológica</th>
+                                    <td><span class="badge text-bg-info">{{ $item['histology'] }}</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Grau de Atipia</th>
+                                    <td><span class="badge text-bg-secondary">{{ $item['atypia_class'] }}</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Tamanho do pólipo</th>
                                     <td>
                                         <div class="fw-semibold">{{ $item['polyp_size']['categoria'] }}</div>
                                         @if ($item['polyp_size']['maior_eixo_mm'] !== null)
@@ -118,12 +188,14 @@
                                         @endif
                                     </td>
                                 </tr>
-                            @empty
+                            </tbody>
+                        @empty
+                            <tbody>
                                 <tr>
-                                    <td colspan="15" class="text-center text-muted">Nenhum registro encontrado no JSON.</td>
+                                    <td colspan="2" class="text-center text-muted">Nenhum registro encontrado no JSON.</td>
                                 </tr>
-                            @endforelse
-                        </tbody>
+                            </tbody>
+                        @endforelse
                     </table>
                 </div>
 
@@ -292,7 +364,7 @@
         document.addEventListener('DOMContentLoaded', () => {
             const searchInput = document.getElementById('tableSearch');
             const table = document.getElementById('generalTable');
-            const rows = table ? Array.from(table.querySelectorAll('tbody tr')) : [];
+            const groups = table ? Array.from(table.querySelectorAll('tbody[data-item]')) : [];
 
             if (!searchInput) {
                 return;
@@ -301,9 +373,10 @@
             searchInput.addEventListener('input', (event) => {
                 const term = event.target.value.toLowerCase();
 
-                rows.forEach((row) => {
-                    const text = row.textContent.toLowerCase();
-                    row.style.display = text.includes(term) ? '' : 'none';
+                groups.forEach((group) => {
+                    const text = group.textContent.toLowerCase();
+                    const show = text.includes(term);
+                    group.style.display = show ? '' : 'none';
                 });
             });
         });
