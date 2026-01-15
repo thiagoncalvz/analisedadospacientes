@@ -43,7 +43,7 @@
                 </div>
             </div>
             <div class="card-body">
-                <div class="table-responsive">
+                <div class="table-responsive general-table-wrapper">
                     <table class="table table-striped align-middle" id="generalTable">
                         <thead class="table-light">
                             <tr>
@@ -103,9 +103,56 @@
                                         @if (!empty($item['pecas_histologicas']))
                                             <div class="d-flex flex-column gap-2">
                                                 @foreach ($item['pecas_histologicas'] as $peca)
+                                                    @php
+                                                        $estruturado = $peca['estruturado'] ?? [];
+                                                        $literal = $peca['literal'] ?? [];
+                                                        $valores = [];
+
+                                                        foreach (['descricao_origem', 'tipo_histologico', 'grau_atipia'] as $campo) {
+                                                            if (!empty($estruturado[$campo])) {
+                                                                $valores[] = $estruturado[$campo];
+                                                            }
+                                                        }
+
+                                                        if (isset($estruturado['quantidade_fragmentos'])) {
+                                                            $valores[] = $estruturado['quantidade_fragmentos'];
+                                                        }
+
+                                                        if (!empty($estruturado['tamanho_mm']) && is_array($estruturado['tamanho_mm'])) {
+                                                            $tamanho = $estruturado['tamanho_mm'];
+                                                            $tamanhoValor = $tamanho['maior_eixo'] ?? null;
+                                                            $tamanhoCategoria = $tamanho['categoria'] ?? null;
+                                                            $textoTamanho = trim(collect([$tamanhoValor ? $tamanhoValor . ' mm' : null, $tamanhoCategoria])->filter()->implode(' - '));
+                                                            if ($textoTamanho !== '') {
+                                                                $valores[] = $textoTamanho;
+                                                            }
+                                                        }
+
+                                                        foreach (['diagnostico', 'microscopia_conclusao', 'macroscopia', 'conclusao'] as $campo) {
+                                                            if (!empty($literal[$campo])) {
+                                                                $valores[] = $literal[$campo];
+                                                            }
+                                                        }
+
+                                                        foreach (['neoplasia', 'adenocarcinoma'] as $campo) {
+                                                            if (array_key_exists($campo, $estruturado)) {
+                                                                $valores[] = $estruturado[$campo] ? 'Sim' : 'Não';
+                                                            }
+                                                        }
+
+                                                        $valores = array_values(array_filter($valores, fn ($valor) => $valor !== null && $valor !== ''));
+                                                    @endphp
                                                     <div class="border rounded p-2 bg-light">
                                                         <div class="fw-semibold">Peça {{ $loop->iteration }}</div>
-                                                        <pre class="mb-0 small">{{ json_encode($peca, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT) }}</pre>
+                                                        @if (!empty($valores))
+                                                            <ul class="mb-0 ps-3">
+                                                                @foreach ($valores as $valor)
+                                                                    <li>{{ $valor }}</li>
+                                                                @endforeach
+                                                            </ul>
+                                                        @else
+                                                            <div class="text-muted small">Sem detalhes adicionais.</div>
+                                                        @endif
                                                     </div>
                                                 @endforeach
                                             </div>
