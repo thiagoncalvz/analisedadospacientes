@@ -21,6 +21,12 @@ class LaudoJsonRepository
 
         $data = $disk->json($path);
 
+        if (!Storage::exists($path)) {
+            return collect();
+        }
+
+        $data = Storage::json($path);
+
         if (!is_array($data)) {
             return collect();
         }
