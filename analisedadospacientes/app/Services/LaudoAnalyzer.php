@@ -11,39 +11,40 @@ class LaudoAnalyzer
     {
         return $items->map(function ($item) {
             $item = is_array($item) ? $item : [];
-            $paciente = $item['paciente'] ?? [];
+            $pacienteData = $item['paciente'] ?? [];
+            $pacienteEstruturado = $pacienteData['estruturado'] ?? (is_array($pacienteData) ? $pacienteData : []);
+            $pacienteLiteral = $pacienteData['literal'] ?? [];
+
+            $exameData = $item['exame'] ?? [];
+            $exameEstruturado = $exameData['estruturado'] ?? (is_array($exameData) ? $exameData : []);
+            $exameLiteral = $exameData['literal'] ?? [];
+
             $laudo = $item['laudo'] ?? [];
+            $laudoLiteralCompleto = $item['laudo_literal_completo'] ?? [];
 
-            $diagnosticos = $item['diagnosticos'] ?? [];
-            if (is_string($diagnosticos)) {
-                $diagnosticos = [$diagnosticos];
-            }
-            if (!is_array($diagnosticos)) {
-                $diagnosticos = [];
-            }
-
-            if (empty($diagnosticos) && !empty($item['diagnostico']) && is_string($item['diagnostico'])) {
-                $diagnosticos = [$item['diagnostico']];
-            }
+            $pecas = $this->normalizePecas($item);
+            $diagnosticos = $this->collectDiagnosticos($item, $pecas);
+            $atipia = $item['atipia'] ?? $this->collectStructuredAtypia($pecas);
 
             $item['paciente'] = [
-                'nome' => $paciente['nome'] ?? null,
-                'idade' => $paciente['idade'] ?? null,
-                'prontuario' => $paciente['prontuario'] ?? null,
-                'sexo' => $paciente['sexo'] ?? ($paciente['genero'] ?? null),
+                'nome' => $pacienteEstruturado['nome'] ?? $pacienteLiteral['nome'] ?? null,
+                'idade' => $this->normalizeAge($pacienteEstruturado['idade'] ?? $pacienteLiteral['idade'] ?? null),
+                'prontuario' => $pacienteEstruturado['prontuario'] ?? $pacienteLiteral['prontuario'] ?? null,
+                'sexo' => $pacienteEstruturado['sexo'] ?? $pacienteEstruturado['genero'] ?? $pacienteLiteral['sexo'] ?? $pacienteLiteral['genero'] ?? null,
             ];
 
             $item['laudo'] = [
-                'peca' => $laudo['peca'] ?? null,
-                'data' => $laudo['data'] ?? null,
-                'cid' => $laudo['cid'] ?? null,
+                'peca' => $laudoLiteralCompleto['numero_peca'] ?? $laudo['peca'] ?? null,
+                'data' => $exameEstruturado['data_laudo'] ?? $exameLiteral['data'] ?? $laudo['data'] ?? null,
+                'cid' => $exameEstruturado['cid'] ?? $exameLiteral['cid'] ?? $laudo['cid'] ?? null,
             ];
 
-            $item['material'] = $item['material'] ?? null;
-            $item['localizacao'] = $item['localizacao'] ?? null;
+            $item['material'] = $item['material'] ?? $exameLiteral['material'] ?? $exameEstruturado['tipo'] ?? null;
+            $item['localizacao'] = $item['localizacao'] ?? $exameLiteral['local'] ?? $exameLiteral['localizacao'] ?? null;
             $item['diagnosticos'] = $diagnosticos;
-            $item['atipia'] = $item['atipia'] ?? null;
+            $item['atipia'] = $atipia;
             $item['displasia'] = $item['displasia'] ?? null;
+            $item['pecas_histologicas'] = $pecas;
 
             return $item;
         });
@@ -230,6 +231,22 @@ class LaudoAnalyzer
 
     public function parsePolypSizeCategory(array $item): array
     {
+        $structuredSizes = $this->extractStructuredPolypSizes($item);
+        if (!empty($structuredSizes)) {
+            $max = max($structuredSizes);
+            $category = match (true) {
+                $max >= 10 => '10 mm ou mais',
+                $max > 5 => '5 a 9 mm',
+                $max >= 2.1 => '2.1 até 5 mm',
+                default => 'Menor que 2 mm',
+            };
+
+            return [
+                'maior_eixo_mm' => $max,
+                'categoria' => $category,
+            ];
+        }
+
         $strings = $this->extractStrings($item);
         $values = [];
 
@@ -278,6 +295,32 @@ class LaudoAnalyzer
 
     public function classifyHistology(array $item): string
     {
+        $pecas = $this->normalizePecas($item);
+        foreach ($pecas as $peca) {
+            $estruturado = $peca['estruturado'] ?? [];
+
+            if (!empty($estruturado['adenocarcinoma'])) {
+                return 'Adenocarcinoma / Câncer';
+            }
+
+            if (!empty($estruturado['neoplasia'])) {
+                return 'Pólipo';
+            }
+
+            if (isset($estruturado['tipo_histologico']) && is_string($estruturado['tipo_histologico'])) {
+                $tipo = $this->normalizeText($estruturado['tipo_histologico']);
+                if (preg_match('/adenocarcinoma|carcinoma|neoplasia maligna|malign/iu', $tipo)) {
+                    return 'Adenocarcinoma / Câncer';
+                }
+                if (preg_match('/polip|polipectomia|mucosectomia|adenoma|peca\s*polip/iu', $tipo)) {
+                    return 'Pólipo';
+                }
+                if (preg_match('/gastrite|inflam|mucosa|tecido de granulacao|hiperplas|colite|ulcer/iu', $tipo)) {
+                    return 'Inflamatório / Não neoplásico';
+                }
+            }
+        }
+
         $text = $this->normalizeText($this->joinTextFields($item));
 
         if ($text === '') {
@@ -301,7 +344,8 @@ class LaudoAnalyzer
 
     public function classifyAtypia(array $item): string
     {
-        $atipia = $item['atipia'] ?? null;
+        $pecas = $this->normalizePecas($item);
+        $atipia = $item['atipia'] ?? $this->collectStructuredAtypia($pecas);
         $displasia = $item['displasia'] ?? null;
         $diagnostico = $this->joinTextFields($item);
         $text = $this->normalizeText(trim(implode(' ', array_filter([$atipia, $displasia, $diagnostico]))));
@@ -331,6 +375,20 @@ class LaudoAnalyzer
 
     private function isPolypProcedure(array $item): bool
     {
+        $pecas = $this->normalizePecas($item);
+        foreach ($pecas as $peca) {
+            $estruturado = $peca['estruturado'] ?? [];
+            if (!empty($estruturado['neoplasia'])) {
+                return true;
+            }
+            if (isset($estruturado['tipo_histologico']) && is_string($estruturado['tipo_histologico'])) {
+                $tipo = $this->normalizeText($estruturado['tipo_histologico']);
+                if (preg_match('/polip|polipectomia|mucosectomia|adenoma/iu', $tipo)) {
+                    return true;
+                }
+            }
+        }
+
         $text = $this->normalizeText($this->joinTextFields($item));
 
         return (bool) preg_match('/polip|polipectomia|mucosectomia|adenoma/iu', $text);
@@ -356,6 +414,88 @@ class LaudoAnalyzer
         }
 
         return $strings;
+    }
+
+    private function normalizePecas(array $item): array
+    {
+        $pecas = $item['pecas_histologicas'] ?? [];
+
+        return is_array($pecas) ? $pecas : [];
+    }
+
+    private function collectDiagnosticos(array $item, array $pecas): array
+    {
+        $diagnosticos = $item['diagnosticos'] ?? [];
+
+        if (is_string($diagnosticos)) {
+            $diagnosticos = [$diagnosticos];
+        }
+        if (!is_array($diagnosticos)) {
+            $diagnosticos = [];
+        }
+
+        if (empty($diagnosticos) && !empty($item['diagnostico']) && is_string($item['diagnostico'])) {
+            $diagnosticos = [$item['diagnostico']];
+        }
+
+        foreach ($pecas as $peca) {
+            $literal = $peca['literal'] ?? [];
+            foreach (['diagnostico', 'microscopia_conclusao', 'conclusao'] as $field) {
+                if (!empty($literal[$field]) && is_string($literal[$field])) {
+                    $diagnosticos[] = $literal[$field];
+                }
+            }
+        }
+
+        return array_values(array_unique(array_filter($diagnosticos)));
+    }
+
+    private function collectStructuredAtypia(array $pecas): ?string
+    {
+        $values = [];
+
+        foreach ($pecas as $peca) {
+            $estruturado = $peca['estruturado'] ?? [];
+            if (!empty($estruturado['grau_atipia']) && is_string($estruturado['grau_atipia'])) {
+                $values[] = $estruturado['grau_atipia'];
+            }
+        }
+
+        if (empty($values)) {
+            return null;
+        }
+
+        return implode(' / ', array_unique($values));
+    }
+
+    private function extractStructuredPolypSizes(array $item): array
+    {
+        $values = [];
+
+        foreach ($this->normalizePecas($item) as $peca) {
+            $estruturado = $peca['estruturado'] ?? [];
+            $tamanho = $estruturado['tamanho_mm'] ?? [];
+            $maiorEixo = $tamanho['maior_eixo'] ?? null;
+
+            if (is_numeric($maiorEixo)) {
+                $values[] = (float) $maiorEixo;
+            }
+        }
+
+        return $values;
+    }
+
+    private function normalizeAge(mixed $idade): mixed
+    {
+        if (is_numeric($idade)) {
+            return (int) $idade;
+        }
+
+        if (is_string($idade) && preg_match('/(\d{1,3})/', $idade, $matches)) {
+            return (int) $matches[1];
+        }
+
+        return $idade;
     }
 
     private function normalizeText(string $text): string
