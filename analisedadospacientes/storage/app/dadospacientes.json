@@ -293,5 +293,2045 @@
         "crm": "10.157"
         }
     }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "JANEIDE ALVES DA SILVA",
+        "sexo": "Feminino",
+        "idade": 55,
+        "prontuario": "314263"
+        },
+        "literal": {
+        "nome": "JANEIDE ALVES DA SILVA",
+        "idade": "55 anos",
+        "prontuario": "314263",
+        "enfermaria": "Enfermaria Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Endoscopia digestiva alta",
+        "data_laudo": "2019-10-30",
+        "instituicao": "Hospital Barão de Lucena",
+        "cid": "K29.5"
+        },
+        "literal": {
+        "material": "Mucosa gástrica",
+        "cid": "CID: K29.5",
+        "medico_solicitante": "Henrique Sergio Teles Correia",
+        "local": "Recife",
+        "data": "30/10/2019"
+        }
+    },
+    "pecas_histologicas": [
+        {
+        "estruturado": {
+            "descricao_origem": "Mucosa gástrica",
+            "quantidade_fragmentos": 2,
+            "tamanho_mm": {
+            "maior_eixo": 2,
+            "categoria": "até 5 mm"
+            },
+            "tipo_histologico": "Inflamatório (Gastrite crônica leve)",
+            "grau_atipia": "Sem atipia",
+            "neoplasia": false,
+            "adenocarcinoma": false
+        },
+        "literal": {
+            "macroscopia": "Em formalina, recebemos dois fragmentos teciduais irregulares, pardos, medindo o maior 0,2 x 0,2 x 0,1 cm.",
+            "microscopia_conclusao": "Gastrite crônica leve. Ausência de bacilos H. pylori.",
+            "diagnostico": "Gastrite crônica leve"
+        }
+        }
+    ],
+    "laudo_literal_completo": {
+        "numero_peca": "4474/19",
+        "assinatura": {
+        "medico": "Dra. Ana Paula Matos",
+        "crm": "10.157"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "ANTÔNIO LUIZ GONZAGA",
+        "sexo": "Masculino",
+        "idade": 72,
+        "prontuario": "8634274"
+        },
+        "literal": {
+        "nome": "ANTÔNIO LUIZ GONZAGA",
+        "idade": "72 anos",
+        "prontuario": "8634274",
+        "enfermaria": "Enfermaria Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Colonoscopia",
+        "data_laudo": "2018-11-08",
+        "instituicao": "Hospital Barão de Lucena",
+        "cid": null
+        },
+        "literal": {
+        "material": "Pólipo de cólon sigmoide",
+        "cid": "",
+        "medico_solicitante": "Maurício de Souza Moreira",
+        "local": "Recife",
+        "data": "08/11/2018"
+        }
+    },
+    "pecas_histologicas": [
+        {
+        "estruturado": {
+            "descricao_origem": "Pólipo de cólon sigmoide",
+            "quantidade_fragmentos": 1,
+            "tamanho_mm": {
+            "maior_eixo": 15,
+            "categoria": "10 mm ou mais"
+            },
+            "tipo_histologico": "Pólipo neoplásico (Adenoma túbulo-viloso)",
+            "grau_atipia": "Moderado",
+            "neoplasia": true,
+            "adenocarcinoma": false
+        },
+        "literal": {
+            "macroscopia": "Em formalina, formação tecidual polipóide, elástica, pardo-acastanhada, medindo 1,5 x 1,0 x 0,7 cm. Superfície de corte compacta, acastanhada.",
+            "microscopia_conclusao": "Adenoma túbulo-viloso com displasia intra-epitelial moderada. Margens de ressecção cirúrgicas livres.",
+            "diagnostico": "Adenoma túbulo-viloso com displasia intra-epitelial moderada"
+        }
+        }
+    ],
+    "laudo_literal_completo": {
+        "numero_peca": "4650/18",
+        "assinatura": {
+        "medico": "Dra. Sofia Santos Tenório",
+        "crm": "19.695"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "MARIA DA CONCEIÇÃO M MENDONÇA",
+        "sexo": "Feminino",
+        "idade": 65,
+        "prontuario": "8643681"
+        },
+        "literal": {
+        "nome": "MARIA DA CONCEIÇÃO M MENDONÇA",
+        "idade": "65 anos",
+        "prontuario": "8643681",
+        "enfermaria": "Enfermaria Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Colonoscopia",
+        "data_laudo": "2018-10-09",
+        "instituicao": "Hospital Barão de Lucena",
+        "cid": null
+        },
+        "literal": {
+        "material": "Pólipos e lesão de reto",
+        "cid": "",
+        "medico_solicitante": "Renata Ribeiro",
+        "local": "Recife",
+        "data": "09/10/2018"
+        }
+    },
+    "pecas_histologicas": [
+        {
+        "estruturado": {
+            "descricao_origem": "Pólipo de reto superior",
+            "quantidade_fragmentos": 1,
+            "tamanho_mm": {
+            "maior_eixo": 5,
+            "categoria": "de 5 mm a 9 mm"
+            },
+            "tipo_histologico": "Pólipo neoplásico (Adenoma tubular)",
+            "grau_atipia": "Baixo grau",
+            "neoplasia": true,
+            "adenocarcinoma": false
+        },
+        "literal": {
+            "macroscopia": "Vidro 1 – Fragmento tecidual irregular, pardacento, medindo 0,5 x 0,2 x 0,2 cm.",
+            "microscopia_conclusao": "Adenoma tubular com displasia de baixo grau.",
+            "diagnostico": "Pólipo de reto superior"
+        }
+        },
+        {
+        "estruturado": {
+            "descricao_origem": "Pólipo de reto inferior",
+            "quantidade_fragmentos": 2,
+            "tamanho_mm": {
+            "maior_eixo": 3,
+            "categoria": "até 5 mm"
+            },
+            "tipo_histologico": "Pólipo neoplásico (Adenoma serrilhado)",
+            "grau_atipia": "Não informado",
+            "neoplasia": true,
+            "adenocarcinoma": false
+        },
+        "literal": {
+            "macroscopia": "Vidro 2 – Dois fragmentos teciduais irregulares, pardacentos, o maior medindo 0,3 x 0,2 x 0,2 cm.",
+            "microscopia_conclusao": "Adenoma serrilhado.",
+            "diagnostico": "Pólipo de reto inferior"
+        }
+        },
+        {
+        "estruturado": {
+            "descricao_origem": "Lesão ulcerovegetante em reto distal/canal anal",
+            "quantidade_fragmentos": 2,
+            "tamanho_mm": {
+            "maior_eixo": 3,
+            "categoria": "até 5 mm"
+            },
+            "tipo_histologico": "Inflamatório (Lesão ulcerada em atividade)",
+            "grau_atipia": "Sem atipia",
+            "neoplasia": false,
+            "adenocarcinoma": false
+        },
+        "literal": {
+            "macroscopia": "Vidro 3 – Dois fragmentos teciduais irregulares, pardacentos, o maior medindo 0,3 x 0,2 x 0,1 cm.",
+            "microscopia_conclusao": "Lesão ulcerada em atividade. Ausência de neoplasia nas amostras examinadas.",
+            "diagnostico": "Lesão ulcerovegetante em reto distal/canal anal"
+        }
+        }
+    ],
+    "laudo_literal_completo": {
+        "numero_peca": "4445/18",
+        "assinatura": {
+        "medico": "Dra. Ana Paula Matos",
+        "crm": "10.157"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "NATANAEL MANOEL DA SILVA",
+        "sexo": "Masculino",
+        "idade": 30,
+        "prontuario": "8627573"
+        },
+        "literal": {
+        "nome": "NATANAEL MANOEL DA SILVA",
+        "idade": "30 anos",
+        "prontuario": "8627573",
+        "enfermaria": "Enfermaria Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Colonoscopia",
+        "data_laudo": "2018-10-10",
+        "instituicao": "Hospital Barão de Lucena",
+        "cid": null
+        },
+        "literal": {
+        "material": "Reto e cólon direito",
+        "cid": "",
+        "medico_solicitante": "Paulo M Barros",
+        "local": "Recife",
+        "data": "10/10/2018"
+        }
+    },
+    "pecas_histologicas": [
+        {
+        "estruturado": {
+            "descricao_origem": "Adenoma tubular retal",
+            "quantidade_fragmentos": 3,
+            "tamanho_mm": {
+            "maior_eixo": 3,
+            "categoria": "até 5 mm"
+            },
+            "tipo_histologico": "Pólipo neoplásico (Adenoma tubular)",
+            "grau_atipia": "Baixo grau",
+            "neoplasia": true,
+            "adenocarcinoma": false
+        },
+        "literal": {
+            "macroscopia": "Vidro 1 – Três fragmentos teciduais irregulares, pardos, o maior medindo 0,3 x 0,2 x 0,1 cm.",
+            "microscopia_conclusao": "Adenoma tubular retal, com displasia epitelial de baixo grau (leve).",
+            "diagnostico": "Adenoma tubular retal"
+        }
+        },
+        {
+        "estruturado": {
+            "descricao_origem": "Adenoma tubular do cólon direito",
+            "quantidade_fragmentos": 2,
+            "tamanho_mm": {
+            "maior_eixo": 4,
+            "categoria": "até 5 mm"
+            },
+            "tipo_histologico": "Pólipo neoplásico (Adenoma tubular)",
+            "grau_atipia": "Baixo grau",
+            "neoplasia": true,
+            "adenocarcinoma": false
+        },
+        "literal": {
+            "macroscopia": "Vidro 2 – Dois fragmentos teciduais irregulares, pardos, o maior medindo 0,4 x 0,2 x 0,2 cm.",
+            "microscopia_conclusao": "Adenoma tubular do cólon direito, com displasia epitelial de baixo grau (leve).",
+            "diagnostico": "Adenoma tubular do cólon direito"
+        }
+        }
+    ],
+    "laudo_literal_completo": {
+        "numero_peca": "4444/18",
+        "assinatura": {
+        "medico": "Dra. Ana Lúcia Antonino Brito",
+        "crm": "8896"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "MOISES MANOEL DE OLIVEIRA SILVA",
+        "sexo": "Masculino",
+        "idade": 25,
+        "prontuario": "8627575"
+        },
+        "literal": {
+        "nome": "MOISES MANOEL DE OLIVEIRA SILVA",
+        "idade": "25 anos",
+        "prontuario": "8627575",
+        "enfermaria": "Enfermaria Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Colonoscopia",
+        "data_laudo": "2018-10-10",
+        "instituicao": "Hospital Barão de Lucena",
+        "cid": null
+        },
+        "literal": {
+        "material": "Pólipos de cólon direito e de sigmoide/reto",
+        "cid": "",
+        "medico_solicitante": "Gustavo Carneiro Leão Filho",
+        "local": "Recife",
+        "data": "10/10/2018"
+        }
+    },
+    "pecas_histologicas": [
+        {
+        "estruturado": {
+            "descricao_origem": "Pólipo de cólon direito",
+            "quantidade_fragmentos": 5,
+            "tamanho_mm": {
+            "maior_eixo": 5,
+            "categoria": "de 5 mm a 9 mm"
+            },
+            "tipo_histologico": "Pólipo neoplásico (Adenoma tubular)",
+            "grau_atipia": "Baixo grau",
+            "neoplasia": true,
+            "adenocarcinoma": false
+        },
+        "literal": {
+            "macroscopia": "Vidro 1 – Cinco fragmentos teciduais irregulares, pardos, medindo o maior 0,5 x 0,2 x 0,1 cm.",
+            "microscopia_conclusao": "Adenoma tubular de baixo grau (displasia leve).",
+            "diagnostico": "Pólipo de cólon direito"
+        }
+        },
+        {
+        "estruturado": {
+            "descricao_origem": "Pólipo de sigmoide/reto",
+            "quantidade_fragmentos": 3,
+            "tamanho_mm": {
+            "maior_eixo": 3,
+            "categoria": "até 5 mm"
+            },
+            "tipo_histologico": "Pólipo neoplásico (Adenoma tubular)",
+            "grau_atipia": "Baixo grau",
+            "neoplasia": true,
+            "adenocarcinoma": false
+        },
+        "literal": {
+            "macroscopia": "Vidro 2 – Três fragmentos teciduais irregulares, pardos, medindo o maior 0,3 x 0,2 x 0,1 cm.",
+            "microscopia_conclusao": "Adenoma tubular de baixo grau (displasia leve).",
+            "diagnostico": "Pólipo de sigmoide/reto"
+        }
+        }
+    ],
+    "laudo_literal_completo": {
+        "numero_peca": "4430/18",
+        "assinatura": {
+        "medico": "Dr. Sérgio Ricardo Soares de Moura",
+        "crm": "18.835"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "MARIA JOSE DE OLIVEIRA",
+        "sexo": "Feminino",
+        "idade": 57,
+        "prontuario": "484584"
+        },
+        "literal": {
+        "nome": "MARIA JOSE DE OLIVEIRA",
+        "idade": "57 anos",
+        "prontuario": "484584",
+        "enfermaria": "Enfermaria Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Colonoscopia",
+        "data_laudo": "2018-10-10",
+        "instituicao": "Hospital Barão de Lucena",
+        "cid": null
+        },
+        "literal": {
+        "material": "Colonoscopia",
+        "cid": "",
+        "medico_solicitante": "Paulo M. Barros",
+        "local": "Recife",
+        "data": "10/10/2018"
+        }
+    },
+    "pecas_histologicas": [
+        {
+        "estruturado": {
+            "descricao_origem": "Pólipo hiperplásico",
+            "quantidade_fragmentos": 3,
+            "tamanho_mm": {
+            "maior_eixo": 3,
+            "categoria": "até 5 mm"
+            },
+            "tipo_histologico": "Pólipo não neoplásico (Hiperplásico)",
+            "grau_atipia": "Sem atipia",
+            "neoplasia": false,
+            "adenocarcinoma": false
+        },
+        "literal": {
+            "macroscopia": "Três fragmentos teciduais irregulares, pardos, medindo o maior 0,3 x 0,2 x 0,2 cm.",
+            "microscopia_conclusao": "Pólipo hiperplásico.",
+            "diagnostico": "Pólipo hiperplásico"
+        }
+        }
+    ],
+    "laudo_literal_completo": {
+        "numero_peca": "4099/18",
+        "assinatura": {
+        "medico": "Dr. Álvaro Pereira de Mello",
+        "crm": "020802"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "JOSE FERNANDO DA SILVA",
+        "sexo": "Masculino",
+        "idade": 53,
+        "prontuario": "294647"
+        },
+        "literal": {
+        "nome": "JOSE FERNANDO DA SILVA",
+        "idade": "53 anos",
+        "prontuario": "294647",
+        "enfermaria": "Enfermaria Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Endoscopia digestiva alta",
+        "data_laudo": "2018-03-19",
+        "instituicao": "Hospital Barão de Lucena",
+        "cid": null
+        },
+        "literal": {
+        "material": "EDA",
+        "cid": "",
+        "medico_solicitante": "Aya Angélica Sakaguchi",
+        "local": "Recife",
+        "data": "19/03/2018"
+        }
+    },
+    "pecas_histologicas": [
+        {
+        "estruturado": {
+            "descricao_origem": "Biópsia gástrica",
+            "quantidade_fragmentos": 2,
+            "tamanho_mm": {
+            "maior_eixo": 5,
+            "categoria": "de 5 mm a 9 mm"
+            },
+            "tipo_histologico": "Inflamatório (Gastrite crônica ativa)",
+            "grau_atipia": "Sem atipia",
+            "neoplasia": false,
+            "adenocarcinoma": false
+        },
+        "literal": {
+            "macroscopia": "Dois fragmentos elásticos, pardos, medindo o maior 0,5 cm. Dois fragmentos para EH.",
+            "microscopia_conclusao": "Gastrite crônica leve, ativa, com agregados linfóides e metaplasia intestinal completa sem displasia. Pesquisa de H. pylori positiva (++/+++).",
+            "diagnostico": "Biópsia gástrica"
+        }
+        }
+    ],
+    "laudo_literal_completo": {
+        "numero_peca": "0930/18",
+        "assinatura": {
+        "medico": "Dr. Sérgio Ricardo Soares de Moura",
+        "crm": "18.835"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "JOSEFA COELHO DE MELO",
+        "sexo": "Feminino",
+        "idade": 67,
+        "prontuario": "8612204"
+        },
+        "literal": {
+        "nome": "JOSEFA COELHO DE MELO",
+        "idade": "67 anos",
+        "prontuario": "8612204",
+        "enfermaria": "Enfermaria Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Colonoscopia",
+        "data_laudo": "2018-10-31",
+        "instituicao": "Hospital Barão de Lucena",
+        "cid": null
+        },
+        "literal": {
+        "material": "Pólipo de transverso",
+        "cid": "",
+        "medico_solicitante": "Leilane Alencar",
+        "local": "Recife",
+        "data": "31/10/2018"
+        }
+    },
+    "pecas_histologicas": [
+        {
+        "estruturado": {
+            "descricao_origem": "Pólipo de cólon transverso",
+            "quantidade_fragmentos": 1,
+            "tamanho_mm": {
+            "maior_eixo": 3,
+            "categoria": "até 5 mm"
+            },
+            "tipo_histologico": "Pólipo neoplásico (Adenoma túbulo-viloso)",
+            "grau_atipia": "Baixo grau",
+            "neoplasia": true,
+            "adenocarcinoma": false
+        },
+        "literal": {
+            "macroscopia": "Fragmento tecidual irregular, pardacento, medindo 0,3 x 0,2 x 0,2 cm.",
+            "microscopia_conclusao": "Adenoma túbulo-viloso do cólon transverso com displasia de baixo grau.",
+            "diagnostico": "Adenoma túbulo-viloso do cólon transverso"
+        }
+        }
+    ],
+    "laudo_literal_completo": {
+        "numero_peca": "4807/18",
+        "assinatura": {
+        "medico": "Dra. Ana Paula Matos",
+        "crm": "10.157"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "MARIA JOSÉ BERNARDO DA SILVA",
+        "sexo": "Feminino",
+        "idade": 64,
+        "prontuario": "8548897"
+        },
+        "literal": {
+        "nome": "MARIA JOSÉ BERNARDO DA SILVA",
+        "idade": "64 anos",
+        "prontuario": "8548897",
+        "enfermaria": "Enfermaria Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Colonoscopia",
+        "data_laudo": "2018-11-21",
+        "instituicao": "Hospital Barão de Lucena",
+        "cid": null
+        },
+        "literal": {
+        "material": "Pólipo de sigmoide",
+        "cid": "",
+        "medico_solicitante": "Renata Paula Coutinho",
+        "local": "Recife",
+        "data": "21/11/2018"
+        }
+    },
+    "pecas_histologicas": [
+        {
+        "estruturado": {
+            "descricao_origem": "Pólipo de cólon sigmoide",
+            "quantidade_fragmentos": 1,
+            "tamanho_mm": {
+            "maior_eixo": 3,
+            "categoria": "até 5 mm"
+            },
+            "tipo_histologico": "Pólipo neoplásico (Adenoma tubular séssil)",
+            "grau_atipia": "Baixo grau",
+            "neoplasia": true,
+            "adenocarcinoma": false
+        },
+        "literal": {
+            "macroscopia": "Fragmento tecidual irregular, pardo, medindo 0,3 x 0,2 x 0,2 cm.",
+            "microscopia_conclusao": "Adenoma tubular séssil do cólon sigmoide, com displasia epitelial de baixo grau.",
+            "diagnostico": "Adenoma tubular séssil do cólon sigmoide"
+        }
+        }
+    ],
+    "laudo_literal_completo": {
+        "numero_peca": "4954/18",
+        "assinatura": {
+        "medico": "Dra. Ana Lúcia Antonino Brito",
+        "crm": "8896"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "LUCIANA MARIA PEREIRA DE OLIVEIRA",
+        "sexo": "Feminino",
+        "idade": 52,
+        "prontuario": "254825"
+        },
+        "literal": {
+        "nome": "LUCIANA MARIA PEREIRA DE OLIVEIRA",
+        "idade": "52 anos",
+        "prontuario": "254825",
+        "enfermaria": "Enfermaria Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Colonoscopia",
+        "data_laudo": "2018-11-22",
+        "instituicao": "Hospital Barão de Lucena",
+        "cid": null
+        },
+        "literal": {
+        "material": "Colonoscopia",
+        "cid": "",
+        "medico_solicitante": "Maurício de Souza Moreira",
+        "local": "Recife",
+        "data": "22/11/2018"
+        }
+    },
+    "pecas_histologicas": [
+        {
+        "estruturado": {
+            "descricao_origem": "Pólipo hiperplásico retal",
+            "quantidade_fragmentos": 4,
+            "tamanho_mm": {
+            "maior_eixo": 3,
+            "categoria": "até 5 mm"
+            },
+            "tipo_histologico": "Pólipo não neoplásico (Hiperplásico)",
+            "grau_atipia": "Sem atipia",
+            "neoplasia": false,
+            "adenocarcinoma": false
+        },
+        "literal": {
+            "macroscopia": "Quatro fragmentos teciduais irregulares, branco-acastanhados, medindo o maior 0,3 x 0,2 x 0,2 cm. Quatro fragmentos para EH.",
+            "microscopia_conclusao": "Pólipo hiperplásico retal.",
+            "diagnostico": "Pólipo hiperplásico retal"
+        }
+        }
+    ],
+    "laudo_literal_completo": {
+        "numero_peca": "5074/18",
+        "assinatura": {
+        "medico": "Dra. Ana Paula Matos",
+        "crm": "10.157"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "JOSE JOÃO DA SILVA",
+        "sexo": "Masculino",
+        "idade": 66,
+        "prontuario": "8626432"
+        },
+        "literal": {
+        "nome": "JOSE JOÃO DA SILVA",
+        "idade": "66 anos",
+        "prontuario": "8626432",
+        "enfermaria": "Enfermaria Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Colonoscopia",
+        "data_laudo": "2018-11-29",
+        "instituicao": "Hospital Barão de Lucena",
+        "cid": null
+        },
+        "literal": {
+        "material": "Pólipo retal",
+        "cid": "",
+        "medico_solicitante": "Paulo M. Barros",
+        "local": "Recife",
+        "data": "29/11/2018"
+        }
+    },
+    "pecas_histologicas": [
+        {
+        "estruturado": {
+            "descricao_origem": "Pólipo retal",
+            "quantidade_fragmentos": 1,
+            "tamanho_mm": {
+            "maior_eixo": 35,
+            "categoria": "10 mm ou mais"
+            },
+            "tipo_histologico": "Pólipo neoplásico (Adenoma serrilhado)",
+            "grau_atipia": "Não informado",
+            "neoplasia": true,
+            "adenocarcinoma": false
+        },
+        "literal": {
+            "macroscopia": "Formação tecidual granulosa, elástica, acastanhada, medindo o maior 3,5 x 2,5 x 2,0 cm. Superfície de corte compacta, castanho-enegrecido.",
+            "microscopia_conclusao": "Adenoma serrilhado. Margem de ressecção cirúrgica livre.",
+            "diagnostico": "Adenoma serrilhado"
+        }
+        }
+    ],
+    "laudo_literal_completo": {
+        "numero_peca": "5238/18",
+        "assinatura": {
+        "medico": "Dra. Sofia Santos Tenório",
+        "crm": "19.695"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "QUITERIA DOMINGUES RODRIGUES",
+        "sexo": "Feminino",
+        "idade": 69,
+        "prontuario": "8640382"
+        },
+        "literal": {
+        "nome": "QUITERIA DOMINGUES RODRIGUES",
+        "idade": "69 anos",
+        "prontuario": "8640382",
+        "enfermaria": "Enfermaria Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Colonoscopia",
+        "data_laudo": "2018-12-07",
+        "instituicao": "Hospital Barão de Lucena",
+        "cid": null
+        },
+        "literal": {
+        "material": "Pólipo de ceco",
+        "cid": "",
+        "medico_solicitante": "Renata Paula Coutinho",
+        "local": "Recife",
+        "data": "07/12/2018"
+        }
+    },
+    "pecas_histologicas": [
+        {
+        "estruturado": {
+            "descricao_origem": "Pólipo de ceco",
+            "quantidade_fragmentos": 7,
+            "tamanho_mm": {
+            "maior_eixo": 3,
+            "categoria": "até 5 mm"
+            },
+            "tipo_histologico": "Pólipo neoplásico (Adenoma tubular)",
+            "grau_atipia": "Baixo grau",
+            "neoplasia": true,
+            "adenocarcinoma": false
+        },
+        "literal": {
+            "macroscopia": "Sete fragmentos teciduais irregulares, pardos, o maior medindo 0,3 x 0,2 x 0,2 cm.",
+            "microscopia_conclusao": "Adenoma tubular do ceco, com displasia epitelial de baixo grau (leve).",
+            "diagnostico": "Adenoma tubular do ceco"
+        }
+        }
+    ],
+    "laudo_literal_completo": {
+        "numero_peca": "5313/18",
+        "assinatura": {
+        "medico": "Dra. Ana Lúcia Antonino Brito",
+        "crm": "8896"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "SEVERINA FARIAS DA SILVA",
+        "sexo": "Feminino",
+        "idade": 69,
+        "prontuario": "8591878"
+        },
+        "literal": {
+        "nome": "SEVERINA FARIAS DA SILVA",
+        "idade": "69 anos",
+        "prontuario": "8591878",
+        "enfermaria": "Enfermaria Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Colonoscopia",
+        "data_laudo": "2018-12-06",
+        "instituicao": "Hospital Barão de Lucena",
+        "cid": null
+        },
+        "literal": {
+        "material": "Pólipo de cólon descendente",
+        "cid": "",
+        "medico_solicitante": "Renata Coutinho",
+        "local": "Recife",
+        "data": "06/12/2018"
+        }
+    },
+    "pecas_histologicas": [
+        {
+        "estruturado": {
+            "descricao_origem": "Pólipo de cólon descendente",
+            "quantidade_fragmentos": 3,
+            "tamanho_mm": {
+            "maior_eixo": 3,
+            "categoria": "até 5 mm"
+            },
+            "tipo_histologico": "Pólipo neoplásico (Adenoma túbulo-viloso)",
+            "grau_atipia": "Baixo grau",
+            "neoplasia": true,
+            "adenocarcinoma": false
+        },
+        "literal": {
+            "macroscopia": "Três fragmentos teciduais irregulares, pardacentos, o maior medindo 0,3 x 0,2 x 0,2 cm.",
+            "microscopia_conclusao": "Adenoma túbulo-viloso com displasia de baixo grau.",
+            "diagnostico": "Adenoma túbulo-viloso"
+        }
+        }
+    ],
+    "laudo_literal_completo": {
+        "numero_peca": "5347/18",
+        "assinatura": {
+        "medico": "Dra. Ana Paula Matos",
+        "crm": "10.157"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "MARIA JOANA DE MEDEIROS",
+        "sexo": "Feminino",
+        "idade": 69,
+        "prontuario": "405243"
+        },
+        "literal": {
+        "nome": "MARIA JOANA DE MEDEIROS",
+        "idade": "69 anos",
+        "prontuario": "405243",
+        "enfermaria": "Enfermaria Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Colonoscopia",
+        "data_laudo": "2018-12-06",
+        "instituicao": "Hospital Barão de Lucena",
+        "cid": null
+        },
+        "literal": {
+        "material": "Pólipo de ceco",
+        "cid": "",
+        "medico_solicitante": "Renata Coutinho",
+        "local": "Recife",
+        "data": "06/12/2018"
+        }
+    },
+    "pecas_histologicas": [
+        {
+        "estruturado": {
+            "descricao_origem": "Pólipo de ceco",
+            "quantidade_fragmentos": 1,
+            "tamanho_mm": {
+            "maior_eixo": 8,
+            "categoria": "de 5 mm a 9 mm"
+            },
+            "tipo_histologico": "Pólipo neoplásico (Adenoma viloso)",
+            "grau_atipia": "Baixo grau",
+            "neoplasia": true,
+            "adenocarcinoma": false
+        },
+        "literal": {
+            "macroscopia": "Fragmento tecidual irregular, pardacento, medindo 0,8 x 0,4 x 0,2 cm.",
+            "microscopia_conclusao": "Adenoma viloso com displasia de baixo grau.",
+            "diagnostico": "Adenoma viloso"
+        }
+        }
+    ],
+    "laudo_literal_completo": {
+        "numero_peca": "5348/18",
+        "assinatura": {
+        "medico": "Dra. Ana Paula Matos",
+        "crm": "10.157"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "PEDRO ANTÔNIO DE ARRUDA GUERRA",
+        "sexo": "Masculino",
+        "idade": 66,
+        "prontuario": "8616863"
+        },
+        "literal": {
+        "nome": "PEDRO ANTÔNIO DE ARRUDA GUERRA",
+        "idade": "66 anos",
+        "prontuario": "8616863",
+        "enfermaria": "Enfermaria Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Colonoscopia",
+        "data_laudo": "2018-12-06",
+        "instituicao": "Hospital Barão de Lucena",
+        "cid": null
+        },
+        "literal": {
+        "material": "Pólipo",
+        "cid": "",
+        "medico_solicitante": "Renata Paula Coutinho",
+        "local": "Recife",
+        "data": "06/12/2018"
+        }
+    },
+    "pecas_histologicas": [
+        {
+        "estruturado": {
+            "descricao_origem": "Pólipo (localização não especificada)",
+            "quantidade_fragmentos": null,
+            "tamanho_mm": {
+            "maior_eixo": 3,
+            "categoria": "até 5 mm"
+            },
+            "tipo_histologico": "Pólipo neoplásico (Adenoma tubular)",
+            "grau_atipia": "Baixo grau",
+            "neoplasia": true,
+            "adenocarcinoma": false
+        },
+        "literal": {
+            "macroscopia": "Vários fragmentos teciduais irregulares, pardos, medindo o maior 0,3 x 0,2 x 0,2 cm.",
+            "microscopia_conclusao": "Adenoma tubular com displasia de baixo grau.",
+            "diagnostico": "Adenoma tubular"
+        }
+        }
+    ],
+    "laudo_literal_completo": {
+        "numero_peca": "5388/18",
+        "assinatura": {
+        "medico": "Dra. Ana Paula Matos",
+        "crm": "10.157"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "MANOEL GALDINO DA COSTA",
+        "sexo": "Masculino",
+        "idade": 55,
+        "prontuario": "8596171"
+        },
+        "literal": {
+        "nome": "MANOEL GALDINO DA COSTA",
+        "idade": "55 anos",
+        "prontuario": "8596171",
+        "enfermaria": "Enfermaria Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Colonoscopia",
+        "data_laudo": "2018-12-19",
+        "instituicao": "Hospital Barão de Lucena",
+        "cid": null
+        },
+        "literal": {
+        "material": "Pólipo de cólon ascendente",
+        "cid": "",
+        "medico_solicitante": "André L. O. Novaes",
+        "local": "Recife",
+        "data": "19/12/2018"
+        }
+    },
+    "pecas_histologicas": [
+        {
+        "estruturado": {
+            "descricao_origem": "Pólipo de cólon ascendente",
+            "quantidade_fragmentos": 2,
+            "tamanho_mm": {
+            "maior_eixo": 6,
+            "categoria": "de 5 mm a 9 mm"
+            },
+            "tipo_histologico": "Pólipo neoplásico (Adenoma túbulo-viloso)",
+            "grau_atipia": "Baixo grau",
+            "neoplasia": true,
+            "adenocarcinoma": false
+        },
+        "literal": {
+            "macroscopia": "Dois fragmentos teciduais irregulares, pardos, o maior medindo 0,6 x 0,4 x 0,2 cm.",
+            "microscopia_conclusao": "Adenoma túbulo-viloso com displasia de baixo grau.",
+            "diagnostico": "Adenoma túbulo-viloso"
+        }
+        }
+    ],
+    "laudo_literal_completo": {
+        "numero_peca": "5648/18",
+        "assinatura": {
+        "medico": "Dra. Sofia Santos Tenório",
+        "crm": "19.695"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "MARTA RAQUEL DO NASCIMENTO",
+        "sexo": "Feminino",
+        "idade": 39,
+        "prontuario": "8648288"
+        },
+        "literal": {
+        "nome": "MARTA RAQUEL DO NASCIMENTO",
+        "idade": "39 anos",
+        "prontuario": "8648288",
+        "enfermaria": "Enfermaria Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Colonoscopia",
+        "data_laudo": "2018-12-17",
+        "instituicao": "Hospital Barão de Lucena",
+        "cid": null
+        },
+        "literal": {
+        "material": "Pólipo de reto",
+        "cid": "",
+        "medico_solicitante": "Leilane Alencar",
+        "local": "Recife",
+        "data": "17/12/2018"
+        }
+    },
+    "pecas_histologicas": [
+        {
+        "estruturado": {
+            "descricao_origem": "Pólipo de reto",
+            "quantidade_fragmentos": 2,
+            "tamanho_mm": {
+            "maior_eixo": 4,
+            "categoria": "até 5 mm"
+            },
+            "tipo_histologico": "Pólipo neoplásico (Adenoma tubular)",
+            "grau_atipia": "Baixo grau",
+            "neoplasia": true,
+            "adenocarcinoma": false
+        },
+        "literal": {
+            "macroscopia": "Dois fragmentos teciduais irregulares, pardos, medindo o maior 0,4 x 0,2 x 0,2 cm.",
+            "microscopia_conclusao": "Pólipo de reto: Adenoma tubular de baixo grau (displasia leve).",
+            "diagnostico": "Adenoma tubular de baixo grau"
+        }
+        }
+    ],
+    "laudo_literal_completo": {
+        "numero_peca": "5633/18",
+        "assinatura": {
+        "medico": "Dr. Sérgio Ricardo Soares de Moura",
+        "crm": "18.835"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "LUIZ GOMES DA SILVA",
+        "sexo": "Masculino",
+        "idade": 73,
+        "prontuario": "8621012"
+        },
+        "literal": {
+        "nome": "LUIZ GOMES DA SILVA",
+        "idade": "73 anos",
+        "prontuario": "8621012",
+        "enfermaria": "Enfermaria Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Colonoscopia",
+        "data_laudo": "2018-12-17",
+        "instituicao": "Hospital Barão de Lucena",
+        "cid": null
+        },
+        "literal": {
+        "material": "Pólipos de cólon transverso e sigmoide",
+        "cid": "",
+        "medico_solicitante": "Paulo M. Barros",
+        "local": "Recife",
+        "data": "17/12/2018"
+        }
+    },
+    "pecas_histologicas": [
+        {
+        "estruturado": {
+            "descricao_origem": "Pólipo de cólon transverso",
+            "quantidade_fragmentos": 1,
+            "tamanho_mm": {
+            "maior_eixo": 5,
+            "categoria": "de 5 mm a 9 mm"
+            },
+            "tipo_histologico": "Pólipo neoplásico (Adenoma tubular)",
+            "grau_atipia": "Moderado",
+            "neoplasia": true,
+            "adenocarcinoma": false
+        },
+        "literal": {
+            "macroscopia": "Fragmento tecidual irregular, pardo, medindo 0,5 x 0,4 x 0,2 cm.",
+            "microscopia_conclusao": "Cólon transverso: Adenoma tubular de baixo grau (displasia moderada).",
+            "diagnostico": "Adenoma tubular com displasia moderada"
+        }
+        },
+        {
+        "estruturado": {
+            "descricao_origem": "Cólon sigmoide",
+            "quantidade_fragmentos": 4,
+            "tamanho_mm": {
+            "maior_eixo": 4,
+            "categoria": "até 5 mm"
+            },
+            "tipo_histologico": "Adenocarcinoma",
+            "grau_atipia": "Moderadamente diferenciado",
+            "neoplasia": true,
+            "adenocarcinoma": true
+        },
+        "literal": {
+            "macroscopia": "Quatro fragmentos teciduais irregulares, pardos, medindo o maior 0,4 x 0,2 x 0,2 cm.",
+            "microscopia_conclusao": "Cólon sigmoide: Adenocarcinoma invasivo, moderadamente diferenciado.",
+            "diagnostico": "Adenocarcinoma invasivo moderadamente diferenciado"
+        }
+        }
+    ],
+    "laudo_literal_completo": {
+        "numero_peca": "5641/18",
+        "assinatura": {
+        "medico": "Dr. Sérgio Ricardo Soares de Moura",
+        "crm": "18.835"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "SAULO ARAGÃO SANTOS",
+        "sexo": "Masculino",
+        "idade": 54,
+        "prontuario": "573067"
+        },
+        "literal": {
+        "nome": "SAULO ARAGÃO SANTOS",
+        "idade": "54 anos",
+        "prontuario": "573067",
+        "enfermaria": "Enfermaria Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Colonoscopia",
+        "data_laudo": "2019-01-02",
+        "instituicao": "Hospital Barão de Lucena",
+        "cid": null
+        },
+        "literal": {
+        "material": "Pólipo de ceco",
+        "cid": "",
+        "medico_solicitante": "Renata Paula Coutinho",
+        "local": "Recife",
+        "data": "02/01/2019"
+        }
+    },
+    "pecas_histologicas": [
+        {
+        "estruturado": {
+            "descricao_origem": "Pólipo de ceco",
+            "quantidade_fragmentos": 2,
+            "tamanho_mm": {
+            "maior_eixo": 3,
+            "categoria": "até 5 mm"
+            },
+            "tipo_histologico": "Pólipo neoplásico (Adenoma túbulo-viloso)",
+            "grau_atipia": "Moderado",
+            "neoplasia": true,
+            "adenocarcinoma": false
+        },
+        "literal": {
+            "macroscopia": "Dois fragmentos teciduais irregulares, pardos, medindo o maior 0,3 x 0,2 x 0,2 cm.",
+            "microscopia_conclusao": "Pólipo de ceco: Adenoma túbulo-viloso de baixo grau (displasia moderada).",
+            "diagnostico": "Adenoma túbulo-viloso de baixo grau"
+        }
+        }
+    ],
+    "laudo_literal_completo": {
+        "numero_peca": "5693/18",
+        "assinatura": {
+        "medico": "Dr. Sérgio Ricardo Soares de Moura",
+        "crm": "18.835"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "ANTÔNIO RAFAEL DE LIRA",
+        "sexo": "Masculino",
+        "idade": 68,
+        "prontuario": "8631573"
+        },
+        "literal": {
+        "nome": "ANTÔNIO RAFAEL DE LIRA",
+        "idade": "68 anos",
+        "prontuario": "8631573",
+        "enfermaria": "Enfermaria Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Colonoscopia",
+        "data_laudo": "2019-01-02",
+        "instituicao": "Hospital Barão de Lucena",
+        "cid": null
+        },
+        "literal": {
+        "material": "Pólipo de ângulo hepático",
+        "cid": "",
+        "medico_solicitante": "Antônio Lucas das M. Filho",
+        "local": "Recife",
+        "data": "02/01/2019"
+        }
+    },
+    "pecas_histologicas": [
+        {
+        "estruturado": {
+            "descricao_origem": "Pólipo de ângulo hepático",
+            "quantidade_fragmentos": 2,
+            "tamanho_mm": {
+            "maior_eixo": 8,
+            "categoria": "de 5 mm a 9 mm"
+            },
+            "tipo_histologico": "Pólipo neoplásico (Adenoma tubular)",
+            "grau_atipia": "Baixo grau",
+            "neoplasia": true,
+            "adenocarcinoma": false
+        },
+        "literal": {
+            "macroscopia": "Dois fragmentos teciduais irregulares, pardos, medindo o maior 0,8 x 0,3 x 0,2 cm.",
+            "microscopia_conclusao": "Pólipo de ângulo hepático: Adenoma tubular de baixo grau (displasia leve).",
+            "diagnostico": "Adenoma tubular de baixo grau"
+        }
+        }
+    ],
+    "laudo_literal_completo": {
+        "numero_peca": "5782/18",
+        "assinatura": {
+        "medico": "Dr. Sérgio Ricardo Soares de Moura",
+        "crm": "18.835"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "MARIA DE LOURDES DE MOURA LIMA",
+        "sexo": "Feminino",
+        "idade": 53,
+        "prontuario": "8644254"
+        },
+        "literal": {
+        "nome": "MARIA DE LOURDES DE MOURA LIMA",
+        "idade": "53 anos",
+        "prontuario": "8644254",
+        "enfermaria": "Enfermaria Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Colonoscopia",
+        "data_laudo": "2019-01-07",
+        "instituicao": "Hospital Barão de Lucena",
+        "cid": null
+        },
+        "literal": {
+        "material": "Pólipo de transverso e de ângulo hepático e lesão de reto baixo",
+        "cid": "",
+        "medico_solicitante": "Antônio Lucas das M. Filho",
+        "local": "Recife",
+        "data": "07/01/2019"
+        }
+    },
+    "pecas_histologicas": [
+        {
+        "estruturado": {
+            "descricao_origem": "Pólipo de cólon transverso / ângulo hepático",
+            "quantidade_fragmentos": 2,
+            "tamanho_mm": {
+            "maior_eixo": 3,
+            "categoria": "até 5 mm"
+            },
+            "tipo_histologico": "Pólipo neoplásico (Adenoma túbulo-viloso)",
+            "grau_atipia": "Baixo grau",
+            "neoplasia": true,
+            "adenocarcinoma": false
+        },
+        "literal": {
+            "macroscopia": "Vidro 1: Dois fragmentos teciduais irregulares, pardacentos, o maior medindo 0,3 x 0,2 x 0,1 cm.",
+            "microscopia_conclusao": "Adenoma túbulo-viloso com displasia de baixo grau.",
+            "diagnostico": "Adenoma túbulo-viloso"
+        }
+        },
+        {
+        "estruturado": {
+            "descricao_origem": "Mucosa colônica/retal",
+            "quantidade_fragmentos": 1,
+            "tamanho_mm": {
+            "maior_eixo": 3,
+            "categoria": "até 5 mm"
+            },
+            "tipo_histologico": "Inflamatório (mucosa com agregado linfóide)",
+            "grau_atipia": "Sem atipia",
+            "neoplasia": false,
+            "adenocarcinoma": false
+        },
+        "literal": {
+            "macroscopia": "Vidro 2: Fragmento tecidual irregular, pardacento, medindo 0,3 x 0,2 x 0,2 cm.",
+            "microscopia_conclusao": "Mucosa do tipo colônica/retal exibindo agregado linfóide em lâmina própria.",
+            "diagnostico": "Mucosa colônica/retal com agregado linfóide"
+        }
+        },
+        {
+        "estruturado": {
+            "descricao_origem": "Lesão de reto baixo",
+            "quantidade_fragmentos": 6,
+            "tamanho_mm": {
+            "maior_eixo": 3,
+            "categoria": "até 5 mm"
+            },
+            "tipo_histologico": "Inflamatório (tecido de granulação)",
+            "grau_atipia": "Sem atipia",
+            "neoplasia": false,
+            "adenocarcinoma": false
+        },
+        "literal": {
+            "macroscopia": "Vidro 3: Seis fragmentos teciduais irregulares, pardacentos, o maior medindo 0,3 x 0,2 x 0,1 cm.",
+            "microscopia_conclusao": "Tecido de granulação com hiperplasia epitelial sem atipias.",
+            "diagnostico": "Tecido de granulação sem atipias"
+        }
+        }
+    ],
+    "laudo_literal_completo": {
+        "numero_peca": "5774/18",
+        "assinatura": {
+        "medico": "Dra. Sofia Santos Tenório",
+        "crm": "19.695"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "DORALICE CAVALCANTE DOS SANTOS",
+        "sexo": "Feminino",
+        "idade": 69,
+        "prontuario": "113451"
+        },
+        "literal": {
+        "nome": "DORALICE CAVALCANTE DOS SANTOS",
+        "idade": "69 anos",
+        "prontuario": "113451",
+        "enfermaria": "Enfermaria Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Colonoscopia",
+        "data_laudo": "2019-01-07",
+        "instituicao": "Hospital Barão de Lucena",
+        "cid": null
+        },
+        "literal": {
+        "material": "Pólipo de descendente",
+        "cid": "",
+        "medico_solicitante": "Paulo M. Barros",
+        "local": "Recife",
+        "data": "07/01/2019"
+        }
+    },
+    "pecas_histologicas": [
+        {
+        "estruturado": {
+            "descricao_origem": "Pólipo de cólon descendente",
+            "quantidade_fragmentos": 2,
+            "tamanho_mm": {
+            "maior_eixo": 4,
+            "categoria": "até 5 mm"
+            },
+            "tipo_histologico": "Pólipo neoplásico (Adenoma túbulo-viloso)",
+            "grau_atipia": "Baixo grau",
+            "neoplasia": true,
+            "adenocarcinoma": false
+        },
+        "literal": {
+            "macroscopia": "Dois fragmentos teciduais irregulares, pardacentos, o maior medindo 0,4 x 0,3 x 0,2 cm.",
+            "microscopia_conclusao": "Adenoma túbulo-viloso com displasia de baixo grau.",
+            "diagnostico": "Adenoma túbulo-viloso"
+        }
+        }
+    ],
+    "laudo_literal_completo": {
+        "numero_peca": "5778/18",
+        "assinatura": {
+        "medico": "Dra. Sofia Santos Tenório",
+        "crm": "19.695"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "NECI VITAL DA SILVA",
+        "sexo": "Feminino",
+        "idade": 57,
+        "prontuario": "8646199"
+        },
+        "literal": {
+        "nome": "NECI VITAL DA SILVA",
+        "idade": "57 anos",
+        "prontuario": "8646199",
+        "enfermaria": "Enfermaria Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Colonoscopia",
+        "data_laudo": "2019-01-02",
+        "instituicao": "Hospital Barão de Lucena",
+        "cid": null
+        },
+        "literal": {
+        "material": "Pólipo retal",
+        "cid": "",
+        "medico_solicitante": "Maurício de Souza Moreira",
+        "local": "Recife",
+        "data": "02/01/2019"
+        }
+    },
+    "pecas_histologicas": [
+        {
+        "estruturado": {
+            "descricao_origem": "Pólipo retal",
+            "quantidade_fragmentos": 4,
+            "tamanho_mm": {
+            "maior_eixo": 3,
+            "categoria": "até 5 mm"
+            },
+            "tipo_histologico": "Pólipo não neoplásico (Hiperplásico)",
+            "grau_atipia": "Sem atipia",
+            "neoplasia": false,
+            "adenocarcinoma": false
+        },
+        "literal": {
+            "macroscopia": "Quatro fragmentos teciduais irregulares, pardos, medindo o maior 0,3 x 0,2 x 0,1 cm.",
+            "microscopia_conclusao": "Pólipo retal: pólipo hiperplásico. Não se evidencia malignidade.",
+            "diagnostico": "Pólipo hiperplásico retal"
+        }
+        }
+    ],
+    "laudo_literal_completo": {
+        "numero_peca": "5786/18",
+        "assinatura": {
+        "medico": "Dr. Sérgio Ricardo Soares de Moura",
+        "crm": "18.835"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "MARIA MADALENA BARBOSA",
+        "sexo": "Feminino",
+        "idade": 65,
+        "prontuario": "322981"
+        },
+        "literal": {
+        "nome": "MARIA MADALENA BARBOSA",
+        "idade": "65 anos",
+        "prontuario": "322981",
+        "enfermaria": "Enfermaria Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Colonoscopia",
+        "data_laudo": "2019-01-14",
+        "instituicao": "Hospital Barão de Lucena",
+        "cid": null
+        },
+        "literal": {
+        "material": "Pólipo de cólon ascendente",
+        "cid": "",
+        "medico_solicitante": "André L. O. Novaes",
+        "local": "Recife",
+        "data": "14/01/2019"
+        }
+    },
+    "pecas_histologicas": [
+        {
+        "estruturado": {
+            "descricao_origem": "Pólipo séssil de cólon ascendente",
+            "quantidade_fragmentos": 1,
+            "tamanho_mm": {
+            "maior_eixo": 3,
+            "categoria": "até 5 mm"
+            },
+            "tipo_histologico": "Pólipo neoplásico (Adenoma tubular séssil)",
+            "grau_atipia": "Baixo grau",
+            "neoplasia": true,
+            "adenocarcinoma": false
+        },
+        "literal": {
+            "macroscopia": "Fragmento tecidual irregular, pardacento, medindo 0,3 x 0,2 x 0,2 cm.",
+            "microscopia_conclusao": "Pólipo séssil em cólon ascendente: Adenoma tubular de baixo grau (displasia leve).",
+            "diagnostico": "Adenoma tubular de baixo grau"
+        }
+        }
+    ],
+    "laudo_literal_completo": {
+        "numero_peca": "5924/18",
+        "assinatura": {
+        "medico": "Dr. Sérgio Ricardo Soares de Moura",
+        "crm": "18.835"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "LENIRA GONÇALVES RAMOS",
+        "sexo": "Feminino",
+        "idade": 57,
+        "prontuario": "110806"
+        },
+        "literal": {
+        "nome": "LENIRA GONÇALVES RAMOS",
+        "idade": "57 anos",
+        "prontuario": "110806",
+        "enfermaria": "Enfermaria Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Colonoscopia",
+        "data_laudo": "2019-01-17",
+        "instituicao": "Hospital Barão de Lucena",
+        "cid": null
+        },
+        "literal": {
+        "material": "Pólipo de cólon transverso",
+        "cid": "",
+        "medico_solicitante": "Paulo M. Barros",
+        "local": "Recife",
+        "data": "17/01/2019"
+        }
+    },
+    "pecas_histologicas": [
+        {
+        "estruturado": {
+            "descricao_origem": "Pólipo de cólon transverso",
+            "quantidade_fragmentos": 1,
+            "tamanho_mm": {
+            "maior_eixo": 2,
+            "categoria": "até 5 mm"
+            },
+            "tipo_histologico": "Adenoma tubular",
+            "grau_atipia": "Baixo grau",
+            "neoplasia": true,
+            "adenocarcinoma": false
+        },
+        "literal": {
+            "macroscopia": "Fragmento tecidual irregular, pardo, medindo 0,2 x 0,2 x 0,1 cm.",
+            "microscopia_conclusao": "Adenoma tubular com displasia de baixo grau.",
+            "diagnostico": "Adenoma tubular de baixo grau"
+        }
+        }
+    ],
+    "laudo_literal_completo": {
+        "numero_peca": "5912/18",
+        "assinatura": {
+        "medico": "Dra. Sofia Santos Tenório",
+        "crm": "19.695"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "MARIA DO CARMO DA SILVA",
+        "sexo": "Feminino",
+        "idade": 68,
+        "prontuario": "8646453"
+        },
+        "literal": {
+        "nome": "MARIA DO CARMO DA SILVA",
+        "idade": "68 anos",
+        "prontuario": "8646453",
+        "enfermaria": "Enfermaria Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Colonoscopia",
+        "data_laudo": "2019-01-17",
+        "instituicao": "Hospital Barão de Lucena",
+        "cid": null
+        },
+        "literal": {
+        "material": "Pólipo de cólon ascendente",
+        "cid": "",
+        "medico_solicitante": "Paulo M. Barros",
+        "local": "Recife",
+        "data": "17/01/2019"
+        }
+    },
+    "pecas_histologicas": [
+        {
+        "estruturado": {
+            "descricao_origem": "Pólipo de cólon ascendente",
+            "quantidade_fragmentos": 1,
+            "tamanho_mm": {
+            "maior_eixo": 15,
+            "categoria": "igual ou maior que 10 mm"
+            },
+            "tipo_histologico": "Adenoma túbulo-viloso",
+            "grau_atipia": "Baixo grau",
+            "neoplasia": true,
+            "adenocarcinoma": false
+        },
+        "literal": {
+            "macroscopia": "Fragmento tecidual irregular, pardo, medindo 1,5 x 0,5 x 0,4 cm.",
+            "microscopia_conclusao": "Adenoma túbulo-viloso com displasia de baixo grau.",
+            "diagnostico": "Adenoma túbulo-viloso de baixo grau"
+        }
+        }
+    ],
+    "laudo_literal_completo": {
+        "numero_peca": "6007/18",
+        "assinatura": {
+        "medico": "Dra. Sofia Santos Tenório",
+        "crm": "19.695"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "CÍCERO SEVERINO PEREIRA",
+        "sexo": "Masculino",
+        "idade": 61,
+        "prontuario": "413701"
+        },
+        "literal": {
+        "nome": "CÍCERO SEVERINO PEREIRA",
+        "idade": "61 anos",
+        "prontuario": "413701",
+        "enfermaria": "Enfermaria Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Colonoscopia",
+        "data_laudo": "2019-01-17",
+        "instituicao": "Hospital Barão de Lucena",
+        "cid": null
+        },
+        "literal": {
+        "material": "Pólipo colônico",
+        "cid": "",
+        "medico_solicitante": "Renata Paula Coutinho",
+        "local": "Recife",
+        "data": "17/01/2019"
+        }
+    },
+    "pecas_histologicas": [
+        {
+        "estruturado": {
+            "descricao_origem": "Pólipo colônico",
+            "quantidade_fragmentos": 4,
+            "tamanho_mm": {
+            "maior_eixo": 3,
+            "categoria": "até 5 mm"
+            },
+            "tipo_histologico": "Adenoma tubular",
+            "grau_atipia": "Baixo grau",
+            "neoplasia": true,
+            "adenocarcinoma": false
+        },
+        "literal": {
+            "macroscopia": "Quatro fragmentos teciduais irregulares, pardos, o maior medindo 0,3 x 0,2 x 0,1 cm.",
+            "microscopia_conclusao": "Adenoma tubular com displasia de baixo grau.",
+            "diagnostico": "Adenoma tubular de baixo grau"
+        }
+        }
+    ],
+    "laudo_literal_completo": {
+        "numero_peca": "5997/18",
+        "assinatura": {
+        "medico": "Dra. Sofia Santos Tenório",
+        "crm": "19.695"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "JOÃO JERÔNIMO DA SILVA",
+        "sexo": "Masculino",
+        "idade": 58,
+        "prontuario": "275487"
+        },
+        "literal": {
+        "nome": "JOÃO JERÔNIMO DA SILVA",
+        "idade": "58 anos",
+        "prontuario": "275487",
+        "enfermaria": "Enfermaria Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Colonoscopia",
+        "data_laudo": "2019-01-14",
+        "instituicao": "Hospital Barão de Lucena",
+        "cid": null
+        },
+        "literal": {
+        "material": "Pólipo de transverso",
+        "cid": "",
+        "medico_solicitante": "Renata Paula Coutinho",
+        "local": "Recife",
+        "data": "14/01/2019"
+        }
+    },
+    "pecas_histologicas": [
+        {
+        "estruturado": {
+            "descricao_origem": "Pólipo de cólon transverso",
+            "quantidade_fragmentos": 2,
+            "tamanho_mm": {
+            "maior_eixo": 15,
+            "categoria": "igual ou maior que 10 mm"
+            },
+            "tipo_histologico": "Adenoma tubular",
+            "grau_atipia": "Baixo grau",
+            "neoplasia": true,
+            "adenocarcinoma": false
+        },
+        "literal": {
+            "macroscopia": "Dois fragmentos teciduais filiformes, pardos, o maior medindo 1,5 x 0,1 x 0,1 cm.",
+            "microscopia_conclusao": "Adenoma tubular do cólon transverso com displasia de baixo grau.",
+            "diagnostico": "Adenoma tubular de baixo grau"
+        }
+        }
+    ],
+    "laudo_literal_completo": {
+        "numero_peca": "6086/18",
+        "assinatura": {
+        "medico": "Dra. Ana Paula Matos",
+        "crm": "10.157"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "EDENILZA MARIA CORREA DA SILVA",
+        "sexo": "Feminino",
+        "idade": 65,
+        "prontuario": "192234"
+        },
+        "literal": {
+        "nome": "EDENILZA MARIA CORREA DA SILVA",
+        "idade": "65 anos",
+        "prontuario": "192234",
+        "enfermaria": "Enfermaria Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Colonoscopia",
+        "data_laudo": "2019-02-11",
+        "instituicao": "Hospital Barão de Lucena",
+        "cid": null
+        },
+        "literal": {
+        "material": "Pólipo de reto",
+        "cid": "",
+        "medico_solicitante": "Paulo M. Barros",
+        "local": "Recife",
+        "data": "11/02/2019"
+        }
+    },
+    "pecas_histologicas": [
+        {
+        "estruturado": {
+            "descricao_origem": "Pólipo de reto",
+            "quantidade_fragmentos": 1,
+            "tamanho_mm": {
+            "maior_eixo": 6,
+            "categoria": "de 5 mm a 9 mm"
+            },
+            "tipo_histologico": "Pólipo hiperplásico",
+            "grau_atipia": "Sem atipia",
+            "neoplasia": false,
+            "adenocarcinoma": false
+        },
+        "literal": {
+            "macroscopia": "Fragmento tecidual irregular, pardo, medindo 0,6 x 0,3 x 0,2 cm.",
+            "microscopia_conclusao": "Pólipo hiperplásico.",
+            "diagnostico": "Pólipo hiperplásico"
+        }
+        }
+    ],
+    "laudo_literal_completo": {
+        "numero_peca": "0457/19",
+        "assinatura": {
+        "medico": "Dra. Ana Paula Matos",
+        "crm": "10.157"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "ALICE CÂNDIDA DOS SANTOS",
+        "sexo": "Feminino",
+        "idade": 70,
+        "prontuario": "237213"
+        },
+        "literal": {
+        "nome": "ALICE CÂNDIDA DOS SANTOS",
+        "idade": "70 anos",
+        "prontuario": "237213",
+        "enfermaria": "Enfermaria Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Colonoscopia",
+        "data_laudo": "2019-02-25",
+        "instituicao": "Hospital Barão de Lucena",
+        "cid": null
+        },
+        "literal": {
+        "material": "Pólipo de retossigmoide",
+        "cid": "",
+        "medico_solicitante": "Renata Paula Coutinho",
+        "local": "Recife",
+        "data": "25/02/2019"
+        }
+    },
+    "pecas_histologicas": [
+        {
+        "estruturado": {
+            "descricao_origem": "Pólipo de retossigmoide",
+            "quantidade_fragmentos": 4,
+            "tamanho_mm": {
+            "maior_eixo": 4,
+            "categoria": "até 5 mm"
+            },
+            "tipo_histologico": "Adenoma túbulo-viloso",
+            "grau_atipia": "Baixo grau",
+            "neoplasia": true,
+            "adenocarcinoma": false
+        },
+        "literal": {
+            "macroscopia": "Quatro fragmentos teciduais irregulares, pardos, o maior medindo 0,4 x 0,3 x 0,2 cm.",
+            "microscopia_conclusao": "Adenoma túbulo-viloso do retossigmoide com displasia de baixo grau.",
+            "diagnostico": "Adenoma túbulo-viloso de baixo grau"
+        }
+        }
+    ],
+    "laudo_literal_completo": {
+        "numero_peca": "0503/19",
+        "assinatura": {
+        "medico": "Dra. Ana Paula Matos",
+        "crm": "10.157"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "SILVANA MARIA DA SILVA SOUZA",
+        "sexo": "Feminino",
+        "idade": 44,
+        "prontuario": "335958"
+        },
+        "literal": {
+        "nome": "SILVANA MARIA DA SILVA SOUZA",
+        "idade": "44 anos",
+        "prontuario": "335958",
+        "enfermaria": "Enfermaria Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Colonoscopia",
+        "data_laudo": "2019-02-18",
+        "instituicao": "Hospital Barão de Lucena",
+        "cid": null
+        },
+        "literal": {
+        "material": "Pólipo de reto",
+        "cid": "",
+        "medico_solicitante": "Não informado",
+        "local": "Recife",
+        "data": "18/02/2019"
+        }
+    },
+    "pecas_histologicas": [
+        {
+        "estruturado": {
+            "descricao_origem": "Produto de biópsia do reto",
+            "quantidade_fragmentos": 1,
+            "tamanho_mm": {
+            "maior_eixo": 4,
+            "categoria": "até 5 mm"
+            },
+            "tipo_histologico": "Adenoma tubular",
+            "grau_atipia": "Baixo grau",
+            "neoplasia": true,
+            "adenocarcinoma": false
+        },
+        "literal": {
+            "macroscopia": "Fragmento tecidual irregular, pardo, medindo 0,4 x 0,2 x 0,2 cm.",
+            "microscopia_conclusao": "Produto de biópsia do reto. Adenoma tubular com displasia de baixo grau.",
+            "diagnostico": "Adenoma tubular de baixo grau"
+        }
+        }
+    ],
+    "laudo_literal_completo": {
+        "numero_peca": "0540/19",
+        "assinatura": {
+        "medico": "Dra. Larissa Francesca",
+        "crm": "23.067"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "QUITERIA DOMINGOS RODRIGUES",
+        "sexo": "Feminino",
+        "idade": 69,
+        "prontuario": "8640382"
+        },
+        "literal": {
+        "nome": "QUITERIA DOMINGOS RODRIGUES",
+        "idade": "69 anos",
+        "prontuario": "8640382",
+        "enfermaria": "Enfermaria Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Colonoscopia",
+        "data_laudo": "2019-03-07",
+        "instituicao": "Hospital Barão de Lucena",
+        "cid": null
+        },
+        "literal": {
+        "material": "Colonoscopia",
+        "cid": "",
+        "medico_solicitante": "Gustavo Carneiro Leão Filho",
+        "local": "Recife",
+        "data": "07/03/2019"
+        }
+    },
+    "pecas_histologicas": [
+        {
+        "estruturado": {
+            "descricao_origem": "Pólipo em cólon direito",
+            "quantidade_fragmentos": null,
+            "tamanho_mm": {
+            "maior_eixo": 4,
+            "categoria": "até 5 mm"
+            },
+            "tipo_histologico": "Adenoma tubular",
+            "grau_atipia": "Baixo grau",
+            "neoplasia": true,
+            "adenocarcinoma": false
+        },
+        "literal": {
+            "macroscopia": "Fragmentos teciduais irregulares, elásticos, pardacentos, o maior medindo 0,4 x 0,3 x 0,2 cm. Superfície de corte compacta e brancacenta.",
+            "microscopia_conclusao": "Adenomas tubulares com displasia de baixo grau em cólon direito.",
+            "diagnostico": "Adenoma tubular de baixo grau"
+        }
+        },
+        {
+        "estruturado": {
+            "descricao_origem": "Pólipo em cólon sigmoide",
+            "quantidade_fragmentos": 2,
+            "tamanho_mm": {
+            "maior_eixo": 20,
+            "categoria": "igual ou maior que 10 mm"
+            },
+            "tipo_histologico": "Adenoma viloso",
+            "grau_atipia": "Baixo grau",
+            "neoplasia": true,
+            "adenocarcinoma": false
+        },
+        "literal": {
+            "macroscopia": "Dois fragmentos irregulares, elásticos, acastanhados, o maior medindo 2,0 x 2,0 x 1,8 cm e o menor 0,8 x 0,5 x 0,3 cm. Cortes compactos e pardacentos.",
+            "microscopia_conclusao": "Adenoma viloso com displasia de baixo grau em cólon sigmoide.",
+            "diagnostico": "Adenoma viloso de baixo grau"
+        }
+        }
+    ],
+    "laudo_literal_completo": {
+        "numero_peca": "0608/19",
+        "assinatura": {
+        "medico": "Dra. Ana Paula Matos",
+        "crm": "10.157"
+        }
+    }
     }
 ]
