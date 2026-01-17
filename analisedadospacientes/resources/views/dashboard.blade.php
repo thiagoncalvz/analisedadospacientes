@@ -28,6 +28,160 @@
         </div>
     </div>
 
+    <section id="sexo" class="mb-5">
+        <div class="card shadow-sm">
+            <div class="card-header bg-white">
+                <h5 class="mb-1">Tabela por Sexo</h5>
+                <small class="text-muted">Percentuais de polipectomias e procedimentos relacionados a pólipo por sexo.</small>
+            </div>
+            <div class="card-body">
+                @if ($sexStats['missing'])
+                    <div class="alert alert-warning">O dataset não possui sexo informado em todos os registros.</div>
+                @endif
+                <div class="table-responsive">
+                    <table class="table table-bordered align-middle">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Sexo</th>
+                                <th>Procedimentos</th>
+                                <th>Percentual</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach ($sexStats['counts'] as $label => $count)
+                                <tr>
+                                    <td>{{ $label }}</td>
+                                    <td>{{ $count }}</td>
+                                    <td>{{ $sexStats['percentages'][$label] }}%</td>
+                                </tr>
+                            @endforeach
+                        </tbody>
+                        <tfoot>
+                            <tr class="table-light">
+                                <th>Total</th>
+                                <th>{{ $sexStats['total'] }}</th>
+                                <th>100%</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="idade" class="mb-5">
+        <div class="card shadow-sm">
+            <div class="card-header bg-white">
+                <h5 class="mb-1">Tabela de Idade</h5>
+                <small class="text-muted">Estatísticas considerando pacientes únicos (prontuário ou nome).</small>
+            </div>
+            <div class="card-body">
+                <div class="row g-3">
+                    <div class="col-md-3">
+                        <div class="border rounded p-3 h-100">
+                            <div class="text-muted">Média</div>
+                            <div class="fs-4 fw-semibold">{{ $ageStats['average'] ?? 'Não informado' }}</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="border rounded p-3 h-100">
+                            <div class="text-muted">Mediana</div>
+                            <div class="fs-4 fw-semibold">{{ $ageStats['median'] ?? 'Não informado' }}</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="border rounded p-3 h-100">
+                            <div class="text-muted">Paciente mais jovem</div>
+                            <div class="fw-semibold">{{ $ageStats['youngest']['nome'] ?? 'Não informado' }}</div>
+                            <div class="text-muted">{{ $ageStats['youngest']['idade'] ?? '-' }} anos</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="border rounded p-3 h-100">
+                            <div class="text-muted">Paciente mais velho</div>
+                            <div class="fw-semibold">{{ $ageStats['oldest']['nome'] ?? 'Não informado' }}</div>
+                            <div class="text-muted">{{ $ageStats['oldest']['idade'] ?? '-' }} anos</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-3 text-muted">Total de pacientes únicos: {{ $ageStats['count'] }}</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="histologia" class="mb-5">
+        <div class="card shadow-sm">
+            <div class="card-header bg-white">
+                <h5 class="mb-1">Tabela de Tipo Histológico</h5>
+                <small class="text-muted">
+                    Percentuais sobre total geral ({{ $histologyStats['total'] }}) e sobre registros com lesões/pólipos ({{ $histologyStats['lesion_total'] }}).
+                </small>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Classificação</th>
+                                <th>Contagem</th>
+                                <th>% sobre total geral</th>
+                                <th>% sobre lesões</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach ($histologyStats['counts'] as $label => $count)
+                                <tr>
+                                    <td>{{ $label }}</td>
+                                    <td>{{ $count }}</td>
+                                    <td>{{ $histologyStats['percentages_total'][$label] }}%</td>
+                                    <td>{{ $histologyStats['percentages_lesion'][$label] }}%</td>
+                                </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="atipia" class="mb-5">
+        <div class="card shadow-sm">
+            <div class="card-header bg-white">
+                <h5 class="mb-1">Tabela de Graus de Atipia</h5>
+                <small class="text-muted">Classificação baseada em atipia, displasia e diagnóstico.</small>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-striped align-middle">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Grau</th>
+                                <th>Contagem</th>
+                                <th>Percentual</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach ($atypiaStats['counts'] as $label => $count)
+                                <tr>
+                                    <td>{{ $label }}</td>
+                                    <td>{{ $count }}</td>
+                                    <td>{{ $atypiaStats['percentages'][$label] }}%</td>
+                                </tr>
+                            @endforeach
+                        </tbody>
+                        <tfoot>
+                            <tr class="table-light">
+                                <th>Total</th>
+                                <th>{{ $atypiaStats['total'] }}</th>
+                                <th>100%</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="geral" class="mb-5">
         <div class="card shadow-sm">
             <div class="card-header bg-white">
@@ -232,160 +386,6 @@
 
                 <div class="d-flex justify-content-center">
                     {{ $items->links('pagination::bootstrap-5') }}
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="sexo" class="mb-5">
-        <div class="card shadow-sm">
-            <div class="card-header bg-white">
-                <h5 class="mb-1">Tabela por Sexo</h5>
-                <small class="text-muted">Percentuais de polipectomias e procedimentos relacionados a pólipo por sexo.</small>
-            </div>
-            <div class="card-body">
-                @if ($sexStats['missing'])
-                    <div class="alert alert-warning">O dataset não possui sexo informado em todos os registros.</div>
-                @endif
-                <div class="table-responsive">
-                    <table class="table table-bordered align-middle">
-                        <thead class="table-light">
-                            <tr>
-                                <th>Sexo</th>
-                                <th>Procedimentos</th>
-                                <th>Percentual</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @foreach ($sexStats['counts'] as $label => $count)
-                                <tr>
-                                    <td>{{ $label }}</td>
-                                    <td>{{ $count }}</td>
-                                    <td>{{ $sexStats['percentages'][$label] }}%</td>
-                                </tr>
-                            @endforeach
-                        </tbody>
-                        <tfoot>
-                            <tr class="table-light">
-                                <th>Total</th>
-                                <th>{{ $sexStats['total'] }}</th>
-                                <th>100%</th>
-                            </tr>
-                        </tfoot>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="idade" class="mb-5">
-        <div class="card shadow-sm">
-            <div class="card-header bg-white">
-                <h5 class="mb-1">Tabela de Idade</h5>
-                <small class="text-muted">Estatísticas considerando pacientes únicos (prontuário ou nome).</small>
-            </div>
-            <div class="card-body">
-                <div class="row g-3">
-                    <div class="col-md-3">
-                        <div class="border rounded p-3 h-100">
-                            <div class="text-muted">Média</div>
-                            <div class="fs-4 fw-semibold">{{ $ageStats['average'] ?? 'Não informado' }}</div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="border rounded p-3 h-100">
-                            <div class="text-muted">Mediana</div>
-                            <div class="fs-4 fw-semibold">{{ $ageStats['median'] ?? 'Não informado' }}</div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="border rounded p-3 h-100">
-                            <div class="text-muted">Paciente mais jovem</div>
-                            <div class="fw-semibold">{{ $ageStats['youngest']['nome'] ?? 'Não informado' }}</div>
-                            <div class="text-muted">{{ $ageStats['youngest']['idade'] ?? '-' }} anos</div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="border rounded p-3 h-100">
-                            <div class="text-muted">Paciente mais velho</div>
-                            <div class="fw-semibold">{{ $ageStats['oldest']['nome'] ?? 'Não informado' }}</div>
-                            <div class="text-muted">{{ $ageStats['oldest']['idade'] ?? '-' }} anos</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-3 text-muted">Total de pacientes únicos: {{ $ageStats['count'] }}</div>
-            </div>
-        </div>
-    </section>
-
-    <section id="histologia" class="mb-5">
-        <div class="card shadow-sm">
-            <div class="card-header bg-white">
-                <h5 class="mb-1">Tabela de Tipo Histológico</h5>
-                <small class="text-muted">
-                    Percentuais sobre total geral ({{ $histologyStats['total'] }}) e sobre registros com lesões/pólipos ({{ $histologyStats['lesion_total'] }}).
-                </small>
-            </div>
-            <div class="card-body">
-                <div class="table-responsive">
-                    <table class="table table-hover align-middle">
-                        <thead class="table-light">
-                            <tr>
-                                <th>Classificação</th>
-                                <th>Contagem</th>
-                                <th>% sobre total geral</th>
-                                <th>% sobre lesões</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @foreach ($histologyStats['counts'] as $label => $count)
-                                <tr>
-                                    <td>{{ $label }}</td>
-                                    <td>{{ $count }}</td>
-                                    <td>{{ $histologyStats['percentages_total'][$label] }}%</td>
-                                    <td>{{ $histologyStats['percentages_lesion'][$label] }}%</td>
-                                </tr>
-                            @endforeach
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="atipia" class="mb-5">
-        <div class="card shadow-sm">
-            <div class="card-header bg-white">
-                <h5 class="mb-1">Tabela de Graus de Atipia</h5>
-                <small class="text-muted">Classificação baseada em atipia, displasia e diagnóstico.</small>
-            </div>
-            <div class="card-body">
-                <div class="table-responsive">
-                    <table class="table table-striped align-middle">
-                        <thead class="table-light">
-                            <tr>
-                                <th>Grau</th>
-                                <th>Contagem</th>
-                                <th>Percentual</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @foreach ($atypiaStats['counts'] as $label => $count)
-                                <tr>
-                                    <td>{{ $label }}</td>
-                                    <td>{{ $count }}</td>
-                                    <td>{{ $atypiaStats['percentages'][$label] }}%</td>
-                                </tr>
-                            @endforeach
-                        </tbody>
-                        <tfoot>
-                            <tr class="table-light">
-                                <th>Total</th>
-                                <th>{{ $atypiaStats['total'] }}</th>
-                                <th>100%</th>
-                            </tr>
-                        </tfoot>
-                    </table>
                 </div>
             </div>
         </div>

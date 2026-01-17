@@ -20,11 +20,11 @@
 
             <div class="collapse navbar-collapse" id="navbarContent">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#geral">Geral</a></li>
                     <li class="nav-item"><a class="nav-link" href="#sexo">Sexo</a></li>
                     <li class="nav-item"><a class="nav-link" href="#idade">Idade</a></li>
                     <li class="nav-item"><a class="nav-link" href="#histologia">Histológica</a></li>
                     <li class="nav-item"><a class="nav-link" href="#atipia">Atipia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#geral">Geral</a></li>
                 </ul>
             </div>
         </div>

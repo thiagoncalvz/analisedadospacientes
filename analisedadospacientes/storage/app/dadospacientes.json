@@ -6274,5 +6274,3813 @@
         "crm": "18835"
         }
     }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "ESMERALDINA MARIA DE SOUZA CANTO SANTOS",
+        "sexo": "Feminino",
+        "idade": 67,
+        "prontuario": "8754342"
+        },
+        "literal": {
+        "nome": "ESMERALDINA MARIA DE SOUZA CANTO SANTOS",
+        "idade": "67 anos",
+        "prontuario": "8754342",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Biópsias colonoscópicas",
+        "data_laudo": "2024-06-12",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "BIÓPSIAS COLONOSCÓPICAS",
+        "medico_solicitante": "Ludmila Godinho",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 12/06/2024"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 4,
+        "aspecto": "Fragmentos filiformes, irregulares, elásticos, pardacentos",
+        "dimensao_maior_cm": "0.8"
+        },
+        "literal": "MACROSCOPIA:\n1- Em formalina, um fragmento filiforme, irregular, elástico, pardacento, medindo 0,5 x 0,2 x 0,2 cm.\n2- Em formalina, um fragmento filiforme, irregular, elástico, pardacento, medindo 0,3 x 0,2 x 0,2 cm.\n3- Em formalina, dois fragmentos filiformes, irregulares, elásticos, pardacentos, medindo o maior 0,8 x 0,4 x 0,3 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Ascendente; Transverso; Sigmoide",
+        "diagnostico": "Adenoma tubular de baixo grau; Pólipo hiperplásico",
+        "grau_displasia": "Leve; Moderada"
+        },
+        "literal": "MICROSCOPIA E CONCLUSÃO:\nBIÓPSIAS COLONOSCÓPICAS\n1- PÓLIPO DE ASCENDENTE: Adenoma tubular de baixo grau, com displasia moderada.\n2- PÓLIPO DE TRANSVERSO: Adenoma tubular de baixo grau, com displasia leve.\n3- PÓLIPO DE SIGMOIDE: Pólipo hiperplásico."
+    },
+    "classificacao": {
+        "cid": "K63.5"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "2078-24",
+        "assinatura": {
+        "medico": "Dr. Sérgio Ricardo Soares de Moura",
+        "crm": "18.835"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "MARIA HELENA GOMES DA SILVA",
+        "sexo": "Feminino",
+        "idade": 65,
+        "prontuario": "8778125"
+        },
+        "literal": {
+        "nome": "MARIA HELENA GOMES DA SILVA",
+        "idade": "65 anos",
+        "prontuario": "8778125",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Colonoscopia",
+        "data_laudo": "2024-06-11",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Colonoscopia",
+        "medico_solicitante": "Layla Moana",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 11/06/2024"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 1,
+        "aspecto": "Fragmento tecidual irregular, elástico, pardacento",
+        "dimensao_maior_cm": "0.5"
+        },
+        "literal": "MACROSCOPIA:\nEm formalina recebemos um fragmento tecidual irregular, elástico, pardacento, medindo 0,5 x 0,3 x 0,2 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Sigmoide",
+        "diagnostico": "Adenoma tubular",
+        "grau_displasia": "Baixo grau"
+        },
+        "literal": "MICROSCOPIA E CONCLUSÃO:\nPólipo pediculado de cólon sigmoide:\n- Adenoma tubular com displasia de baixo grau em mucosa de intestino grosso (01 estrutura)."
+    },
+    "classificacao": {
+        "cid": ""
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "2088/24",
+        "assinatura": {
+        "medico": "Dra. Rebeca Rocha",
+        "crm": "20732"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "MARIA DO CARMO VEREDO",
+        "sexo": "Feminino",
+        "idade": 58,
+        "prontuario": "8494772"
+        },
+        "literal": {
+        "nome": "MARIA DO CARMO VEREDO",
+        "idade": "58 anos",
+        "prontuario": "8494772",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Pólipo de cólon",
+        "data_laudo": "2013-10-28",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Pólipo de cólon",
+        "medico_solicitante": "Aline David",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 28/10/2013"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 4,
+        "aspecto": "Fragmento tecidual brancacento",
+        "dimensao_maior_cm": "0.2"
+        },
+        "literal": "MACROSCOPIA:\nUm diminuto fragmento tecidual brancacento, medindo 0,2 x 0,1 cm.\nQuatro fragmentos para EH."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Cólon",
+        "diagnostico": "Mucosa colônica sem alterações histológicas significativas",
+        "grau_displasia": "Ausente"
+        },
+        "literal": "MICROSCOPIA E CONCLUSÃO:\nMucosa colônica sem alterações histológicas significativas."
+    },
+    "classificacao": {
+        "cid": ""
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "0709/13-MV",
+        "assinatura": {
+        "medico": "Dra. Ana Lúcia Antonino Brito",
+        "crm": "8896"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "JOSIAS BANDEIRA DA SILVA",
+        "sexo": "Masculino",
+        "idade": 53,
+        "prontuario": "8510190"
+        },
+        "literal": {
+        "nome": "JOSIAS BANDEIRA DA SILVA",
+        "idade": "53 anos",
+        "prontuario": "8510190",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Pólipo de cólon sigmoide",
+        "data_laudo": "2013-11-25",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Pólipo de cólon sigmoide",
+        "medico_solicitante": "Renata Paula Coutinho",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 25/11/2013"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 4,
+        "aspecto": "Fragmentos pardos",
+        "dimensao_maior_cm": "1.0"
+        },
+        "literal": "MACROSCOPIA:\nQuatro fragmentos pardos, o maior medindo 1,0 x 0,7 cm.\nVários fragmentos para EH."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Sigmoide",
+        "diagnostico": "Pólipo adenomatoso tubular",
+        "grau_displasia": ""
+        },
+        "literal": "MICROSCOPIA E CONCLUSÃO:\nPólipo adenomatoso tubular do cólon sigmoide."
+    },
+    "classificacao": {
+        "cid": ""
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "1008/13-mv",
+        "assinatura": {
+        "medico": "Dra. Ana Lúcia Antonino Brito",
+        "crm": "8896"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "AURENI GONÇALVES TORRES DE SOUZA",
+        "sexo": "Feminino",
+        "idade": 34,
+        "prontuario": "380438"
+        },
+        "literal": {
+        "nome": "AURENI GONÇALVES TORRES DE SOUZA",
+        "idade": "34 anos",
+        "prontuario": "380438",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Pólipos de reto",
+        "data_laudo": "2013-11-24",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Pólipos de reto",
+        "medico_solicitante": "Bruno F F Borges",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 24/11/2013"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 2,
+        "aspecto": "Fragmentos pardos",
+        "dimensao_maior_cm": "0.3"
+        },
+        "literal": "MACROSCOPIA:\nDois fragmentos pardos, o maior medindo 0,3 cm.\nDois fragmentos para EH."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Reto",
+        "diagnostico": "Adenoma tubular",
+        "grau_displasia": "Baixo grau"
+        },
+        "literal": "MICROSCOPIA E CONCLUSÃO:\nProduto de biópsia retal.\nAdenoma tubular, com displasia de baixo grau."
+    },
+    "classificacao": {
+        "cid": ""
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "0880/13-MV",
+        "assinatura": {
+        "medico": "Dr. Marcelo do Rego Maciel Souto Maior",
+        "crm": "15.636"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "ALCIDES MONTEIRO DA SILVA",
+        "sexo": "Masculino",
+        "idade": 61,
+        "prontuario": "490219"
+        },
+        "literal": {
+        "nome": "ALCIDES MONTEIRO DA SILVA",
+        "idade": "61 anos",
+        "prontuario": "490219",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Pólipos sésseis do reto",
+        "data_laudo": "2013-11-23",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Pólipos sésseis do reto",
+        "medico_solicitante": "Ana Thereza S D Rocha",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 23/11/2013"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 2,
+        "aspecto": "Fragmentos pardos",
+        "dimensao_maior_cm": "0.2"
+        },
+        "literal": "MACROSCOPIA:\nDois fragmentos pardos, o maior medindo 0,2 cm.\nDois fragmentos para EH."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Reto",
+        "diagnostico": "Adenoma tubular",
+        "grau_displasia": "Baixo grau"
+        },
+        "literal": "MICROSCOPIA E CONCLUSÃO:\nProduto de biópsia retal.\nAdenoma tubular com displasia de baixo grau. A lesão foi completamente excisada."
+    },
+    "classificacao": {
+        "cid": ""
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "1090/13-MV",
+        "assinatura": {
+        "medico": "Dr. Marcelo do Rego Maciel Souto Maior",
+        "crm": "15.636"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "JOSÉ PATROCÍNIO PEREIRA",
+        "sexo": "Masculino",
+        "idade": 70,
+        "prontuario": "8501736"
+        },
+        "literal": {
+        "nome": "JOSÉ PATROCÍNIO PEREIRA",
+        "idade": "70 anos",
+        "prontuario": "8501736",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Pólipos de descendente, transverso, ascendente e ascendente proximal",
+        "data_laudo": "2014-01-14",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Pólipo de descendente, transverso, ascendente e ascendente proximal",
+        "medico_solicitante": "Bruno F F Borges",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 14/01/2014"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 5,
+        "aspecto": "Fragmentos elásticos, pardos",
+        "dimensao_maior_cm": "0.9"
+        },
+        "literal": "MACROSCOPIA:\n1- Um fragmento elástico, pardo, medindo 0,9 x 0,6 cm.\nA = Dois fragmentos para EH.\n2- Um fragmento elástico, pardo, medindo 0,6 cm.\nB = Um fragmento para EH.\n3- Um fragmento elástico, pardo, medindo 0,7 cm.\nC = Um fragmento para EH.\n4- Um fragmento pardo, medindo 0,2 cm.\nD = Um fragmento para EH."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Ascendente; Transverso; Ascendente proximal",
+        "diagnostico": "Adenoma serrilhado; Adenoma tubular",
+        "grau_displasia": "Baixo grau"
+        },
+        "literal": "MICROSCOPIA E CONCLUSÃO:\n1- Cólon ascendente:\nAdenoma serrilhado.\n\n2- Cólon transverso:\nAdenoma tubular com displasia de baixo grau.\n\n3- Cólon ascendente:\nAdenoma serrilhado.\n\n4- Cólon ascendente proximal:\nAdenoma tubular com displasia de baixo grau."
+    },
+    "classificacao": {
+        "cid": ""
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "0030/14",
+        "assinatura": {
+        "medico": "Dra. Ana Paula Matos",
+        "crm": "10.157"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "CICERA MARIA DA CONCEIÇÃO",
+        "sexo": "Feminino",
+        "idade": 82,
+        "prontuario": "572012"
+        },
+        "literal": {
+        "nome": "CICERA MARIA DA CONCEIÇÃO",
+        "idade": "82 anos",
+        "prontuario": "572012",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Biópsias colônicas",
+        "data_laudo": "2023-07-11",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Biópsias colônicas",
+        "medico_solicitante": "André Luiz",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 11/07/2023"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 3,
+        "aspecto": "Fragmentos teciduais irregulares, elásticos, pardos",
+        "dimensao_maior_cm": "0.4"
+        },
+        "literal": "MACROSCOPIA:\nEm formalina recebemos:\n1) A- Dois fragmentos teciduais irregulares, elásticos, pardos, medindo o maior 0,4 x 0,2 x 0,2 cm.\n2) B- Um fragmento tecidual firme, irregular, elástico, pardo, medindo 0,3 x 0,2 x 0,2 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Transverso; Ceco",
+        "diagnostico": "Adenoma tubular",
+        "grau_displasia": "Leve"
+        },
+        "literal": "MICROSCOPIA E CONCLUSÃO:\nBIÓPSIAS COLONOSCÓPICAS\n1- PÓLIPO DE TRANSVERSO\n- Adenoma tubular de baixo grau, com displasia leve, exibindo erosão da superfície, com moderada resposta inflamatória associada.\n\n2- PÓLIPO DE CECO\n- Adenoma tubular de baixo grau, com displasia leve.\n\n# CID 10 - K63.5."
+    },
+    "classificacao": {
+        "cid": "K63.5"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "3262.23",
+        "assinatura": {
+        "medico": "Dr. Sérgio Ricardo Soares de Moura",
+        "crm": "18.835"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "MAURIZIA INES DA SILVA",
+        "sexo": "Feminino",
+        "idade": 43,
+        "prontuario": "8606434"
+        },
+        "literal": {
+        "nome": "MAURIZIA INES DA SILVA",
+        "idade": "43 anos",
+        "prontuario": "8606434",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Colonoscopia",
+        "data_laudo": "2024-01-16",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Colonoscopia",
+        "medico_solicitante": "Leilane Alencar",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 16/01/2024"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 4,
+        "aspecto": "Fragmentos teciduais irregulares, firmes, elásticos, pardos",
+        "dimensao_maior_cm": "0.5"
+        },
+        "literal": "MACROSCOPIA:\nEm formalina recebemos:\n1) A- Dois fragmentos teciduais irregulares, firmes, elásticos, pardos, o maior medindo 0,5 x 0,2 x 0,2 cm.\n2) B- Um fragmento tecidual irregular, firme, elástico, pardo, medindo 0,4 x 0,2 x 0,2 cm.\n3) C- Um fragmento tecidual irregular, firme, elástico, pardo, medindo 0,5 x 0,2 x 0,2 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Ascendente; Sigmoide; Reto",
+        "diagnostico": "Pólipo hiperplásico",
+        "grau_displasia": "Ausente"
+        },
+        "literal": "MICROSCOPIA E CONCLUSÃO:\n1) Cólon ascendente, polipectomia:\n- Pólipo hiperplásico.\n\n2) Cólon sigmoide, polipectomia:\n- Pólipo hiperplásico, do tipo rico em células caliciformes.\n\n3) Reto, polipectomia:\n- Pólipo hiperplásico, do tipo rico em células caliciformes."
+    },
+    "classificacao": {
+        "cid": "K63.5"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "0035/24",
+        "assinatura": {
+        "medico": "Dra. Mariana Lêdo",
+        "crm": "26397"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "FABIANA DE OLIVEIRA",
+        "sexo": "Feminino",
+        "idade": 40,
+        "prontuario": "8613142"
+        },
+        "literal": {
+        "nome": "FABIANA DE OLIVEIRA",
+        "idade": "40 anos",
+        "prontuario": "8613142",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Colonoscopia",
+        "data_laudo": "2024-01-26",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Colonoscopia",
+        "medico_solicitante": "Juliano Martins",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 26/01/2024"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 1,
+        "aspecto": "Fragmento tecidual irregular, elástico, pardo",
+        "dimensao_maior_cm": "0.4"
+        },
+        "literal": "MACROSCOPIA:\nEm formalina recebemos um fragmento tecidual irregular, elástico, pardo, medindo 0,4 x 0,2 x 0,2 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Ceco",
+        "diagnostico": "Adenoma tubular",
+        "grau_displasia": "Baixo grau"
+        },
+        "literal": "MICROSCOPIA E CONCLUSÃO:\nCeco, polipectomia:\n- Adenoma tubular, com displasia de baixo grau."
+    },
+    "classificacao": {
+        "cid": "K63.5"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "0081.24",
+        "assinatura": {
+        "medico": "Dra. Mariana Lêdo",
+        "crm": "26397"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "ELIANE GOMES FERREIRA",
+        "sexo": "Feminino",
+        "idade": 61,
+        "prontuario": "116550"
+        },
+        "literal": {
+        "nome": "ELIANE GOMES FERREIRA",
+        "idade": "61 anos",
+        "prontuario": "116550",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Colonoscopia",
+        "data_laudo": "2024-01-26",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Colonoscopia",
+        "medico_solicitante": "Juliano Martins",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 26/01/2024"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 3,
+        "aspecto": "Fragmentos teciduais irregulares, firmes, elásticos, pardos",
+        "dimensao_maior_cm": "0.6"
+        },
+        "literal": "MACROSCOPIA:\nEm formalina recebemos:\n1) A- Um fragmento tecidual irregular, firme, elástico, pardo, medindo 0,6 x 0,2 x 0,2 cm.\n2) B- Dois fragmentos teciduais irregulares, firmes, elásticos, pardos, o maior medindo 0,6 x 0,3 x 0,2 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Ascendente; Sigmoide",
+        "diagnostico": "Pólipo hiperplásico; Adenoma túbulo-viloso",
+        "grau_displasia": "Baixo grau"
+        },
+        "literal": "MICROSCOPIA E CONCLUSÃO:\n1) Cólon ascendente, polipectomia:\n- Pólipo hiperplásico rico em células caliciformes.\n\n2) Cólon sigmoide, polipectomia:\n- Adenoma túbulo-viloso com displasia de baixo grau."
+    },
+    "classificacao": {
+        "cid": "K63.5"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "0078.24",
+        "assinatura": {
+        "medico": "Dra. Mariana Lêdo",
+        "crm": "26397"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "IRENE MARIA DE SOUZA",
+        "sexo": "Feminino",
+        "idade": 62,
+        "prontuario": "8767231"
+        },
+        "literal": {
+        "nome": "IRENE MARIA DE SOUZA",
+        "idade": "62 anos",
+        "prontuario": "8767231",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Biópsia de cólon descendente",
+        "data_laudo": "2024-02-08",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Biópsia de cólon descendente",
+        "medico_solicitante": "Maurício de Souza Moreira",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 08/02/2024"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 5,
+        "aspecto": "Fragmentos teciduais irregulares, firmes, elásticos, pardos",
+        "dimensao_maior_cm": "0.5"
+        },
+        "literal": "MACROSCOPIA:\nEm formalina recebemos cinco fragmentos teciduais, irregulares, firmes, elásticos, pardos, medindo o maior 0,5 x 0,2 x 0,2 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Descendente",
+        "diagnostico": "Pólipo hiperplásico",
+        "grau_displasia": "Ausente"
+        },
+        "literal": "MICROSCOPIA E CONCLUSÃO:\nCólon descendente, polipectomia:\n- Pólipo hiperplásico do tipo micro vesicular.\n\nNOTA: Amostra intensamente prejudicada por artefatos pré-analíticos."
+    },
+    "classificacao": {
+        "cid": "K63.5"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "0175/24",
+        "assinatura": {
+        "medico": "Dra. Mariana Lêdo",
+        "crm": "26397"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "MARCIONILA VIEIRA DA CUNHA",
+        "sexo": "Feminino",
+        "idade": 54,
+        "prontuario": "8754020"
+        },
+        "literal": {
+        "nome": "MARCIONILA VIEIRA DA CUNHA",
+        "idade": "54 anos",
+        "prontuario": "8754020",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Colonoscopia",
+        "data_laudo": "2024-01-25",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Colonoscopia",
+        "medico_solicitante": "Maurício Moreira",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 25/01/2024"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 14,
+        "aspecto": "Fragmentos teciduais irregulares, firmes, elásticos, pardos",
+        "dimensao_maior_cm": "0.5"
+        },
+        "literal": "MACROSCOPIA:\nEm formalina recebemos:\n1) A- Seis fragmentos teciduais irregulares, firmes, elásticos, pardos, medindo o maior 0,5 x 0,2 x 0,2 cm.\n2) B- Oito fragmentos teciduais irregulares, firmes, elásticos, pardos, o maior medindo 0,5 x 0,2 x 0,2 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "",
+        "diagnostico": "Lesão túbulo-vilosa; Adenoma viloso",
+        "grau_displasia": "Baixo grau"
+        },
+        "literal": "MICROSCOPIA E CONCLUSÃO:\n1) Fragmentos de lesão túbulo-vilosa com artefatos técnicos que limitam avaliação diagnóstica.\n\n2) Fragmentos de adenoma viloso com displasia de baixo grau."
+    },
+    "classificacao": {
+        "cid": "D12"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "0179/24",
+        "assinatura": {
+        "medico": "Dra. Sofia Santos Tenório",
+        "crm": "19.695"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "JUCELIA JOSEFA DA SILVA",
+        "sexo": "Feminino",
+        "idade": 57,
+        "prontuario": "551941"
+        },
+        "literal": {
+        "nome": "JUCELIA JOSEFA DA SILVA",
+        "idade": "57 anos",
+        "prontuario": "551941",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Colonoscopia",
+        "data_laudo": "2024-01-30",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Colonoscopia",
+        "medico_solicitante": "Leilane Alencar",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 30/01/2024"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 1,
+        "aspecto": "Fragmento tecidual irregular, firme, elástico, pardo",
+        "dimensao_maior_cm": "0.5"
+        },
+        "literal": "MACROSCOPIA:\nEm formalina recebemos um fragmento tecidual irregular, firme, elástico, pardo, medindo 0,5 x 0,2 x 0,2 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "",
+        "diagnostico": "Adenoma túbulo-viloso",
+        "grau_displasia": "Baixo grau"
+        },
+        "literal": "MICROSCOPIA E CONCLUSÃO:\nAdenoma túbulo-viloso com displasia de baixo grau."
+    },
+    "classificacao": {
+        "cid": "D12"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "0249.24",
+        "assinatura": {
+        "medico": "Dra. Sofia Santos Tenório",
+        "crm": "19.695"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "LUCAS SOARES DA SILVA",
+        "sexo": "Masculino",
+        "idade": 64,
+        "prontuario": "530899"
+        },
+        "literal": {
+        "nome": "LUCAS SOARES DA SILVA",
+        "idade": "64 anos",
+        "prontuario": "530899",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Pólipo de sigmoide",
+        "data_laudo": "2024-01-26",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Pólipo de sigmoide",
+        "medico_solicitante": "Joyce Cavalcanti",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 26/01/2024"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 1,
+        "aspecto": "Formação polipoide, firme, elástica, acastanhada",
+        "dimensao_maior_cm": "0.7"
+        },
+        "literal": "MACROSCOPIA:\nUma formação polipoide, firme, elástica, acastanhada, medindo 0,7 x 0,3 x 0,2 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Sigmoide",
+        "diagnostico": "Adenoma túbulo-viloso",
+        "grau_displasia": "Baixo grau"
+        },
+        "literal": "MICROSCOPIA E CONCLUSÃO:\nDX:\nAdenoma túbulo-viloso com displasia de baixo grau."
+    },
+    "classificacao": {
+        "cid": "D12"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "0307.24",
+        "assinatura": {
+        "medico": "Dra. Sofia Santos Tenório",
+        "crm": "19.695"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "MARIA LUCIDALVA DA SILVA",
+        "sexo": "Feminino",
+        "idade": 56,
+        "prontuario": "70793"
+        },
+        "literal": {
+        "nome": "MARIA LUCIDALVA DA SILVA",
+        "idade": "56 anos",
+        "prontuario": "70793",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Polipectomia",
+        "data_laudo": "2024-02-19",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Polipectomia",
+        "medico_solicitante": "André Luiz",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 19/02/2024"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 2,
+        "aspecto": "Fragmentos teciduais irregulares, firmes, elásticos, pardos",
+        "dimensao_maior_cm": "0.6"
+        },
+        "literal": "MACROSCOPIA:\nEm formalina recebemos:\n1) A - Um fragmento tecidual irregular, firme, elástico, pardo, medindo 0,6x0,3x0,2 cm.\n2) B - Um fragmento tecidual irregular, firme, elástico, pardo, medindo 0,4x0,2x0,2 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Cólon ascendente; Cólon transverso",
+        "diagnostico": "Adenoma tubular; Adenoma serrilhado tradicional",
+        "grau_displasia": "Baixo grau"
+        },
+        "literal": "MICROSCOPIA E CONCLUSÃO:\n1) Cólon ascendente (segundo identificação do recipiente), polipectomia:\n- Adenoma tubular com displasia de baixo grau.\n\n2) Cólon transverso (segundo identificação do recipiente), polipectomia:\n- Adenoma serrilhado tradicional."
+    },
+    "classificacao": {
+        "cid": "K63.5"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "0353/24",
+        "assinatura": {
+        "medico": "Dra. Mariana Lêdo",
+        "crm": "26397"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "JOSIMERE MENDES DA SILVA SANTOS",
+        "sexo": "Feminino",
+        "idade": 53,
+        "prontuario": "8753059"
+        },
+        "literal": {
+        "nome": "JOSIMERE MENDES DA SILVA SANTOS",
+        "idade": "53 anos",
+        "prontuario": "8753059",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Colonoscopia",
+        "data_laudo": "2024-02-28",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Colonoscopia",
+        "medico_solicitante": "Leilane Alencar",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 28/02/2024"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 2,
+        "aspecto": "Fragmentos teciduais irregulares, firmes, elásticos, pardos",
+        "dimensao_maior_cm": "0.5"
+        },
+        "literal": "MACROSCOPIA:\nEm formalina dois fragmentos teciduais irregulares, firmes, elásticos, pardos, o maior medindo 0,5x0,2x0,2 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Ceco",
+        "diagnostico": "Pólipo hiperplásico",
+        "grau_displasia": ""
+        },
+        "literal": "MICROSCOPIA E CONCLUSÃO:\nCeco, polipectomia:\n- Pólipo hiperplásico."
+    },
+    "classificacao": {
+        "cid": "K63.5"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "0370.24",
+        "assinatura": {
+        "medico": "Dra. Mariana Lêdo",
+        "crm": "26397"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "MARIA DO SOCORRO LEITE JOSINO",
+        "sexo": "Feminino",
+        "idade": 55,
+        "prontuario": "87425001"
+        },
+        "literal": {
+        "nome": "MARIA DO SOCORRO LEITE JOSINO",
+        "idade": "55 anos",
+        "prontuario": "87425001",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Pólipos de sigmoide, descendente e reto",
+        "data_laudo": "2024-03-01",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "1- Pólipo de sigmoide; 2- Pólipo de descendente; 3- Pólipo de reto",
+        "medico_solicitante": "Joyce Cavalcanti",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 01/03/2024"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 3,
+        "aspecto": "Fragmentos teciduais irregulares, elásticos, pardos",
+        "dimensao_maior_cm": "0.4"
+        },
+        "literal": "MACROSCOPIA:\nEm formalina, em recipientes separados, recebemos:\n1- 01 fragmento tecidual irregular, elástico, pardo, medindo 0,3x0,2x0,2cm.\n2- 01 fragmento tecidual irregular, elástico, pardo, medindo 0,4x0,2x0,2cm.\n3- 01 fragmento tecidual irregular, elástico, pardo, medindo 0,4x0,2x0,2cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Sigmoide; Cólon descendente; Reto",
+        "diagnostico": "Adenoma tubular",
+        "grau_displasia": "Alto grau; Moderada; Moderada"
+        },
+        "literal": "MICROSCOPIA E CONCLUSÃO:\n1- PÓLIPO DE SIGMOIDE:\n- Adenoma tubular de alto grau.\n- Base do pólipo (margem) livre.\n\n2- PÓLIPO DE DESCENDENTE:\n- Adenoma tubular de baixo grau, com displasia moderada.\n\n3- PÓLIPO DE RETO:\n- Adenoma tubular de baixo grau, com displasia moderada."
+    },
+    "classificacao": {
+        "cid": "K63.5"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "0494.24",
+        "assinatura": {
+        "medico": "Dr. Sérgio Ricardo Soares de Moura",
+        "crm": "18.835"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "CELIA MARIA AGUIAR",
+        "sexo": "Feminino",
+        "idade": 61,
+        "prontuario": "8642391"
+        },
+        "literal": {
+        "nome": "CELIA MARIA AGUIAR",
+        "idade": "61 anos",
+        "prontuario": "8642391",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Colonoscopia",
+        "data_laudo": "2021-05-31",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Colonoscopia",
+        "medico_solicitante": "Gustavo Jose",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 31/05/2021"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 6,
+        "aspecto": "Fragmentos teciduais irregulares, elásticos, pardos",
+        "dimensao_maior_cm": "0.5"
+        },
+        "literal": "MACROSCOPIA:\nEm formalina recebemos:\n1) A- Dois fragmentos teciduais irregulares, elásticos, pardos, o maior medindo 0,5x0,2x0,2 cm.\n2) B- Quatro fragmentos teciduais irregulares, pardos, o maior 0,2x0,2x0,1 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "",
+        "diagnostico": "Tiflíte crônica inespecífica leve; Proctite crônica moderada",
+        "grau_displasia": ""
+        },
+        "literal": "MICROSCOPIA E CONCLUSÃO:\n1) Tiflíte crônica inespecífica leve, linfoplasmocitária.\n\n2) Proctite crônica moderada, com atividade focal, sem evidências morfológicas de DII em atividade nesta amostra."
+    },
+    "classificacao": {
+        "cid": "K51"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "1855/21",
+        "assinatura": {
+        "medico": "Dr. Álvaro Pereira de Mello",
+        "crm": "020802"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "SOLANGE SILVA DE OLIVEIRA",
+        "sexo": "Feminino",
+        "idade": 55,
+        "prontuario": "8751241"
+        },
+        "literal": {
+        "nome": "SOLANGE SILVA DE OLIVEIRA",
+        "idade": "55 anos",
+        "prontuario": "8751241",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Colonoscopia",
+        "data_laudo": "2023-07-03",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Colonoscopia",
+        "medico_solicitante": "Dr. André Luis Novaes",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 03/07/2023"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 3,
+        "aspecto": "Fragmentos teciduais irregulares, elásticos, pardacentos",
+        "dimensao_maior_cm": "0.5"
+        },
+        "literal": "MACROSCOPIA:\nEm formalina e devidamente identificados, recebemos três fragmentos teciduais, irregulares, elásticos e pardacentos, medindo o maior 0,5x0,3x0,2 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Reto",
+        "diagnostico": "Adenoma túbulo-viloso",
+        "grau_displasia": "Baixo grau"
+        },
+        "literal": "MICROSCOPIA E CONCLUSÃO:\n\"Produto de polipectomia do reto\":\n- Adenoma túbulo-viloso com displasia de baixo grau (displasia leve).\n- Margem não avaliável devido à prévia fragmentação da amostra."
+    },
+    "classificacao": {
+        "cid": "K63.8"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "3123/23",
+        "assinatura": {
+        "medico": "Dra. Larissa Francesca",
+        "crm": "23.067"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "RISOMAR PEREIRA NUNES",
+        "sexo": "Feminino",
+        "idade": 81,
+        "prontuario": "8584082"
+        },
+        "literal": {
+        "nome": "RISOMAR PEREIRA NUNES",
+        "idade": "81 anos",
+        "prontuario": "8584082",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Colonoscopia",
+        "data_laudo": "2023-07-14",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Colonoscopia",
+        "medico_solicitante": "Dr. Mauricio José de Matos",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 14/07/2023"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 15,
+        "aspecto": "Fragmentos teciduais irregulares, elásticos, pardacentos",
+        "dimensao_maior_cm": "0.6"
+        },
+        "literal": "MACROSCOPIA:\nEm formalina, recebemos:\n1 - A: 04 fragmentos teciduais irregulares, elásticos, pardacentos, medindo o maior 0,6x0,3x0,2 cm.\n2 - B: 07 fragmentos teciduais irregulares, elásticos, pardacentos, medindo o maior 0,6x0,3x0,2 cm.\n3 - C: 04 fragmentos teciduais irregulares, elásticos, pardacentos, medindo o maior 0,3x0,2x0,2 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Cólon ascendente; Cólon transverso; Reto distal",
+        "diagnostico": "Adenoma tubular e pólipo hiperplásico",
+        "grau_displasia": "Baixo grau"
+        },
+        "literal": "MICROSCOPIA E CONCLUSÃO:\n1) Cólon ascendente, polipectomia:\n- Adenoma tubular com displasia de baixo grau em um dos fragmentos (Classe III de Viena).\n- Demais fragmentos sem atipias.\n\n2) Cólon transverso, polipectomia:\n- Adenoma tubular com displasia de baixo grau em quatro fragmentos (Classe III de Viena).\n- Demais fragmentos sem atipias.\n\n3) Reto distal, polipectomia:\n- Pólipo hiperplásico."
+    },
+    "classificacao": {
+        "cid": "K63.5"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "3263/23",
+        "assinatura": {
+        "medico": "Dra. Mariana Lêdo",
+        "crm": "26.397"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "GINALDO HONÓRIO DA SILVA",
+        "sexo": "Masculino",
+        "idade": 69,
+        "prontuario": "8737336"
+        },
+        "literal": {
+        "nome": "GINALDO HONÓRIO DA SILVA",
+        "idade": "69 anos",
+        "prontuario": "8737336",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Colonoscopia",
+        "data_laudo": "2023-04-12",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Colonoscopia",
+        "medico_solicitante": "Maria Novaes",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 12/04/2023"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 10,
+        "aspecto": "Fragmentos teciduais firmes, irregulares, amarelados e brancacentos",
+        "dimensao_maior_cm": "1.5"
+        },
+        "literal": "MACROSCOPIA:\nEm formalina recebemos:\n1) Três formações teciduais firmes, amareladas, a maior medindo 0,6x0,2x0,2 cm. Aos cortes, é firme, brancacento.\n2) Três fragmentos teciduais irregulares, firmes, amarelados, o maior medindo 0,3 cm de diâmetro.\n3) Sete formações teciduais firmes, brancacentas, a maior medindo 0,6x0,1x0,1 cm. Aos cortes, é firme, brancacento.\n4) Formação tecidual irregular, elástica, amarelada, medindo 1,5x0,6x0,3 cm. Aos cortes, firme, pardo-amarelado."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Cólon transverso",
+        "diagnostico": "Pólipos hiperplásicos e adenomas tubulares e túbulo-vilosos",
+        "grau_displasia": "Baixo grau"
+        },
+        "literal": "MICROSCOPIA E CONCLUSÃO:\n1) Produto de polipectomias do cólon transverso:\n- Pólipos hiperplásicos.\n\n2) Produto de LST do cólon transverso:\n- Adenoma túbulo-viloso com displasia de baixo grau (displasia moderada).\n- Margem não avaliável devido à prévia fragmentação da amostra.\n\n3) Produto de polipectomias do cólon transverso:\n- Adenoma tubular de baixo grau (displasia leve).\n- Pólipo hiperplásico.\n- Margem não avaliável devido à prévia fragmentação da amostra.\n\n4) Produto de mucosectomia do cólon transverso:\n- Adenoma túbulo-viloso com displasia de baixo grau (displasia moderada).\n- Margem livre de displasia."
+    },
+    "classificacao": {
+        "cid": "K63.5"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "1295/23",
+        "assinatura": {
+        "medico": "Dra. Larissa Francesca",
+        "crm": "23.067"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "BENIVAL FRANCISCO GUSMÃO",
+        "sexo": "Masculino",
+        "idade": 71,
+        "prontuario": "8756374"
+        },
+        "literal": {
+        "nome": "BENIVAL FRANCISCO GUSMÃO",
+        "idade": "71 anos",
+        "prontuario": "8756374",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Colonoscopia",
+        "data_laudo": "2023-07-03",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Colonoscopia",
+        "medico_solicitante": "Dr. Maurício José de Matos",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 03/07/2023"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 1,
+        "aspecto": "Fragmento tecidual irregular, elástico e pardacento",
+        "dimensao_maior_cm": "0.4"
+        },
+        "literal": "MACROSCOPIA:\nEm formalina e devidamente identificado, recebemos fragmento tecidual irregular, elástico e pardacento medindo 0,4x0,2x0,2 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Cólon ascendente",
+        "diagnostico": "Adenoma túbulo-viloso",
+        "grau_displasia": "Baixo grau"
+        },
+        "literal": "MICROSCOPIA E CONCLUSÃO:\n\"Cólon ascendente\":\n- Adenoma túbulo-viloso com displasia de baixo grau (displasia leve)."
+    },
+    "classificacao": {
+        "cid": "D12"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "2980/23",
+        "assinatura": {
+        "medico": "Dra. Sofia Santos Tenório",
+        "crm": "19.695"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "MAURÍCIO SEVERINO DA SILVA",
+        "sexo": "Masculino",
+        "idade": 68,
+        "prontuario": "8757068"
+        },
+        "literal": {
+        "nome": "MAURÍCIO SEVERINO DA SILVA",
+        "idade": "68 anos",
+        "prontuario": "8757068",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Colonoscopia",
+        "data_laudo": "2023-07-03",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Colonoscopia",
+        "medico_solicitante": "Dr. Gustavo José Carneiro Leão Filho",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 03/07/2023"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 3,
+        "aspecto": "Fragmentos teciduais irregulares, elásticos e pardacentos",
+        "dimensao_maior_cm": "0.5"
+        },
+        "literal": "MACROSCOPIA:\nEm formalina e devidamente identificado, três fragmentos teciduais, irregulares, elásticos e pardacentos medindo o maior 0,5x0,2x0,2 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Reto",
+        "diagnostico": "Pólipo hiperplásico",
+        "grau_displasia": ""
+        },
+        "literal": "MICROSCOPIA E CONCLUSÃO:\n\"Produto de polipectomia de reto\":\n- Pólipo hiperplásico."
+    },
+    "classificacao": {
+        "cid": "K63.8"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "3011/23",
+        "assinatura": {
+        "medico": "Dra. Larissa Francesca",
+        "crm": "23.067"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "MARIA DAS GRAÇAS DE ARAÚJO",
+        "sexo": "Feminino",
+        "idade": 63,
+        "prontuario": "551724"
+        },
+        "literal": {
+        "nome": "MARIA DAS GRAÇAS DE ARAÚJO",
+        "idade": "63 anos",
+        "prontuario": "551724",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Colonoscopia",
+        "data_laudo": "2023-07-03",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Colonoscopia",
+        "medico_solicitante": "Drª Marília Novaes Ferreira",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 03/07/2023"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 5,
+        "aspecto": "Fragmentos teciduais irregulares, elásticos e pardacentos",
+        "dimensao_maior_cm": "0.5"
+        },
+        "literal": "MACROSCOPIA:\n1 - A - Em formalina e devidamente identificados, recebemos 03 fragmentos teciduais, irregulares, elásticos e pardacentos medindo o maior 0,5x0,2x0,2 cm.\n2 - B - Em formalina e devidamente identificados, recebemos 02 fragmentos teciduais, irregulares, elásticos e pardacentos medindo o maior 0,5x0,2x0,2 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Cólon sigmoide; Reto",
+        "diagnostico": "Adenoma tubular; Pólipo hiperplásico",
+        "grau_displasia": "Baixo grau"
+        },
+        "literal": "MICROSCOPIA E CONCLUSÃO:\n1 - Produto de polipectomia de cólon sigmoide:\n- Adenoma tubular com displasia de baixo grau (displasia leve/2 estruturas).\n- Pólipo hiperplásico (1 estrutura).\n2 - Produto de polipectomia do reto:\n- Pólipo hiperplásico."
+    },
+    "classificacao": {
+        "cid": "K63.8"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "3017/23",
+        "assinatura": {
+        "medico": "Dra. Larissa Francesca",
+        "crm": "23.067"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "DALVA MARIA ALVES DE ARRUDA",
+        "sexo": "Feminino",
+        "idade": 65,
+        "prontuario": "543448"
+        },
+        "literal": {
+        "nome": "DALVA MARIA ALVES DE ARRUDA",
+        "idade": "65 anos",
+        "prontuario": "543448",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Colonoscopia",
+        "data_laudo": "2023-06-26",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Colonoscopia",
+        "medico_solicitante": "Dr. Juliano Martins de Lima",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 26/06/2023"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 3,
+        "aspecto": "Fragmentos teciduais irregulares, elásticos e pardacentos",
+        "dimensao_maior_cm": "0.6"
+        },
+        "literal": "MACROSCOPIA:\n1 - A - Em formalina recebemos 02 fragmentos teciduais e irregulares, elásticos, pardacentos medindo o maior 0,6x0,3x0,2 cm.\n2 - B - Em formalina recebemos 01 fragmento tecidual e irregular, elástico, pardacento medindo 0,3x0,2x0,2 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Reto",
+        "diagnostico": "Adenoma tubular; Pseudopólipo inflamatório; Retite crônica leve ativa",
+        "grau_displasia": "Baixo grau"
+        },
+        "literal": "MICROSCOPIA E CONCLUSÃO:\n\"Colonoscopia\":\n1 - Produto de polipectomia do reto:\n- Adenoma tubular de baixo grau (displasia leve).\n- Pseudopólipo inflamatório.\n2 - Produto de biópsia de reto:\n- Retite crônica leve ativa com áreas de erosão, sem sinais de especificidade.\n- Ausência de displasia nesta amostra."
+    },
+    "classificacao": {
+        "cid": "R10"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "2943/23",
+        "assinatura": {
+        "medico": "Dra. Larissa Francesca",
+        "crm": "23.067"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "ANA LUCIA SOARES LEAL",
+        "sexo": "Feminino",
+        "idade": 53,
+        "prontuario": "8735687"
+        },
+        "literal": {
+        "nome": "ANA LUCIA SOARES LEAL",
+        "idade": "53 anos",
+        "prontuario": "8735687",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Polipectomia",
+        "data_laudo": "2023-07-03",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Polipectomia",
+        "medico_solicitante": "Joyce Cavalcanti",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 03/07/2023"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 1,
+        "aspecto": "Fragmento tecidual irregular, elástico, pardacento",
+        "dimensao_maior_cm": "0.4"
+        },
+        "literal": "MACROSCOPIA:\nUm fragmento tecidual, irregular, elástico, pardacento, medindo 0,4 x 0,2 x 0,2 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Cólon transverso",
+        "diagnostico": "Adenoma tubular",
+        "grau_displasia": "Baixo grau"
+        },
+        "literal": "MICROSCOPIA E CONCLUSÃO:\nProduto de polipectomia do cólon transverso:\n- Adenoma tubular com displasia de baixo grau (displasia leve).\n- Margem livre de displasia."
+    },
+    "classificacao": {
+        "cid": "K63.8"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "2981/23",
+        "assinatura": {
+        "medico": "Dra. Larissa Francesca",
+        "crm": "23.067"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "ANTONIO RAFAEL DE LIRA",
+        "sexo": "Masculino",
+        "idade": 72,
+        "prontuario": "8631573"
+        },
+        "literal": {
+        "nome": "ANTONIO RAFAEL DE LIRA",
+        "idade": "72 anos",
+        "prontuario": "8631573",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Pólipo em cólon ascendente",
+        "data_laudo": "2023-03-09",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Pólipo em cólon ascendente",
+        "medico_solicitante": "Juarez Silvestre",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 09/03/2023"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 1,
+        "aspecto": "Fragmento tecidual firme, amarelado",
+        "dimensao_maior_cm": "0.5"
+        },
+        "literal": "MACROSCOPIA:\nRecebido em formalina, um fragmento tecidual firme, amarelado, medindo 0,5 cm de diâmetro."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Cólon ascendente",
+        "diagnostico": "Adenoma túbulo-viloso",
+        "grau_displasia": "Baixo grau"
+        },
+        "literal": "MICROSCOPIA E CONCLUSÃO:\nAdenoma túbulo-viloso com displasia de baixo grau (displasia leve)."
+    },
+    "classificacao": {
+        "cid": "D12"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "0623/23",
+        "assinatura": {
+        "medico": "Dra. Sofia Santos Tenório",
+        "crm": "19.695"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "JAILTON COELHO DOS SANTOS",
+        "sexo": "Masculino",
+        "idade": 41,
+        "prontuario": "8753400"
+        },
+        "literal": {
+        "nome": "JAILTON COELHO DOS SANTOS",
+        "idade": "41 anos",
+        "prontuario": "8753400",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Pólipo de reto",
+        "data_laudo": "2023-06-19",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Pólipo de reto",
+        "medico_solicitante": "André Novaes",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 19/06/2023"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 1,
+        "aspecto": "Fragmento tecidual irregular, elástico, pardacento",
+        "dimensao_maior_cm": "0.5"
+        },
+        "literal": "MACROSCOPIA:\nUm fragmento tecidual, irregular, elástico, pardacento, medindo 0,5 x 0,2 x 0,2 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Reto",
+        "diagnostico": "Pólipo hiperplásico",
+        "grau_displasia": "Sem displasia"
+        },
+        "literal": "CONCLUSÃO:\nProduto de polipectomia de reto.\nPólipo hiperplásico."
+    },
+    "classificacao": {
+        "cid": "K63.8"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "2832/23",
+        "assinatura": {
+        "medico": "Dra. Larissa Francesca",
+        "crm": "23.067"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "BENIVAL FRANCISCO GUSMÃO",
+        "sexo": "Masculino",
+        "idade": 71,
+        "prontuario": "8756374"
+        },
+        "literal": {
+        "nome": "BENIVAL FRANCISCO GUSMÃO",
+        "idade": "71 anos",
+        "prontuario": "8756374",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Colonoscopia",
+        "data_laudo": "2023-07-03",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Colonoscopia",
+        "medico_solicitante": "Dr. Maurício José de Matos",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 03/07/2023"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 1,
+        "aspecto": "Fragmento tecidual irregular, elástico e pardacento",
+        "dimensao_maior_cm": "0.4"
+        },
+        "literal": "MACROSCOPIA:\nEm formalina e devidamente identificado, recebemos fragmento tecidual irregular, elástico e pardacento medindo 0,4 x 0,2 x 0,2 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Cólon ascendente",
+        "diagnostico": "Adenoma túbulo-viloso",
+        "grau_displasia": "Baixo grau"
+        },
+        "literal": "MICROSCOPIA E CONCLUSÃO:\n\"Cólon ascendente\":\nAdenoma túbulo-viloso com displasia de baixo grau (displasia leve)."
+    },
+    "classificacao": {
+        "cid": "D12"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "2980/23",
+        "assinatura": {
+        "medico": "Dra. Sofia Santos Tenório",
+        "crm": "19.695"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "CLEDELUEZA FERNANDES DO NASCIMENTO",
+        "sexo": "Feminino",
+        "idade": 75,
+        "prontuario": "8721400"
+        },
+        "literal": {
+        "nome": "CLEDELUEZA FERNANDES DO NASCIMENTO",
+        "idade": "75 anos",
+        "prontuario": "8721400",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Biópsias colonoscópicas",
+        "data_laudo": "2023-06-09",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Biópsias colonoscópicas",
+        "medico_solicitante": "Maurício Matos",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 09/06/2023"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 11,
+        "aspecto": "Fragmentos teciduais irregulares, firmes ou elásticos, pardos",
+        "dimensao_maior_cm": "0.5"
+        },
+        "literal": "MACROSCOPIA:\nEm formalina recebemos:\nA) Dois fragmentos teciduais irregulares, elásticos, pardos, o maior medindo 0,5x0,2x0,2 cm.\nB) Dois fragmentos teciduais firmes, irregulares, elásticos, o maior medindo 0,5x0,2x0,2 cm.\nC) Um fragmento tecidual irregular, firme, elástico, medindo 0,3x0,2x0,2 cm.\nD) Quatro fragmentos teciduais irregulares, firmes, elásticos, o maior medindo 0,5x0,2x0,2 cm.\nE) Dois fragmentos teciduais irregulares, firmes, elásticos, o maior medindo 0,4x0,2x0,2 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Ceco, cólon ascendente, transverso, sigmoide e reto",
+        "diagnostico": "Adenoma tubular",
+        "grau_displasia": "Alto e baixo grau"
+        },
+        "literal": "MICROSCOPIA E CONCLUSÃO:\nBIÓPSIAS COLONOSCÓPICAS\n1 - PÓLIPO DE CECO: Adenoma tubular de alto grau.\n2 - PÓLIPO DE ASCENDENTE: Adenoma tubular de alto grau.\n3 - PÓLIPO DE TRANSVERSO: Adenoma tubular de baixo grau, com displasia leve.\n4 - PÓLIPO DE SIGMOIDE: Adenoma tubular de baixo grau, com displasia moderada.\n5 - PÓLIPO DE RETO: Adenoma tubular de alto grau."
+    },
+    "classificacao": {
+        "cid": "K63.5"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "2714/23",
+        "assinatura": {
+        "medico": "Dr. Sérgio Ricardo Soares de Moura",
+        "crm": "18.835"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "JAQUELINE AMÉLIA DE SOUSA",
+        "sexo": "Feminino",
+        "idade": 53,
+        "prontuario": "8726166"
+        },
+        "literal": {
+        "nome": "JAQUELINE AMÉLIA DE SOUSA",
+        "idade": "53 anos",
+        "prontuario": "8726166",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Colonoscopia",
+        "data_laudo": "2023-06-12",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Colonoscopia",
+        "medico_solicitante": "Drº Gustavo Carneiro Leão Filho",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 12.06.2023"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 1,
+        "aspecto": "Fragmento tecidual irregular, elástico e pardacento",
+        "dimensao_maior_cm": "0.4"
+        },
+        "literal": "MACROSCOPIA:\nEm formalina, recebemos fragmento tecidual, irregular, elástico e pardacento medindo 0,4x0,2x0,2 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Cólon transverso",
+        "diagnostico": "Adenoma túbulo-viloso",
+        "grau_displasia": "Baixo grau"
+        },
+        "literal": "MICROSCOPIA E CONCLUSÃO:\n\"Pólipo transverso\":\n- Adenoma túbulo-viloso com displasia de baixo grau."
+    },
+    "classificacao": {
+        "cid": "D12"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "2742/23",
+        "assinatura": {
+        "medico": "Drª Sofia Santos Tenório",
+        "crm": "19.695"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "CLEDELEUZA FERNANDES DO NASCIMENTO",
+        "sexo": "Feminino",
+        "idade": 75,
+        "prontuario": "8721400"
+        },
+        "literal": {
+        "nome": "CLEDELEUZA FERNANDES DO NASCIMENTO",
+        "idade": "75 anos",
+        "prontuario": "8721400",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Biópsias colonoscópicas",
+        "data_laudo": "2023-06-09",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Biópsias colonoscópicas",
+        "medico_solicitante": "Mauricio Matos",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 09/06/2023"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 11,
+        "aspecto": "Fragmentos teciduais irregulares, firmes ou elásticos, pardos",
+        "dimensao_maior_cm": "0.5"
+        },
+        "literal": "MACROSCOPIA:\nEm formalina recebemos:\nA) Dois fragmentos teciduais irregulares, elásticos, pardos, o maior medindo 0,5x0,2x0,2 cm.\nB) Dois fragmentos teciduais firmes, irregulares, elásticos, o maior medindo 0,5x0,2x0,2 cm.\nC) Um fragmento tecidual irregular, firme, elástico medindo 0,3x0,2x0,2 cm.\nD) Quatro fragmentos teciduais irregulares, firmes, elásticos, o maior medindo 0,5x0,2x0,2 cm.\nE) Dois fragmentos teciduais irregulares, firmes, elásticos, o maior medindo 0,4x0,2x0,2 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Ceco; Cólon ascendente; Cólon transverso; Sigmoide; Reto",
+        "diagnostico": "Adenoma tubular",
+        "grau_displasia": "Alto grau; Baixo grau; Baixo grau com displasia leve; Baixo grau com displasia moderada"
+        },
+        "literal": "MICROSCOPIA E CONCLUSÃO:\n- BIÓPSIAS COLONOSCÓPICAS\n1) PÓLIPO DE CECO:\n- Adenoma tubular de alto grau.\n2) PÓLIPO DE ASCENDENTE:\n- Adenoma tubular de alto grau.\n3) PÓLIPO DE TRANSVERSO:\n- Adenoma tubular de baixo grau, com displasia leve.\n4) PÓLIPO DE SIGMOIDE:\n- Adenoma tubular de baixo grau, com displasia moderada.\n5) PÓLIPO DE RETO:\n- Adenoma tubular de alto grau."
+    },
+    "classificacao": {
+        "cid": "K63.5"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "2714/23",
+        "assinatura": {
+        "medico": "Dr. Sérgio Ricardo Soares de Moura",
+        "crm": "18.835"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "SUELI MARIANA DA SILVA",
+        "sexo": "Feminino",
+        "idade": 74,
+        "prontuario": "8749454"
+        },
+        "literal": {
+        "nome": "SUELI MARIANA DA SILVA",
+        "idade": "74 anos",
+        "prontuario": "8749454",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Pólipo transverso",
+        "data_laudo": "2023-06-16",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Pólipo transverso",
+        "medico_solicitante": "Gustavo Carneiro",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 16/06/2023"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 2,
+        "aspecto": "Fragmentos teciduais irregulares, elásticos, acastanhados",
+        "dimensao_maior_cm": "0.5"
+        },
+        "literal": "MACROSCOPIA:\nEm formalina recebemos dois fragmentos teciduais irregulares, elásticos, acastanhados, medindo o maior 0,5x0,2x0,2 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Cólon transverso",
+        "diagnostico": "Adenoma tubular",
+        "grau_displasia": "Baixo grau (displasia leve)"
+        },
+        "literal": "MICROSCOPIA E CONCLUSÃO:\nPÓLIPO DE TRANSVERSO.\n- Adenoma tubular de baixo grau, com displasia leve."
+    },
+    "classificacao": {
+        "cid": "K63.5"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "2764/23",
+        "assinatura": {
+        "medico": "Dr. Sérgio Ricardo Soares de Moura",
+        "crm": "18.835"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "LÚCIA MARIA DE OLIVEIRA",
+        "sexo": "Feminino",
+        "idade": 67,
+        "prontuario": "8655626"
+        },
+        "literal": {
+        "nome": "LÚCIA MARIA DE OLIVEIRA",
+        "idade": "67 anos",
+        "prontuario": "8655626",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Colonoscopia",
+        "data_laudo": "2023-06-12",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "colonoscopia",
+        "medico_solicitante": "Marília Novaes Ferreira",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 12/06/2023"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 14,
+        "aspecto": "Fragmentos teciduais irregulares, elásticos e pardacentos",
+        "dimensao_maior_cm": "0.6"
+        },
+        "literal": "MACROSCOPIA:\nEm formalina, recebemos múltiplos fragmentos teciduais irregulares, elásticos e pardacentos, distribuídos em sete amostras (A a G), variando de 2 a 3 fragmentos por frasco, sendo o maior medindo até 0,6x0,2x0,2 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Trato gastrointestinal (íleo, cólon transverso, cólon descendente, anastomose coloretal e reto)",
+        "diagnostico": "Achados inflamatórios inespecíficos, pólipos hiperplásicos e adenoma tubular",
+        "grau_displasia": "Baixo grau (displasia leve) quando presente"
+        },
+        "literal": "MICROSCOPIA E CONCLUSÃO:\nProduto de biópsia do trato gastrointestinal.\n1 - Íleo: Ileíte crônica moderada ativa, sem sinais de especificidade. Ausência de parasitas ou displasia.\n2 - Cólon transverso: Pólipos hiperplásicos.\n3 - Cólon transverso: Mucosa de intestino grosso com leve reação inflamatória crônica inespecífica, sem displasia ou neoplasia.\n4 - Cólon descendente: Adenoma tubular com displasia de baixo grau (displasia leve), margem livre de displasia.\n5 - Cólon descendente: Mucosa com leve reação inflamatória crônica inespecífica, sem displasia ou neoplasia.\n6 - Anastomose coloretal: Tecido de granulação, sem displasia ou neoplasia.\n7 - Reto: Mucosa de intestino grosso com leve reação inflamatória crônica inespecífica, sem displasia ou neoplasia."
+    },
+    "classificacao": {
+        "cid": "K63.8"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "2600/23",
+        "assinatura": {
+        "medico": "Dr. Álvaro Pereira de Mello",
+        "crm": "020.802"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "IVANILDO MARTINS DA SILVA",
+        "sexo": "Masculino",
+        "idade": 58,
+        "prontuario": "8668937"
+        },
+        "literal": {
+        "nome": "IVANILDO MARTINS DA SILVA",
+        "idade": "58 anos",
+        "prontuario": "8668937",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Pólipo descendente distal",
+        "data_laudo": "2023-06-12",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Pólipo descendente distal",
+        "medico_solicitante": "Suzana Bernardo",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 12/06/2023"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 1,
+        "aspecto": "Fragmento tecidual irregular, elástico e pardacento",
+        "dimensao_maior_cm": "0.5"
+        },
+        "literal": "MACROSCOPIA:\nUm fragmento, tecidual, irregular, elástico, pardacento, medindo 0,5 x 0,2 x 0,2 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Cólon descendente distal",
+        "diagnostico": "Adenoma tubular",
+        "grau_displasia": "Baixo grau (displasia moderada)"
+        },
+        "literal": "MICROSCOPIA E CONCLUSÃO:\nProduto de polipectomia do cólon descendente distal:\n- Adenoma tubular com displasia de baixo grau (displasia moderada).\n- Margem livre de displasia."
+    },
+    "classificacao": {
+        "cid": "K63.8"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "2603/23",
+        "assinatura": {
+        "medico": "Dra. Larissa Francesca",
+        "crm": "23.067"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "MARIA DE FÁTIMA TAVARES DA SILVA",
+        "sexo": "Feminino",
+        "idade": 57,
+        "prontuario": "487226"
+        },
+        "literal": {
+        "nome": "MARIA DE FÁTIMA TAVARES DA SILVA",
+        "idade": "57 anos",
+        "prontuario": "487226",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Colonoscopia",
+        "data_laudo": "2023-07-02",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Colonoscopia",
+        "medico_solicitante": "Dra. Marília Novaes Ferreira",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 02.07.2023"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 1,
+        "aspecto": "Fragmento tecidual irregular, elástico e pardacento",
+        "dimensao_maior_cm": "0.4"
+        },
+        "literal": "MACROSCOPIA:\nEm formalina e devidamente identificado, recebemos fragmento tecidual, irregular, elástico, pardacento medindo 0,4 x 0,2 x 0,2 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Cólon ascendente",
+        "diagnostico": "Adenoma tubular",
+        "grau_displasia": "Baixo grau (displasia leve)"
+        },
+        "literal": "MICROSCOPIA E CONCLUSÃO:\n\"Pólipo em ascendente\":\n- Adenoma tubular com alterações displásicas de baixo grau (displasia leve)."
+    },
+    "classificacao": {
+        "cid": "K63"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "2598/23",
+        "assinatura": {
+        "medico": "Dr. Álvaro Pereira de Mello",
+        "crm": "020.802"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "DAMIANA OLEGÁRIO DOS SANTOS",
+        "sexo": "Feminino",
+        "idade": 72,
+        "prontuario": "25599"
+        },
+        "literal": {
+        "nome": "DAMIANA OLEGÁRIO DOS SANTOS",
+        "idade": "72 anos",
+        "prontuario": "25599",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Colonoscopia",
+        "data_laudo": "2023-05-13",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Colonoscopia",
+        "medico_solicitante": "Dr. Maurício José de Matos",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 13.05.2023"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 1,
+        "aspecto": "Fragmento tecidual irregular, elástico e pardacento",
+        "dimensao_maior_cm": "0.4"
+        },
+        "literal": "Em formalina, recebemos fragmento tecidual, irregular, elástico e pardacento medindo 0,4 x 0,2 x 0,2 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "",
+        "diagnostico": "Adenoma tubular",
+        "grau_displasia": "Baixo grau"
+        },
+        "literal": "MICROSCOPIA E CONCLUSÃO:\n\"Colonoscopia\":\n- Adenoma tubular com displasia de baixo grau."
+    },
+    "classificacao": {
+        "cid": "D12"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "1879/23",
+        "assinatura": {
+        "medico": "Dra. Sofia dos Santos Tenório",
+        "crm": "19.695"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "GILBERTO FELIX DA SILVA",
+        "sexo": "Masculino",
+        "idade": 45,
+        "prontuario": "8751237"
+        },
+        "literal": {
+        "nome": "GILBERTO FELIX DA SILVA",
+        "idade": "45 anos",
+        "prontuario": "8751237",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Colonoscopia",
+        "data_laudo": "2023-05-08",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Colonoscopia",
+        "medico_solicitante": "Marília Novaes",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 08.05.2023"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 3,
+        "aspecto": "Fragmentos teciduais firmes, irregulares, elásticos e pardos",
+        "dimensao_maior_cm": "0.5"
+        },
+        "literal": "Em formalina recebemos:\n1) A - Dois fragmentos teciduais firmes, irregulares, elásticos, pardos, o maior medindo 0,5 x 0,2 x 0,2 cm.\n2) B - Um fragmento tecidual irregular, firme, elástico, pardo, medindo 0,5 x 0,2 x 0,2 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "",
+        "diagnostico": "Adenoma tubular / Pólipo hiperplásico",
+        "grau_displasia": "Baixo grau"
+        },
+        "literal": "MICROSCOPIA E CONCLUSÃO:\nA - Adenoma tubular com alterações displásicas de baixo grau (displasia leve).\nB - Pólipo hiperplásico."
+    },
+    "classificacao": {
+        "cid": "K63"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "1896/23",
+        "assinatura": {
+        "medico": "Dr. Álvaro Pereira de Mello",
+        "crm": "020802"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "MARTA LUCIA PEREIRA DURVAL",
+        "sexo": "Feminino",
+        "idade": 52,
+        "prontuario": "8599665"
+        },
+        "literal": {
+        "nome": "MARTA LUCIA PEREIRA DURVAL",
+        "idade": "52 anos",
+        "prontuario": "8599665",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Pólipo transverso",
+        "data_laudo": "2023-05-08",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Pólipo transverso",
+        "medico_solicitante": "André Luiz",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 08/05/2023"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 1,
+        "aspecto": "Fragmento tecidual firme, elástico, pardo",
+        "dimensao_maior_cm": "0.5"
+        },
+        "literal": "Em formalina recebemos um fragmento tecidual firme, elástico, pardo, medindo 0,5 x 0,2 x 0,2 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Cólon transverso",
+        "diagnostico": "Adenoma tubular",
+        "grau_displasia": "Displasia moderada"
+        },
+        "literal": "PÓLIPO TRANSVERSO.\nAdenoma tubular de baixo grau, com displasia moderada."
+    },
+    "classificacao": {
+        "cid": "K63.5"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "1904/23",
+        "assinatura": {
+        "medico": "Dr. Sérgio Ricardo Soares de Moura",
+        "crm": "18.835"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "CARMOSINA MARIA DE LIMA",
+        "sexo": "Feminino",
+        "idade": 51,
+        "prontuario": "587979"
+        },
+        "literal": {
+        "nome": "CARMOSINA MARIA DE LIMA",
+        "idade": "51 anos",
+        "prontuario": "587979",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Colonoscopia",
+        "data_laudo": "2023-05-04",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Colonoscopia",
+        "medico_solicitante": "Gustavo José",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 04/05/2023"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 2,
+        "aspecto": "Fragmentos teciduais irregulares, firmes, elásticos, pardacentos",
+        "dimensao_maior_cm": "0.5"
+        },
+        "literal": "Em formalina recebemos dois fragmentos teciduais irregulares, firmes, elásticos, pardacentos, medindo o maior 0,5 x 0,32 x 0,2 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Reto",
+        "diagnostico": "Pólipo hiperplásico",
+        "grau_displasia": "Sem atipias"
+        },
+        "literal": "Reto, polipectomia:\nPólipo hiperplásico sem atipias."
+    },
+    "classificacao": {
+        "cid": "K62.1"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "1933/23",
+        "assinatura": {
+        "medico": "Dra. Mariana Lêdo",
+        "crm": "26.397"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "SERGIO TENORIO DA SILVA",
+        "sexo": "Masculino",
+        "idade": 65,
+        "prontuario": "8751344"
+        },
+        "literal": {
+        "nome": "SERGIO TENORIO DA SILVA",
+        "idade": "65 anos",
+        "prontuario": "8751344",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Biópsias colônicas",
+        "data_laudo": "2023-05-04",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Biópsias colônicas",
+        "medico_solicitante": "Gustavo Jose",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 04/05/2023"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 3,
+        "aspecto": "Fragmentos teciduais firmes, irregulares, elásticos, pardos",
+        "dimensao_maior_cm": "0.6"
+        },
+        "literal": "1) A - Um fragmento tecidual firme, irregular, elástico, pardo, medindo 0,5 x 0,2 x 0,2 cm.\n2) B - Dois fragmentos teciduais irregulares, firmes, elásticos, o maior medindo 0,6 x 0,2 x 0,2 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Sigmoide; Transverso proximal",
+        "diagnostico": "Adenoma tubular",
+        "grau_displasia": "Baixo grau (displasia leve)"
+        },
+        "literal": "Biópsias colonoscópicas\n1 - Pólipo em sigmoide:\nAdenoma tubular de baixo grau, com displasia leve.\n2 - Pólipo em transverso proximal:\nAdenoma tubular de baixo grau, com displasia leve."
+    },
+    "classificacao": {
+        "cid": "K63.5"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "1932-23",
+        "assinatura": {
+        "medico": "Dr. Sérgio Ricardo Soares de Moura",
+        "crm": "18.835"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "ROMILDA FERREIRA DE QUEIROZ",
+        "sexo": "Feminino",
+        "idade": 54,
+        "prontuario": "586757"
+        },
+        "literal": {
+        "nome": "ROMILDA FERREIRA DE QUEIROZ",
+        "idade": "54 anos",
+        "prontuario": "586757",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Pólido de reto + mucosa retal / pólipo ascendente",
+        "data_laudo": "2023-05-08",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Pólido de reto + mucosa retal / pólipo ascendente",
+        "medico_solicitante": "Dra. Fernanda Leão",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 08/05/2023"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 6,
+        "aspecto": "Fragmentos teciduais irregulares, elásticos e pardacentos",
+        "dimensao_maior_cm": "0.5"
+        },
+        "literal": "A + 1 - Em formalina, recebemos cinco fragmentos teciduais, irregulares, elásticos e pardacentos, o maior medindo 0,5 x 0,2 x 0,2 cm.\nB + 2 - Em formalina, recebemos fragmento tecidual, irregular, elástico medindo 0,5 x 0,2 x 0,2 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Reto; Cólon ascendente",
+        "diagnostico": "Pólipo hiperplásico; Adenoma túbulo-viloso",
+        "grau_displasia": "Baixo grau (displasia moderada)"
+        },
+        "literal": "Produto de biópsia de trato gastrointestinal:\n1) Reto:\nPólipo hiperplásico.\n2) Cólon ascendente:\nAdenoma túbulo-viloso com displasia de baixo grau (displasia moderada);\nMargem livre de displasia."
+    },
+    "classificacao": {
+        "cid": "K63.8"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "1927/23",
+        "assinatura": {
+        "medico": "Dra. Larissa Francesca",
+        "crm": "23.067"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "EUNICE BARBOSA DA SILVA",
+        "sexo": "Feminino",
+        "idade": 84,
+        "prontuario": "8528140"
+        },
+        "literal": {
+        "nome": "EUNICE BARBOSA DA SILVA",
+        "idade": "84 anos",
+        "prontuario": "8528140",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Pólipo transverso",
+        "data_laudo": "2023-06-08",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Pólipo transverso",
+        "medico_solicitante": "Mauricio José",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 08/06/2023"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 1,
+        "aspecto": "Formação tecidual firme, amarelada e irregular",
+        "dimensao_maior_cm": "1.0"
+        },
+        "literal": "Em formalina recebemos formação tecidual firme, amarelada, irregular, medindo 1,0 cm de diâmetro. Aos cortes, é compacto, amarelado."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Cólon transverso",
+        "diagnostico": "Adenoma serrilhado",
+        "grau_displasia": "Baixo grau"
+        },
+        "literal": "Adenoma serrilhado com alterações displásicas de baixo grau."
+    },
+    "classificacao": {
+        "cid": "K63"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "2002/23",
+        "assinatura": {
+        "medico": "Dr. Álvaro Pereira de Mello",
+        "crm": "020802"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "FABIANA VICENTE DA SILVA LIMA",
+        "sexo": "Feminino",
+        "idade": 40,
+        "prontuario": "495570"
+        },
+        "literal": {
+        "nome": "FABIANA VICENTE DA SILVA LIMA",
+        "idade": "40 anos",
+        "prontuario": "495570",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Colonoscopia",
+        "data_laudo": "2023-05-12",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Colonoscopia",
+        "medico_solicitante": "Mauricio de Souza Moreira",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 12.05.23"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 3,
+        "aspecto": "Fragmentos teciduais irregulares, elásticos e pardacentos",
+        "dimensao_maior_cm": "0.5"
+        },
+        "literal": "Em formalina, recebemos três fragmentos teciduais, irregulares, elásticos e pardacentos o maior medindo 0,5x0,2x0,2 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Cólon transverso",
+        "diagnostico": "Pólipo hiperplásico",
+        "grau_displasia": "Ausente"
+        },
+        "literal": "Cólon transverso, polipectomia: Pólipo hiperplásico."
+    },
+    "classificacao": {
+        "cid": "K63.5"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "2096/23",
+        "assinatura": {
+        "medico": "Drª Mariana Lêdo",
+        "crm": "26.397"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "JOSE ANTONIO DA SILVA",
+        "sexo": "Masculino",
+        "idade": 66,
+        "prontuario": "417302"
+        },
+        "literal": {
+        "nome": "JOSE ANTONIO DA SILVA",
+        "idade": "66 anos",
+        "prontuario": "417302",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Colonoscopia",
+        "data_laudo": "2023-05-12",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Colonoscopia",
+        "medico_solicitante": "Drº Gustavo José Carneiro",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 12.05.2023"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 3,
+        "aspecto": "Fragmentos teciduais irregulares, elásticos e pardacentos",
+        "dimensao_maior_cm": "0.6"
+        },
+        "literal": "Em formalina, recebemos três fragmentos teciduais, irregulares, elásticos e pardacentos o maior medindo 0,6x0,3x0,2 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Cólon transverso",
+        "diagnostico": "Adenoma tubular",
+        "grau_displasia": "Baixo grau"
+        },
+        "literal": "Cólon transverso, polipectomia: Adenoma tubular com displasia de baixo grau."
+    },
+    "classificacao": {
+        "cid": "K63.5"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "2093/23",
+        "assinatura": {
+        "medico": "Dra. Mariana Lêdo",
+        "crm": "26.397"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "MARCONDES GONÇALVES DOS SANTOS",
+        "sexo": "Masculino",
+        "idade": 46,
+        "prontuario": "8751033"
+        },
+        "literal": {
+        "nome": "MARCONDES GONÇALVES DOS SANTOS",
+        "idade": "46 anos",
+        "prontuario": "8751033",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Pólipo descendente",
+        "data_laudo": "2023-05-22",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Pólipo descendente",
+        "medico_solicitante": "Marília Novaes",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 22/05/2023"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 2,
+        "aspecto": "Fragmentos teciduais irregulares, elásticos e pardacentos",
+        "dimensao_maior_cm": "0.3"
+        },
+        "literal": "Dois fragmentos teciduais, irregulares, elásticos, pardacentos, medindo o maior 0,3 x 0,2 x 0,2 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Cólon descendente",
+        "diagnostico": "Pólipo hiperplásico",
+        "grau_displasia": "Ausente"
+        },
+        "literal": "Produto de polipectomia do cólon descendente: Pólipo hiperplásico."
+    },
+    "classificacao": {
+        "cid": "K63.8"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "2165/23",
+        "assinatura": {
+        "medico": "Dra. Larissa Francesca",
+        "crm": "23.067"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "AUGUSTINHO AZEVEDO VANDERLEI",
+        "sexo": "Masculino",
+        "idade": 75,
+        "prontuario": "8601650"
+        },
+        "literal": {
+        "nome": "AUGUSTINHO AZEVEDO VANDERLEI",
+        "idade": "75 anos",
+        "prontuario": "8601650",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Pólipo sigmoide",
+        "data_laudo": "2023-05-22",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Pólipo sigmoide",
+        "medico_solicitante": "Maurício Matos",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 22/05/2023"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 1,
+        "aspecto": "Fragmento tecidual firme, elástico e pardo",
+        "dimensao_maior_cm": "0.6"
+        },
+        "literal": "Em formalina recebemos um fragmento tecidual firme, elástico, pardo, medindo 0,6 x 0,2 x 0,2 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Sigmoide",
+        "diagnostico": "Adenoma túbulo-viloso",
+        "grau_displasia": "Baixo grau"
+        },
+        "literal": "Adenoma túbulo-viloso com displasia de baixo grau."
+    },
+    "classificacao": {
+        "cid": "D12"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "2203/23",
+        "assinatura": {
+        "medico": "Dra. Sofia dos Santos Tenório",
+        "crm": "19.695"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "GUTEMBERG VITURINO DE FARIAS",
+        "sexo": "Masculino",
+        "idade": 57,
+        "prontuario": "8610027"
+        },
+        "literal": {
+        "nome": "GUTEMBERG VITURINO DE FARIAS",
+        "idade": "57 anos",
+        "prontuario": "8610027",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Colonoscopia",
+        "data_laudo": "2023-06-12",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Colonoscopia",
+        "medico_solicitante": "Dr. Juliano Martins de Lima",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 12/06/2023"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 1,
+        "aspecto": "Fragmento tecidual irregular, elástico e pardacento",
+        "dimensao_maior_cm": "0.2"
+        },
+        "literal": "Em formalina, recebemos fragmento tecidual, irregular, elástico e pardacento medindo 0,2 x 0,2 x 0,1 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Cólon transverso",
+        "diagnostico": "Adenoma tubular",
+        "grau_displasia": "Baixo grau"
+        },
+        "literal": "Pólipo de transverso: Adenoma tubular com displasia de baixo grau."
+    },
+    "classificacao": {
+        "cid": "D12"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "2784/23",
+        "assinatura": {
+        "medico": "Dra. Sofia Santos Tenório",
+        "crm": "19.695"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "JOSEFA MARIA PIRES DO NASCIMENTO",
+        "sexo": "Feminino",
+        "idade": 59,
+        "prontuario": "8653529"
+        },
+        "literal": {
+        "nome": "JOSEFA MARIA PIRES DO NASCIMENTO",
+        "idade": "59 anos",
+        "prontuario": "8653529",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Colonoscopia",
+        "data_laudo": "2023-06-01",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Colonoscopia",
+        "medico_solicitante": "Drª Marília Novaes Ferreira",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 01/06/2023"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 2,
+        "aspecto": "Fragmentos teciduais irregulares, elásticos e pardacentos",
+        "dimensao_maior_cm": "0.4"
+        },
+        "literal": "Em formalina, recebemos dois fragmentos teciduais, irregulares, elásticos e pardacentos medindo o maior 0,4 x 0,2 x 0,2 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Cólon transverso",
+        "diagnostico": "Adenoma túbulo-viloso",
+        "grau_displasia": "Baixo grau"
+        },
+        "literal": "Pólipo transverso: Adenoma túbulo-viloso com displasia de baixo grau."
+    },
+    "classificacao": {
+        "cid": "D12"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "2373/23",
+        "assinatura": {
+        "medico": "Dra. Sofia Santos Tenório",
+        "crm": "19.695"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "ABILIO DA SILVA LOURENÇO",
+        "sexo": "Masculino",
+        "idade": 62,
+        "prontuario": "592565"
+        },
+        "literal": {
+        "nome": "ABILIO DA SILVA LOURENÇO",
+        "idade": "62 anos",
+        "prontuario": "592565",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Colonoscopia",
+        "data_laudo": "2023-06-08",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Colonoscopia",
+        "medico_solicitante": "Dr. Juliano Martins de Lima",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 08/06/2023"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 1,
+        "aspecto": "Fragmento tecidual irregular, elástico e pardacento",
+        "dimensao_maior_cm": "0.5"
+        },
+        "literal": "Em formalina, recebemos fragmento tecidual, irregular, elástico e pardacento medindo 0,5 x 0,2 x 0,2 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Sigmoide",
+        "diagnostico": "Adenoma tubular",
+        "grau_displasia": "Baixo grau"
+        },
+        "literal": "Pólipo de sigmoide: Adenoma tubular com displasia de baixo grau (displasia leve)."
+    },
+    "classificacao": {
+        "cid": "D12"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "2393/23",
+        "assinatura": {
+        "medico": "Dra. Sofia Santos Tenório",
+        "crm": "19.695"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "ELIANE MACIEL DOS SANTOS",
+        "sexo": "Feminino",
+        "idade": 54,
+        "prontuario": "8747351"
+        },
+        "literal": {
+        "nome": "ELIANE MACIEL DOS SANTOS",
+        "idade": "54 anos",
+        "prontuario": "8747351",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Pólipo de canal anal",
+        "data_laudo": "2023-07-06",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Pólipo de canal anal",
+        "medico_solicitante": "Marília Novaes",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 06/07/2023"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 4,
+        "aspecto": "Fragmentos teciduais irregulares, elásticos e pardos",
+        "dimensao_maior_cm": "0.4"
+        },
+        "literal": "Em formalina recebemos quatro fragmentos teciduais irregulares, elásticos, pardos, o maior medindo 0,4 x 0,2 x 0,2 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Canal anal",
+        "diagnostico": "Pólipo hiperplásico intestinal",
+        "grau_displasia": "Ausente"
+        },
+        "literal": "Pólipo de canal anal. Pólipo hiperplásico intestinal, variante microvesicular, exibindo ulceração da superfície."
+    },
+    "classificacao": {
+        "cid": "K63.5"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "2471/23",
+        "assinatura": {
+        "medico": "Dr. Sérgio Ricardo Soares de Moura",
+        "crm": "18.835"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "JOSEFA MARIA RODRIGUES",
+        "sexo": "Feminino",
+        "idade": 82,
+        "prontuario": "300788"
+        },
+        "literal": {
+        "nome": "JOSEFA MARIA RODRIGUES",
+        "idade": "82 anos",
+        "prontuario": "300788",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Biópsias colônicas",
+        "data_laudo": "2023-06-06",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Biópsias colônicas",
+        "medico_solicitante": "Mauricio de Souza",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 06/06/2023"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 10,
+        "aspecto": "Fragmentos teciduais irregulares, firmes, elásticos e pardos",
+        "dimensao_maior_cm": "0.5"
+        },
+        "literal": "Em formalina recebemos: 1) A - Três fragmentos teciduais irregulares, firmes, elásticos, pardos, medindo o maior 0,3 x 0,2 x 0,2 cm. 2) B - Um fragmento tecidual irregular, firme, elástico, pardo, medindo 0,5 x 0,2 x 0,2 cm. 3) C - Um fragmento tecidual irregular, firme, elástico, pardo, medindo o maior 0,4 x 0,2 x 0,2 cm. 4) D - Três fragmentos teciduais irregulares, firmes, elásticos, pardos, o maior medindo 0,4 x 0,2 x 0,2 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Cólon direito / cólon esquerdo / sigmoide / reto distal",
+        "diagnostico": "Adenoma túbulo-viloso e alterações inflamatórias",
+        "grau_displasia": "Alto grau"
+        },
+        "literal": "Biópsias colonoscópicas. 1 - Cólon direito: Alterações inflamatórias mínimas, inativas, sem especificidade nesta amostra. 2 - Cólon esquerdo: Alterações inflamatórias mínimas, inativas, sem especificidade nesta amostra. 3 - Pólipo de sigmoide: Adenoma túbulo-viloso de alto grau. 4 - Reto distal: Proctite ativa crônica leve, erosiva, sem especificidade nesta amostra."
+    },
+    "classificacao": {
+        "cid": "K63.9"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "2519/23",
+        "assinatura": {
+        "medico": "Dr. Sérgio Ricardo Soares de Moura",
+        "crm": "18.835"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "FRANCISCA ISABEL DA SILVA",
+        "sexo": "Feminino",
+        "idade": 64,
+        "prontuario": "8699609"
+        },
+        "literal": {
+        "nome": "FRANCISCA ISABEL DA SILVA",
+        "idade": "64 anos",
+        "prontuario": "8699609",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Biópsias colonoscópicas",
+        "data_laudo": "2023-06-06",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Biópsias colonoscópicas",
+        "medico_solicitante": "Mauricio de Souza",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 06/06/2023"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 2,
+        "aspecto": "Fragmentos teciduais irregulares, firmes, elásticos e pardos",
+        "dimensao_maior_cm": "0.5"
+        },
+        "literal": "Em formalina recebemos: 1) A - Um fragmento tecidual irregular, firme, elástico, pardo, medindo 0,4 x 0,2 x 0,2 cm. 2) B - Um fragmento tecidual irregular, firme, elástico, pardo, medindo 0,5 x 0,2 x 0,2 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Cólon descendente / reto",
+        "diagnostico": "Adenoma tubular e pólipo hiperplásico",
+        "grau_displasia": "Baixo grau"
+        },
+        "literal": "Biópsias colonoscópicas. 1 - Pólipo de descendente: Adenoma tubular de baixo grau, com displasia leve e focal. 2 - Pólipo de reto: Pólipo hiperplásico, variante microvesicular, exibindo ulceração da superfície, com tecido de granulação."
+    },
+    "classificacao": {
+        "cid": "K63.5"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "2555/23",
+        "assinatura": {
+        "medico": "Dr. Sérgio Ricardo Soares de Moura",
+        "crm": "18.835"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "CARLOS FERNANDES DE SOUZA",
+        "sexo": "Masculino",
+        "idade": 65,
+        "prontuario": "8747005"
+        },
+        "literal": {
+        "nome": "CARLOS FERNANDES DE SOUZA",
+        "idade": "65 anos",
+        "prontuario": "8747005",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Pólipos descendentes e transverso",
+        "data_laudo": "2023-06-12",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Pólipos descendentes + transverso",
+        "medico_solicitante": "Suzana Bernardo",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 12/06/2023"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 5,
+        "aspecto": "Fragmentos teciduais firmes, elástico-firmes e pardacentos",
+        "dimensao_maior_cm": "1.0"
+        },
+        "literal": "1) Dois fragmentos teciduais, um deles maior, polipoide, medindo 1,0 x 0,9 x 0,3 cm, aos cortes é firme e acastanhado. Fragmento menor medindo 0,5 x 0,4 x 0,2 cm. 2) Três fragmentos teciduais, irregulares, firme-elásticos, pardacentos, medindo o maior 0,5 x 0,4 x 0,3 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Cólon descendente e transverso",
+        "diagnostico": "Adenoma túbulo-viloso e pólipos hiperplásicos",
+        "grau_displasia": "Baixo grau (moderada)"
+        },
+        "literal": "Produto de biópsia do trato gastrointestinal. 1 - Descendente: Adenoma túbulo-viloso com displasia de baixo grau (moderada). Pólipo hiperplásico. 2 - Transverso: Pólipo hiperplásico."
+    },
+    "classificacao": {
+        "cid": "K63.8"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "2558/23",
+        "assinatura": {
+        "medico": "Dra. Larissa Francesca",
+        "crm": "23.067"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "ÂNGELA MARIA DA SILVA",
+        "sexo": "Feminino",
+        "idade": 68,
+        "prontuario": "8737198"
+        },
+        "literal": {
+        "nome": "ÂNGELA MARIA DA SILVA",
+        "idade": "68 anos",
+        "prontuario": "8737198",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Colonoscopia",
+        "data_laudo": "2023-06-08",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Colonoscopia",
+        "medico_solicitante": "Drº Maurício José de Matos",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 08/06/2023"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 8,
+        "aspecto": "Fragmentos teciduais irregulares, elásticos e acastanhados",
+        "dimensao_maior_cm": "0.6"
+        },
+        "literal": "Em formalina, recebemos oito fragmentos teciduais, irregulares, elásticos e acastanhados, o maior medindo 0,6 x 0,2 x 0,2 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Anastomose",
+        "diagnostico": "Pólipo inflamatório",
+        "grau_displasia": ""
+        },
+        "literal": "\"Pólipo em anastomose\": Pólipo inflamatório."
+    },
+    "classificacao": {
+        "cid": ""
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "2559/23",
+        "assinatura": {
+        "medico": "Dra. Sofia Santos Tenório",
+        "crm": "19.695"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "UQUIAS DO NASCIMENTO SOUZA",
+        "sexo": "Masculino",
+        "idade": 49,
+        "prontuario": "481433"
+        },
+        "literal": {
+        "nome": "UQUIAS DO NASCIMENTO SOUZA",
+        "idade": "49 anos",
+        "prontuario": "481433",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Pólipo de reto",
+        "data_laudo": "2023-06-07",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Pólipo de reto",
+        "medico_solicitante": "Joyce Cavalcanti",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 07/06/2023"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 1,
+        "aspecto": "Fragmento tecidual irregular, elástico e acastanhado",
+        "dimensao_maior_cm": "0.6"
+        },
+        "literal": "Um fragmento, tecidual, irregular, elástico, acastanhado, medindo 0,6 x 0,2 x 0,2 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Reto",
+        "diagnostico": "Adenoma túbulo-viloso",
+        "grau_displasia": "Baixo grau"
+        },
+        "literal": "Produto de polipectomia de reto: Adenoma túbulo-viloso com displasia de baixo grau (displasia leve). Margem livre de displasia."
+    },
+    "classificacao": {
+        "cid": "K63.8"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "2556/23",
+        "assinatura": {
+        "medico": "Dra. Larissa Francesca",
+        "crm": "23.067"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "GERCINO GUILHERMINO DE SENNA",
+        "sexo": "Masculino",
+        "idade": 66,
+        "prontuario": "8638470"
+        },
+        "literal": {
+        "nome": "GERCINO GUILHERMINO DE SENNA",
+        "idade": "66 anos",
+        "prontuario": "8638470",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Pólipo retal",
+        "data_laudo": "2023-05-22",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Pólipo retal",
+        "medico_solicitante": "Gustavo Jose",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 22/05/2023"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 1,
+        "aspecto": "Fragmento tecidual firme, elástico e pardo",
+        "dimensao_maior_cm": "0.6"
+        },
+        "literal": "Em formalina recebemos um fragmento tecidual firme, elástico, pardo, medindo 0,6 x 0,3 x 0,2 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Reto",
+        "diagnostico": "Adenoma túbulo-viloso",
+        "grau_displasia": "Baixo grau"
+        },
+        "literal": "Adenoma túbulo-viloso com displasia de baixo grau."
+    },
+    "classificacao": {
+        "cid": "D12"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "2201/23",
+        "assinatura": {
+        "medico": "Dra. Sofia dos Santos Tenório",
+        "crm": "19.695"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "JONAS MONTEIRO BISPO",
+        "sexo": "Masculino",
+        "idade": 73,
+        "prontuario": "560959"
+        },
+        "literal": {
+        "nome": "JONAS MONTEIRO BISPO",
+        "idade": "73 anos",
+        "prontuario": "560959",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Colonoscopia",
+        "data_laudo": "2023-05-08",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Colonoscopia",
+        "medico_solicitante": "Drº Maurício José de Matos",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 08.05.2023"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 1,
+        "aspecto": "Fragmento tecidual irregular, elástico e pardacento",
+        "dimensao_maior_cm": "0.4"
+        },
+        "literal": "Em formalina, recebemos fragmento tecidual irregular, elástico e pardacento medindo 0,4 x 0,2 x 0,2 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Cólon transverso",
+        "diagnostico": "Pólipo hiperplásico do tipo microvesicular",
+        "grau_displasia": ""
+        },
+        "literal": "“Cólon transverso, polipectomia”: Pólipo hiperplásico do tipo microvesicular."
+    },
+    "classificacao": {
+        "cid": "K63.5"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "1894/23",
+        "assinatura": {
+        "medico": "Dra. Mariana Lêdo",
+        "crm": "26.397"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "FRANCISCO ILDEFONSO BANDEIRA MODESTO",
+        "sexo": "Masculino",
+        "idade": 58,
+        "prontuario": "8751646"
+        },
+        "literal": {
+        "nome": "FRANCISCO ILDEFONSO BANDEIRA MODESTO",
+        "idade": "58 anos",
+        "prontuario": "8751646",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Colonoscopia",
+        "data_laudo": "2023-05-17",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Colonoscopia",
+        "medico_solicitante": "Drº Lilian Barbosa de Souza",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 17.05.2023"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 1,
+        "aspecto": "Fragmento tecidual irregular, elástico e pardacento",
+        "dimensao_maior_cm": "0.5"
+        },
+        "literal": "Em formalina, recebemos fragmento tecidual, irregular, elástico e pardacento medindo 0,5 x 0,2 x 0,2 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "",
+        "diagnostico": "Pólipo hiperplásico",
+        "grau_displasia": ""
+        },
+        "literal": "“Colonoscopia”: Pólipo hiperplásico."
+    },
+    "classificacao": {
+        "cid": "D12"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "1892/23",
+        "assinatura": {
+        "medico": "Dra. Sofia Santos Tenório",
+        "crm": "19.695"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "EUNICE MARIA DA SILVA",
+        "sexo": "Feminino",
+        "idade": 68,
+        "prontuario": "390048"
+        },
+        "literal": {
+        "nome": "EUNICE MARIA DA SILVA",
+        "idade": "68 anos",
+        "prontuario": "390048",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Colonoscopia",
+        "data_laudo": "2023-03-24",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Colonoscopia",
+        "medico_solicitante": "Drº Juliano Martins de Lima",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 24/03/23"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 3,
+        "aspecto": "Fragmentos teciduais firmes, amarelados/brancacentos",
+        "dimensao_maior_cm": "0.3"
+        },
+        "literal": "Em formalina, recebemos três fragmentos teciduais, firmes, amarelados/brancacentos, o maior medindo 0,3 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Canal anal",
+        "diagnostico": "Hiperplasia epitelial papilomatosa",
+        "grau_displasia": "Sem atipias"
+        },
+        "literal": "“Lesão de canal anal”: Hiperplasia epitelial papilomatosa, sem atipias."
+    },
+    "classificacao": {
+        "cid": "K62"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "1107/23",
+        "assinatura": {
+        "medico": "Dra. Mariana Lêdo",
+        "crm": "26.397"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "MARLENE TEIXEIRA DE LIMA",
+        "sexo": "Feminino",
+        "idade": 68,
+        "prontuario": "262517"
+        },
+        "literal": {
+        "nome": "MARLENE TEIXEIRA DE LIMA",
+        "idade": "68 anos",
+        "prontuario": "262517",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Colonoscopia",
+        "data_laudo": "2023-03-09",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Colonoscopia",
+        "medico_solicitante": "Drº Juliano Martins de Lima",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 09/03/23"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 2,
+        "aspecto": "Fragmentos teciduais firmes, amarelados, aos cortes firmes e brancacentos",
+        "dimensao_maior_cm": "0.5"
+        },
+        "literal": "Em formalina, recebemos dois fragmentos teciduais, firmes, amarelado, medindo 0,5x0,3x0,2 cm. Aos cortes, firmes, brancacentos."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Cólon (não especificado)",
+        "diagnostico": "Adenoma túbulo-viloso",
+        "grau_displasia": "Baixo grau"
+        },
+        "literal": "“Colonoscopia”: Fragmentos de adenoma túbulo-viloso com displasia de baixo grau."
+    },
+    "classificacao": {
+        "cid": "D12"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "0617/23",
+        "assinatura": {
+        "medico": "Dra. Sofia Santos Tenório",
+        "crm": "19.695"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "MARIA JOSÉ GUEDES DE ARAÚJO",
+        "sexo": "Feminino",
+        "idade": 55,
+        "prontuario": "8683438"
+        },
+        "literal": {
+        "nome": "MARIA JOSÉ GUEDES DE ARAÚJO",
+        "idade": "55 anos",
+        "prontuario": "8683438",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Colonoscopia",
+        "data_laudo": "2023-03-21",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Colonoscopia",
+        "medico_solicitante": "Drº Maurício José de Matos",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 21/03/23"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 1,
+        "aspecto": "Fragmento tecidual firme, amarelado, aos cortes firme e brancacento",
+        "dimensao_maior_cm": "0.7"
+        },
+        "literal": "Em formalina, recebemos fragmento tecidual, firme, amarelado medindo 0,7 de diâmetro. Aos cortes, é firme, brancacento."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Cólon (não especificado)",
+        "diagnostico": "Adenoma tubular",
+        "grau_displasia": "Baixo grau"
+        },
+        "literal": "“Colonoscopia”: Adenoma tubular com displasia de baixo grau (displasia leve)."
+    },
+    "classificacao": {
+        "cid": "D12"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "1030/23",
+        "assinatura": {
+        "medico": "Dra. Sofia Santos Tenório",
+        "crm": "26.397"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "SEVERINA SOARES DA SILVA",
+        "sexo": "Feminino",
+        "idade": 71,
+        "prontuario": "110939"
+        },
+        "literal": {
+        "nome": "SEVERINA SOARES DA SILVA",
+        "idade": "71 anos",
+        "prontuario": "110939",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Colonoscopia",
+        "data_laudo": "2023-03-17",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Colonoscopia",
+        "medico_solicitante": "Drª Marília Novaes Ferreira",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 17/03/23"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 1,
+        "aspecto": "Fragmento tecidual irregular, elástico, pardacento",
+        "dimensao_maior_cm": "0.6"
+        },
+        "literal": "Em formalina, recebemos fragmento tecidual, irregular, elástico, pardacento medindo 0,6x0,3x0,2 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Cólon sigmoide",
+        "diagnostico": "Adenoma tubular",
+        "grau_displasia": "Baixo grau"
+        },
+        "literal": "“Cólon sigmoide, polipectomia”: Adenoma tubular com displasia de baixo grau."
+    },
+    "classificacao": {
+        "cid": "K35"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "0899/23",
+        "assinatura": {
+        "medico": "Drª Mariana Lêdo",
+        "crm": "26.397"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "ILZA BENTO DE SANTANA",
+        "sexo": "Feminino",
+        "idade": 51,
+        "prontuario": "567198"
+        },
+        "literal": {
+        "nome": "ILZA BENTO DE SANTANA",
+        "idade": "51 anos",
+        "prontuario": "567198",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Colonoscopia",
+        "data_laudo": "2023-03-21",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Colonoscopia",
+        "medico_solicitante": "Drº Juliano Martins de Lima",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 21/03/23"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 2,
+        "aspecto": "Fragmentos teciduais firmes, amarelados",
+        "dimensao_maior_cm": "0.4"
+        },
+        "literal": "Em formalina, recebemos dois fragmentos teciduais, firmes, amarelados, o maior medindo 0,4 cm de diâmetro."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Cólon",
+        "diagnostico": "Adenoma túbulo-viloso",
+        "grau_displasia": "Baixo grau"
+        },
+        "literal": "“Colonoscopia”: Adenoma túbulo-viloso com displasia de baixo grau (displasia leve)."
+    },
+    "classificacao": {
+        "cid": "D12"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "1112/23",
+        "assinatura": {
+        "medico": "Drª Sofia Santos Tenório",
+        "crm": "26.397"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "SUZANA RAIMUNDA DOS SANTOS",
+        "sexo": "Feminino",
+        "idade": 55,
+        "prontuario": "8684131"
+        },
+        "literal": {
+        "nome": "SUZANA RAIMUNDA DOS SANTOS",
+        "idade": "55 anos",
+        "prontuario": "8684131",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Pólipo de reto",
+        "data_laudo": "2023-05-15",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Pólipo de Reto",
+        "medico_solicitante": "Joyce Cavalcanti",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 15/05/2023"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 1,
+        "aspecto": "Fragmento tecidual irregular, elástico",
+        "dimensao_maior_cm": "0.4"
+        },
+        "literal": "Um fragmento tecidual, irregular, elástico, medindo 0,4 x 0,2 x 0,2 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Reto",
+        "diagnostico": "Pólipo hiperplásico",
+        "grau_displasia": "Sem displasia"
+        },
+        "literal": "Produto de polipectomia de reto. Pólipo hiperplásico."
+    },
+    "classificacao": {
+        "cid": "K63.8"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "2152/23",
+        "assinatura": {
+        "medico": "Dra. Larissa Francesca",
+        "crm": "23.067"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "MARIA JOSÉ DA SILVA SANTOS",
+        "sexo": "Feminino",
+        "idade": 74,
+        "prontuario": "8740969"
+        },
+        "literal": {
+        "nome": "MARIA JOSÉ DA SILVA SANTOS",
+        "idade": "74 anos",
+        "prontuario": "8740969",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Colonoscopia",
+        "data_laudo": "2023-03-21",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Colonoscopia",
+        "medico_solicitante": "Drº Mauricio José de Matos",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 21/03/23"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 1,
+        "aspecto": "Fragmento tecidual irregular, elástico, pardacento",
+        "dimensao_maior_cm": "1.0"
+        },
+        "literal": "Em formalina, recebemos fragmento tecidual irregular, elástico, pardacento medindo 1,0 x 0,6 x 0,3 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Cólon descendente",
+        "diagnostico": "Adenoma túbulo-viloso",
+        "grau_displasia": "Não graduável"
+        },
+        "literal": "Cólon descendente, polipectomia. Adenoma túbulo-viloso com displasia não graduável. NOTA: Amostra intensamente prejudicada por artefatos pré-analíticos."
+    },
+    "classificacao": {
+        "cid": "K63.5"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "0820/23",
+        "assinatura": {
+        "medico": "Drª Mariana Lêdo",
+        "crm": "26.397"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "LUCIDALVA PINTO SIMÕES",
+        "sexo": "Feminino",
+        "idade": 68,
+        "prontuario": "8714567"
+        },
+        "literal": {
+        "nome": "LUCIDALVA PINTO SIMÕES",
+        "idade": "68",
+        "prontuario": "8714567",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Colonoscopia",
+        "data_laudo": "2023-02-03",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Colonoscopia",
+        "medico_solicitante": "Drª Marina Novaes Ferreira",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 03/02/23"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 1,
+        "aspecto": "Fragmento pardacento",
+        "dimensao_maior_cm": "0.3"
+        },
+        "literal": "Em formalina, recebemos fragmento pardacento medindo 0,3 x 0,2 x 0,2 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Cólon descendente",
+        "diagnostico": "Pólipo hiperplásico com área de erosão na superfície",
+        "grau_displasia": "Ausente"
+        },
+        "literal": "Cólon descendente, polipectomia. Pólipo hiperplásico com área de erosão na superfície."
+    },
+    "classificacao": {
+        "cid": "K62.1"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "0363/23",
+        "assinatura": {
+        "medico": "Drª Mariana Lêdo",
+        "crm": "26.397"
+        }
+    }
     }
 ]
