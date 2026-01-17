@@ -735,3 +735,15 @@ fetch('./dadospacientes.json')
       statusEl.textContent = `Erro ao carregar o dataset: ${error.message}`;
     }
   });
+
+
+
+function syncNavbarHeight() {
+  const nav = document.querySelector('.navbar');
+  if (!nav) return;
+  const h = nav.getBoundingClientRect().height;
+  document.documentElement.style.setProperty('--navbar-h', `${h}px`);
+}
+
+window.addEventListener('load', syncNavbarHeight);
+window.addEventListener('resize', syncNavbarHeight);

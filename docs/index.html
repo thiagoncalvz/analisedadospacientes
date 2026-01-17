@@ -13,13 +13,15 @@
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body class="bg-light">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
     <div class="container">
-      <span class="navbar-brand fw-semibold">Análise de Dados de Pacientes</span>
+      <span class="navbar-brand fw-semibold brand-wrap">
+        Análise de Dados de Pacientes
+      </span>
     </div>
   </nav>
 
-  <main class="container py-4">
+  <main class="container py-5 main-scroll">
     <!-- <div id="status" class="alert alert-info">Carregando dados do dataset...</div> -->
 
     <section class="row g-3 mb-4" id="summary" hidden>
@@ -177,14 +179,20 @@
     <section id="geral" class="mb-5" hidden>
       <div class="card shadow-sm">
         <div class="card-header bg-white">
-          <div class="d-flex flex-wrap align-items-center justify-content-between gap-2">
+          <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-2">
             <div>
               <h5 class="mb-1">Tabela Geral</h5>
               <small class="text-muted">Todos os laudos registrados no JSON.</small>
             </div>
-            <div class="input-group w-auto">
+
+            <div class="input-group w-100 w-md-auto search-group">
               <span class="input-group-text">Buscar</span>
-              <input type="search" class="form-control" id="tableSearch" placeholder="Digite nome, CID, diagnóstico..." />
+              <input
+                type="search"
+                class="form-control"
+                id="tableSearch"
+                placeholder="Digite nome, CID, diagnóstico..."
+              />
             </div>
           </div>
         </div>

@@ -1,11 +1,107 @@
-body {
+/* =========================
+   Base: mobile-first
+========================= */
+html, body {
+  height: 100%;
+}
+
+:root{
+  --navbar-h: 56px; /* altura padrão do navbar */
+}
+
+/* Sem scroll no body, scroll só no main */
+body{
   min-height: 100vh;
+  overflow: hidden;
 }
 
-.general-table-wrapper tbody + tbody {
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+/* Navbar */
+.brand-wrap{
+  white-space: normal;      /* deixa quebrar linha no mobile */
+  line-height: 1.1;
 }
 
-.general-table-wrapper .table-primary th {
-  font-size: 0.95rem;
+/* Main scrollável */
+.main-scroll{
+  margin-top: var(--navbar-h);
+  height: calc(100vh - var(--navbar-h));
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 24px;
+  padding-top: 4rem !important;
+}
+
+/* Evita “tabelas estourando” no mobile */
+.table-responsive{
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Ajustes gerais de cards no mobile */
+.card{
+  border-radius: 14px;
+}
+
+.card-header h5{
+  line-height: 1.2;
+}
+
+/* Busca: no mobile ocupa tudo */
+.search-group{
+  max-width: 520px; /* no desktop não fica gigante */
+}
+
+/* Tabela geral: wrapper com altura boa */
+.general-table-wrapper{
+  max-height: 60vh;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Paginação quebrar bem no mobile */
+.pagination{
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+/* =========================
+   Breakpoints
+========================= */
+
+/* Mobile pequeno */
+@media (max-width: 576px){
+  :root{
+    --navbar-h: 64px; /* dá uma folga se o brand quebrar linha */
+  }
+
+  main.container{
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  /* Cards de resumo: números menores no mobile */
+  #summary .display-6{
+    font-size: 1.75rem;
+  }
+
+  /* Blocos da idade: compactar um pouco */
+  #idade .border.rounded.p-3{
+    padding: 12px !important;
+  }
+
+  /* Tabelas: texto um pouco menor */
+  table{
+    font-size: 0.92rem;
+  }
+}
+
+/* Tablet e acima */
+@media (min-width: 768px){
+  :root{
+    --navbar-h: 56px;
+  }
+
+  /* Busca volta a ser “tamanho natural” */
+  .search-group{
+    width: auto;
+  }
 }
