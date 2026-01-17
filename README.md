@@ -193,3 +193,97 @@ O Bootstrap 5 é carregado via Vite, com SCSS em `resources/scss/app.scss` e ent
 ## Licença
 
 MIT.
+
+
+
+
+
+Essas são algumas informações de uma sistema de analise de dados de pacientes;
+Quero que extraia as informações desta imagem de laudo de acordo com as informações do sistema em um objeto json;
+Siga sempre em todos os laudo o formato padrão do objeto json;
+
+Alguns pacientes tem mais de uma peça histológica;
+
+Quero que o sistema tenha:
+
+1 - Uma tabela geral com os dados de todos os pacientes;
+2 - Uma segunda tabela de sexo que defina as porcentagens das polipectomias no sexo feminino e no sexo masculino;
+3 - Uma terceira tabela de idade dos pacientes que calcule a idade média, mediana e os extremos de idade de todos os pacientes ( O paciente mais jovem e o paciente mais velho identificado na tabela);
+4 - Uma quarta tabela de tipo histológico contendo todos os pólipos, os inflamatórios e adenocarcinoma, pois alguns pólipos são câncer;
+5 - Uma quinta tabela de Graus de Atipia, se é alto, médio ou baixo que é aquele moderadamente diferenciado, pouco diferenciado, displasia de alto grau, de baixo grau ou moderada;
+
+Observação:
+
+1 - O tamanho do Pólipo nem sempre tá escrito como Pólipo, às vezes vem escrito como Peça, Polipectomia, Mucosectomia, "Foram recebidas peças com as seguintes característica", Biópsia ( exemplo: Biópsia: 03 mm x 04 mm x 08 mm; nesse caso se usa o 08 mm, sempre o maior eixo);
+
+2 - É dividido em três categorias:
+
+2.1 - até 5 mm;
+2.2 - de 5 mm a 9 mm;
+2.3 - 10 mm ou mais;
+
+Quando um laudo for identificado como duplicado (mesmo paciente + prontuário + número da peça) NÃO será gerado JSON;
+
+A partir de agora, cada laudo terá DUAS CAMADAS no JSON:
+
+1 - Camada estruturada (normalizada) → usada para cálculos, tabelas e estatísticas;
+2 - Camada literal (bruta) → texto exatamente como consta no laudo, sem interpretação;
+
+Formato padrão do objeto json:
+
+{
+  "paciente": {
+    "estruturado": {
+      "nome": "",
+      "sexo": "",
+      "idade": 0,
+      "prontuario": ""
+    },
+    "literal": {
+      "nome": "",
+      "idade": "",
+      "prontuario": "",
+      "enfermaria": ""
+    }
+  },
+  "exame": {
+    "estruturado": {
+      "tipo": "",
+      "material": "",
+      "data_laudo": "",
+      "instituicao": ""
+    },
+    "literal": {
+      "material": "",
+      "medico_solicitante": "",
+      "local": "",
+      "data": ""
+    }
+  },
+  "macroscopia": {
+    "estruturado": {
+      "fragmentos": 0,
+      "aspecto": "",
+      "dimensao_maior_cm": ""
+    },
+    "literal": ""
+  },
+  "microscopia_conclusao": {
+    "estruturado": {
+      "localizacao": "",
+      "diagnostico": "",
+      "grau_displasia": ""
+    },
+    "literal": ""
+  },
+  "classificacao": {
+    "cid": ""
+  },
+  "laudo_literal_completo": {
+    "numero_peca": "",
+    "assinatura": {
+      "medico": "",
+      "crm": ""
+    }
+  }
+},
