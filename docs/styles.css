@@ -28,7 +28,7 @@ body{
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   padding-bottom: 24px;
-  padding-top: 4rem !important;
+  padding-top: 6rem !important;
 }
 
 /* Evita “tabelas estourando” no mobile */
