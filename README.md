@@ -1,4 +1,4 @@
-# Análise de Dados de Pacientes (Laravel 11 + Blade + Bootstrap 5)
+# Análise de Dados de Pacientes (Laravel 11 + Blade + Bootstrap 5) aaa
 
 Sistema web para análise epidemiológica/histopatológica de laudos armazenados **exclusivamente** em JSON (`storage/app/dadospacientes.json`). O dashboard normaliza os dados em memória (Collections), permite visualizar tabelas e estatísticas e inclui parser robusto de tamanho de pólipos.
 
