@@ -6162,5 +6162,117 @@
         "crm": "26397"
         }
     }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "MARIA DA CONCEIÇÃO ALEXANDRE DA SILVA",
+        "sexo": "Feminino",
+        "idade": 49,
+        "prontuario": "8578729"
+        },
+        "literal": {
+        "nome": "MARIA DA CONCEIÇÃO ALEXANDRE DA SILVA",
+        "idade": "49 anos",
+        "prontuario": "8578729",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Pólipo de transverso",
+        "data_laudo": "2024-06-12",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "PÓLIPO DE TRANSVERSO",
+        "medico_solicitante": "Alyjah Karlla",
+        "local": "Recife",
+        "data": "12/06/2024"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 1,
+        "aspecto": "Tecidual irregular, elástico, pardacento",
+        "dimensao_maior_cm": "0,4 x 0,2 x 0,2"
+        },
+        "literal": "Em formalina, um fragmento tecidual, irregular, elástico, pardacento, medindo 0,4 x 0,2 x 0,2 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Transverso",
+        "diagnostico": "Adenoma tubular",
+        "grau_displasia": "Baixo grau"
+        },
+        "literal": "PÓLIPO DE TRANSVERSO. Adenoma tubular de baixo grau, com displasia leve e focal."
+    },
+    "classificacao": {
+        "cid": "K63.5"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "2079/24",
+        "assinatura": {
+        "medico": "Dr. Sérgio Ricardo Soares de Moura",
+        "crm": "18835"
+        }
+    }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "MARIA DAS DORES MENDES DA SILVA",
+        "sexo": "Feminino",
+        "idade": 53,
+        "prontuario": "8597534"
+        },
+        "literal": {
+        "nome": "MARIA DAS DORES MENDES DA SILVA",
+        "idade": "53 anos",
+        "prontuario": "8597534",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Pólipo pediculado de sigmoide",
+        "data_laudo": "2024-06-12",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "PÓLIPO PEDICULADO DE SIGMOIDE",
+        "medico_solicitante": "Ludmila Godinho",
+        "local": "Recife",
+        "data": "12/06/2024"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 1,
+        "aspecto": "Tecidual irregular, elástico, pardacento",
+        "dimensao_maior_cm": "0,5 x 0,2 x 0,2"
+        },
+        "literal": "Em formalina, um fragmento tecidual, irregular, elástico, pardacento, medindo 0,5 x 0,2 x 0,2 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Sigmoide",
+        "diagnostico": "Adenoma túbulo-viloso",
+        "grau_displasia": "Baixo grau (com áreas suspeitas de alto grau)"
+        },
+        "literal": "PÓLIPO PEDICULADO DE SIGMOIDE. Adenoma túbulo-viloso de baixo grau, com displasia moderada, havendo áreas com possível displasia de alto grau, cuja avaliação foi prejudicada por artefatos de coagulação térmica (vide nota). Base do pólipo livre."
+    },
+    "classificacao": {
+        "cid": "K63.5"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "2080/24",
+        "assinatura": {
+        "medico": "Dr. Sérgio Ricardo Soares de Moura",
+        "crm": "18835"
+        }
+    }
     }
 ]
