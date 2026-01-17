@@ -10026,5 +10026,61 @@
         "crm": "26.397"
         }
     }
+    },
+    {
+    "paciente": {
+        "estruturado": {
+        "nome": "LUCIDALVA PINTO SIMÕES",
+        "sexo": "Feminino",
+        "idade": 68,
+        "prontuario": "8714567"
+        },
+        "literal": {
+        "nome": "LUCIDALVA PINTO SIMÕES",
+        "idade": "68",
+        "prontuario": "8714567",
+        "enfermaria": "Pasta"
+        }
+    },
+    "exame": {
+        "estruturado": {
+        "tipo": "Laudo histopatológico",
+        "material": "Colonoscopia",
+        "data_laudo": "2023-02-03",
+        "instituicao": "Hospital Barão de Lucena"
+        },
+        "literal": {
+        "material": "Colonoscopia",
+        "medico_solicitante": "Drª Marina Novaes Ferreira",
+        "local": "Hospital Barão de Lucena",
+        "data": "Recife, 03/02/23"
+        }
+    },
+    "macroscopia": {
+        "estruturado": {
+        "fragmentos": 1,
+        "aspecto": "Fragmento pardacento",
+        "dimensao_maior_cm": "0.3"
+        },
+        "literal": "Em formalina, recebemos fragmento pardacento medindo 0,3 x 0,2 x 0,2 cm."
+    },
+    "microscopia_conclusao": {
+        "estruturado": {
+        "localizacao": "Cólon descendente",
+        "diagnostico": "Pólipo hiperplásico com área de erosão na superfície",
+        "grau_displasia": "Ausente"
+        },
+        "literal": "Cólon descendente, polipectomia. Pólipo hiperplásico com área de erosão na superfície."
+    },
+    "classificacao": {
+        "cid": "K62.1"
+    },
+    "laudo_literal_completo": {
+        "numero_peca": "0363/23",
+        "assinatura": {
+        "medico": "Drª Mariana Lêdo",
+        "crm": "26.397"
+        }
+    }
     }
 ]
