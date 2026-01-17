@@ -62,7 +62,7 @@ storage/
 O GitHub Pages não executa PHP/Laravel. Para publicar o dashboard como site estático, há um build pronto em `docs/` que carrega o dataset e reproduz as tabelas diretamente no navegador.
 
 1. Garanta que o arquivo `docs/dadospacientes.json` esteja atualizado com base em `storage/app/dadospacientes.json`.
-2. No GitHub, configure **Settings → Pages** para servir a partir de `docs/`.
+2. No GitHub, configure **Settings → Pages** para servir a partir de `docs/` (recomendado). Caso esteja apontando para o root do repositório, o `index.html` da raiz redireciona para `docs/`.
 3. Acesse a URL do GitHub Pages (ex.: `https://<usuario>.github.io/<repositorio>/`).
 
 ## Dataset (JSON)
