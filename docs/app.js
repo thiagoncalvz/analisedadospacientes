@@ -284,6 +284,125 @@ const uniquePatients = (items) => {
   return Array.from(unique.values());
 };
 
+const isEndoscopy = (item) => {
+  const candidates = [
+    item?.exame?.estruturado?.tipo,
+    item?.exame?.literal?.tipo,
+    item?.laudo_literal_completo?.tipo,
+    item?.material,
+  ];
+
+  return candidates.some((value) => {
+    if (typeof value !== 'string' || value === '') {
+      return false;
+    }
+    return normalizeText(value).includes('endoscop');
+  });
+};
+
+const locationStats = (items) => {
+  const counts = {
+    Ceco: 0,
+    Ascendente: 0,
+    Transverso: 0,
+    Descendente: 0,
+    Sigmoide: 0,
+    Retossigmoide: 0,
+    Reto: 0,
+    'Não informado': 0,
+  };
+
+  const extractLocations = (item) => {
+    const texts = [];
+    if (typeof item?.localizacao === 'string' && item.localizacao.trim()) {
+      texts.push(item.localizacao);
+    }
+    normalizePecas(item).forEach((peca) => {
+      const origem = peca?.estruturado?.descricao_origem;
+      if (typeof origem === 'string' && origem.trim()) {
+        texts.push(origem);
+      }
+    });
+
+    const locations = [];
+    texts.forEach((text) => {
+      const normalized = normalizeText(text);
+      const matchedRetossigmoide = /retossigmoid|reto\s*sigmoid|retosigmoid/iu.test(normalized);
+      if (matchedRetossigmoide) {
+        locations.push('Retossigmoide');
+      }
+      if (!matchedRetossigmoide && /sigmoid/iu.test(normalized)) {
+        locations.push('Sigmoide');
+      }
+      if (!matchedRetossigmoide && /\breto\b|retal/iu.test(normalized)) {
+        locations.push('Reto');
+      }
+      if (/\bceco\b|cecal/iu.test(normalized)) {
+        locations.push('Ceco');
+      }
+      if (/ascendent/iu.test(normalized)) {
+        locations.push('Ascendente');
+      }
+      if (/transvers/iu.test(normalized)) {
+        locations.push('Transverso');
+      }
+      if (/descendent/iu.test(normalized)) {
+        locations.push('Descendente');
+      }
+    });
+
+    const uniqueLocations = [...new Set(locations)];
+    return uniqueLocations.length ? uniqueLocations : ['Não informado'];
+  };
+
+  items.forEach((item) => {
+    extractLocations(item).forEach((location) => {
+      counts[location] = (counts[location] ?? 0) + 1;
+    });
+  });
+
+  const total = Object.values(counts).reduce((sum, value) => sum + value, 0);
+  const percentages = Object.fromEntries(
+    Object.entries(counts).map(([label, count]) => [label, total > 0 ? Math.round((count / total) * 1000) / 10 : 0])
+  );
+
+  return {
+    counts,
+    percentages,
+    total,
+  };
+};
+
+const polypCountStats = (items) => {
+  const counts = {
+    'Até 1 pólipo': 0,
+    'Até 2 pólipos': 0,
+    '3 ou mais pólipos': 0,
+  };
+
+  items.forEach((item) => {
+    const polypCount = normalizePecas(item).length;
+    if (polypCount <= 1) {
+      counts['Até 1 pólipo'] += 1;
+    } else if (polypCount <= 2) {
+      counts['Até 2 pólipos'] += 1;
+    } else {
+      counts['3 ou mais pólipos'] += 1;
+    }
+  });
+
+  const total = Object.values(counts).reduce((sum, value) => sum + value, 0);
+  const percentages = Object.fromEntries(
+    Object.entries(counts).map(([label, count]) => [label, total > 0 ? Math.round((count / total) * 1000) / 10 : 0])
+  );
+
+  return {
+    counts,
+    percentages,
+    total,
+  };
+};
+
 const statsBySex = (items) => {
   const counts = {
     Feminino: 0,
@@ -615,22 +734,29 @@ const showSection = (id) => {
 };
 
 const updateDashboard = (items) => {
+  const endoscopyItems = items.filter((item) => isEndoscopy(item));
+  const validItems = items.filter((item) => !isEndoscopy(item));
+
   const summary = document.getElementById('summary');
   if (summary) {
     summary.hidden = false;
   }
 
   const totalItemsEl = document.getElementById('totalItems');
+  const endoscopyItemsEl = document.getElementById('endoscopyItems');
+  const validItemsEl = document.getElementById('validItems');
   const uniquePatientsEl = document.getElementById('uniquePatients');
   const polypSizedEl = document.getElementById('polypSized');
 
   if (totalItemsEl) totalItemsEl.textContent = items.length;
-  if (uniquePatientsEl) uniquePatientsEl.textContent = uniquePatients(items).length;
+  if (endoscopyItemsEl) endoscopyItemsEl.textContent = endoscopyItems.length;
+  if (validItemsEl) validItemsEl.textContent = validItems.length;
+  if (uniquePatientsEl) uniquePatientsEl.textContent = uniquePatients(validItems).length;
 
-  const polypSizedCount = items.filter((item) => item.polyp_size?.maior_eixo_mm !== null).length;
+  const polypSizedCount = validItems.filter((item) => item.polyp_size?.maior_eixo_mm !== null).length;
   if (polypSizedEl) polypSizedEl.textContent = polypSizedCount;
 
-  const sexStats = statsBySex(items);
+  const sexStats = statsBySex(validItems);
   const sexTableBody = document.querySelector('#sexTable tbody');
   if (sexTableBody) {
     sexTableBody.innerHTML = Object.entries(sexStats.counts)
@@ -647,7 +773,7 @@ const updateDashboard = (items) => {
     sexAlert.innerHTML = sexStats.missing ? '<div class="alert alert-warning">O dataset não possui sexo informado em todos os registros.</div>' : '';
   }
 
-  const ageStatsData = ageStats(items);
+  const ageStatsData = ageStats(validItems);
   const ageAverage = document.getElementById('ageAverage');
   const ageMedian = document.getElementById('ageMedian');
   const ageYoungestName = document.getElementById('ageYoungestName');
@@ -664,7 +790,7 @@ const updateDashboard = (items) => {
   if (ageOldestAge) ageOldestAge.textContent = ageStatsData.oldest ? `${ageStatsData.oldest.idade} anos` : '-';
   if (ageCount) ageCount.textContent = ageStatsData.count;
 
-  const histologyStatsData = histologyStats(items);
+  const histologyStatsData = histologyStats(validItems);
   const histologyTableBody = document.querySelector('#histologyTable tbody');
   if (histologyTableBody) {
     histologyTableBody.innerHTML = Object.entries(histologyStatsData.counts)
@@ -679,7 +805,7 @@ const updateDashboard = (items) => {
     histologySummary.textContent = `Percentuais sobre total geral (${histologyStatsData.total}) e sobre registros com lesões/pólipos (${histologyStatsData.lesion_total}).`;
   }
 
-  const atypiaStatsData = atypiaStats(items);
+  const atypiaStatsData = atypiaStats(validItems);
   const atypiaTableBody = document.querySelector('#atypiaTable tbody');
   if (atypiaTableBody) {
     atypiaTableBody.innerHTML = Object.entries(atypiaStatsData.counts)
@@ -694,7 +820,37 @@ const updateDashboard = (items) => {
     atypiaTotal.textContent = atypiaStatsData.total;
   }
 
-  normalizedItems = items.map((item) => ({
+  const locationStatsData = locationStats(validItems);
+  const locationTableBody = document.querySelector('#locationTable tbody');
+  if (locationTableBody) {
+    locationTableBody.innerHTML = Object.entries(locationStatsData.counts)
+      .map(
+        ([label, count]) =>
+          `<tr><td>${label}</td><td>${count}</td><td>${locationStatsData.percentages[label]}%</td></tr>`
+      )
+      .join('');
+  }
+  const locationTotal = document.getElementById('locationTotal');
+  if (locationTotal) {
+    locationTotal.textContent = locationStatsData.total;
+  }
+
+  const polypCountStatsData = polypCountStats(validItems);
+  const polypCountTableBody = document.querySelector('#polypCountTable tbody');
+  if (polypCountTableBody) {
+    polypCountTableBody.innerHTML = Object.entries(polypCountStatsData.counts)
+      .map(
+        ([label, count]) =>
+          `<tr><td>${label}</td><td>${count}</td><td>${polypCountStatsData.percentages[label]}%</td></tr>`
+      )
+      .join('');
+  }
+  const polypCountTotal = document.getElementById('polypCountTotal');
+  if (polypCountTotal) {
+    polypCountTotal.textContent = polypCountStatsData.total;
+  }
+
+  normalizedItems = validItems.map((item) => ({
     ...item,
     searchText: normalizeText(joinTextFields(item)),
   }));
@@ -702,7 +858,7 @@ const updateDashboard = (items) => {
   renderGeneralTable(1);
   setupSearch();
 
-  ['sexo', 'idade', 'histologia', 'atipia', 'geral'].forEach(showSection);
+  ['sexo', 'idade', 'histologia', 'atipia', 'localizacao', 'numero-polipos', 'geral'].forEach(showSection);
 };
 
 const statusEl = document.getElementById('status');
