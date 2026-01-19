@@ -49,6 +49,11 @@ body{
   max-width: 520px; /* no desktop não fica gigante */
 }
 
+#summary > .col-md-4:nth-child(n + 4) {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
 /* Tabela geral: wrapper com altura boa */
 .general-table-wrapper{
   max-height: 60vh;
@@ -85,6 +90,10 @@ body{
   /* Blocos da idade: compactar um pouco */
   #idade .border.rounded.p-3{
     padding: 12px !important;
+  }
+
+  #summary > .col-md-4 {
+    width: 100%;
   }
 
   /* Tabelas: texto um pouco menor */

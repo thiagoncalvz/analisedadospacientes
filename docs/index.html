@@ -36,6 +36,22 @@
       <div class="col-md-4">
         <div class="card shadow-sm h-100">
           <div class="card-body">
+            <h6 class="text-muted">Laudos de endoscopia</h6>
+            <div class="display-6 fw-semibold" id="endoscopyItems">0</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <h6 class="text-muted">Laudos válidos (sem endoscopia)</h6>
+            <div class="display-6 fw-semibold" id="validItems">0</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
             <h6 class="text-muted">Pacientes únicos</h6>
             <div class="display-6 fw-semibold" id="uniquePatients">0</div>
           </div>
@@ -167,6 +183,66 @@
                 <tr class="table-light">
                   <th>Total</th>
                   <th id="atypiaTotal">0</th>
+                  <th>100%</th>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="localizacao" class="mb-5" hidden>
+      <div class="card shadow-sm">
+        <div class="card-header bg-white">
+          <h5 class="mb-1">Tabela de Localização dos Pólipos</h5>
+          <small class="text-muted">Distribuição das localizações informadas nos laudos.</small>
+        </div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-bordered align-middle" id="locationTable">
+              <thead class="table-light">
+                <tr>
+                  <th>Localização</th>
+                  <th>Contagem</th>
+                  <th>Percentual</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+              <tfoot>
+                <tr class="table-light">
+                  <th>Total</th>
+                  <th id="locationTotal">0</th>
+                  <th>100%</th>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="numero-polipos" class="mb-5" hidden>
+      <div class="card shadow-sm">
+        <div class="card-header bg-white">
+          <h5 class="mb-1">Tabela de Número de Pólipos por Laudo</h5>
+          <small class="text-muted">Quantidade de pólipos identificados por registro.</small>
+        </div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-striped align-middle" id="polypCountTable">
+              <thead class="table-light">
+                <tr>
+                  <th>Categoria</th>
+                  <th>Contagem</th>
+                  <th>Percentual</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+              <tfoot>
+                <tr class="table-light">
+                  <th>Total</th>
+                  <th id="polypCountTotal">0</th>
                   <th>100%</th>
                 </tr>
               </tfoot>
