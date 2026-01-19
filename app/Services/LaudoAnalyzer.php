@@ -244,8 +244,10 @@ class LaudoAnalyzer
         ];
 
         foreach ($items as $item) {
-            $location = $this->classifyLocation($item);
-            $counts[$location] = ($counts[$location] ?? 0) + 1;
+            $locations = $this->extractLocations($item);
+            foreach ($locations as $location) {
+                $counts[$location] = ($counts[$location] ?? 0) + 1;
+            }
         }
 
         $total = array_sum($counts);
@@ -459,45 +461,58 @@ class LaudoAnalyzer
         return (bool) preg_match('/polip|polipectomia|mucosectomia|adenoma/iu', $text);
     }
 
-    private function classifyLocation(array $item): string
+    private function extractLocations(array $item): array
     {
-        $location = $item['localizacao'] ?? null;
+        $locations = [];
+        $texts = [];
 
-        if (!is_string($location) || trim($location) === '') {
-            return 'Não informado';
+        if (!empty($item['localizacao']) && is_string($item['localizacao'])) {
+            $texts[] = $item['localizacao'];
         }
 
-        $text = $this->normalizeText($location);
-
-        if (preg_match('/retossigmoid|reto\s*sigmoid|retosigmoid/iu', $text)) {
-            return 'Retossigmoide';
+        foreach ($this->normalizePecas($item) as $peca) {
+            $descricaoOrigem = $peca['estruturado']['descricao_origem'] ?? null;
+            if (is_string($descricaoOrigem) && trim($descricaoOrigem) !== '') {
+                $texts[] = $descricaoOrigem;
+            }
         }
 
-        if (preg_match('/sigmoid/iu', $text)) {
-            return 'Sigmoide';
+        foreach ($texts as $text) {
+            $normalized = $this->normalizeText($text);
+
+            $matchedRetossigmoide = preg_match('/retossigmoid|reto\s*sigmoid|retosigmoid/iu', $normalized) === 1;
+            if ($matchedRetossigmoide) {
+                $locations[] = 'Retossigmoide';
+            }
+
+            if (!$matchedRetossigmoide && preg_match('/sigmoid/iu', $normalized)) {
+                $locations[] = 'Sigmoide';
+            }
+
+            if (!$matchedRetossigmoide && preg_match('/\breto\b|retal/iu', $normalized)) {
+                $locations[] = 'Reto';
+            }
+
+            if (preg_match('/\bceco\b|cecal/iu', $normalized)) {
+                $locations[] = 'Ceco';
+            }
+
+            if (preg_match('/ascendent/iu', $normalized)) {
+                $locations[] = 'Ascendente';
+            }
+
+            if (preg_match('/transvers/iu', $normalized)) {
+                $locations[] = 'Transverso';
+            }
+
+            if (preg_match('/descendent/iu', $normalized)) {
+                $locations[] = 'Descendente';
+            }
         }
 
-        if (preg_match('/\breto\b|retal/iu', $text)) {
-            return 'Reto';
-        }
+        $locations = array_values(array_unique($locations));
 
-        if (preg_match('/\bceco\b|cecal/iu', $text)) {
-            return 'Ceco';
-        }
-
-        if (preg_match('/ascendent/iu', $text)) {
-            return 'Ascendente';
-        }
-
-        if (preg_match('/transvers/iu', $text)) {
-            return 'Transverso';
-        }
-
-        if (preg_match('/descendent/iu', $text)) {
-            return 'Descendente';
-        }
-
-        return 'Não informado';
+        return !empty($locations) ? $locations : ['Não informado'];
     }
 
     private function joinTextFields(array $item): string
