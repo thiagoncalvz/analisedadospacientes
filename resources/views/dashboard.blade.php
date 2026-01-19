@@ -182,6 +182,82 @@
         </div>
     </section>
 
+    <section id="localizacao" class="mb-5">
+        <div class="card shadow-sm">
+            <div class="card-header bg-white">
+                <h5 class="mb-1">Tabela de Localização dos Pólipos</h5>
+                <small class="text-muted">Distribuição das localizações informadas nos laudos.</small>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered align-middle">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Localização</th>
+                                <th>Contagem</th>
+                                <th>Percentual</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach ($locationStats['counts'] as $label => $count)
+                                <tr>
+                                    <td>{{ $label }}</td>
+                                    <td>{{ $count }}</td>
+                                    <td>{{ $locationStats['percentages'][$label] }}%</td>
+                                </tr>
+                            @endforeach
+                        </tbody>
+                        <tfoot>
+                            <tr class="table-light">
+                                <th>Total</th>
+                                <th>{{ $locationStats['total'] }}</th>
+                                <th>100%</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="numero-polipos" class="mb-5">
+        <div class="card shadow-sm">
+            <div class="card-header bg-white">
+                <h5 class="mb-1">Tabela de Número de Pólipos por Laudo</h5>
+                <small class="text-muted">Quantidade de pólipos identificados por registro.</small>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-striped align-middle">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Categoria</th>
+                                <th>Contagem</th>
+                                <th>Percentual</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach ($polypCountStats['counts'] as $label => $count)
+                                <tr>
+                                    <td>{{ $label }}</td>
+                                    <td>{{ $count }}</td>
+                                    <td>{{ $polypCountStats['percentages'][$label] }}%</td>
+                                </tr>
+                            @endforeach
+                        </tbody>
+                        <tfoot>
+                            <tr class="table-light">
+                                <th>Total</th>
+                                <th>{{ $polypCountStats['total'] }}</th>
+                                <th>100%</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="geral" class="mb-5">
         <div class="card shadow-sm">
             <div class="card-header bg-white">

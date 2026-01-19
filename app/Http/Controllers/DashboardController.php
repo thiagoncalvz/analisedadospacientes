@@ -42,6 +42,8 @@ class DashboardController extends Controller
         $sexStats = $analyzer->statsBySex($items);
         $histologyStats = $analyzer->histologyStats($items);
         $atypiaStats = $analyzer->atypiaStats($items);
+        $locationStats = $analyzer->locationStats($items);
+        $polypCountStats = $analyzer->polypCountStats($items);
 
         $polypSizedCount = $enriched->filter(fn ($item) => $item['polyp_size']['maior_eixo_mm'] !== null)->count();
 
@@ -54,6 +56,8 @@ class DashboardController extends Controller
             'sexStats' => $sexStats,
             'histologyStats' => $histologyStats,
             'atypiaStats' => $atypiaStats,
+            'locationStats' => $locationStats,
+            'polypCountStats' => $polypCountStats,
         ]);
     }
 }

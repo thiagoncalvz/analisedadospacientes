@@ -230,6 +230,70 @@ class LaudoAnalyzer
         ];
     }
 
+    public function locationStats(Collection $items): array
+    {
+        $counts = [
+            'Ceco' => 0,
+            'Ascendente' => 0,
+            'Transverso' => 0,
+            'Descendente' => 0,
+            'Sigmoide' => 0,
+            'Retossigmoide' => 0,
+            'Reto' => 0,
+            'Não informado' => 0,
+        ];
+
+        foreach ($items as $item) {
+            $location = $this->classifyLocation($item);
+            $counts[$location] = ($counts[$location] ?? 0) + 1;
+        }
+
+        $total = array_sum($counts);
+        $percentages = [];
+        foreach ($counts as $label => $count) {
+            $percentages[$label] = $total > 0 ? round(($count / $total) * 100, 1) : 0;
+        }
+
+        return [
+            'counts' => $counts,
+            'percentages' => $percentages,
+            'total' => $total,
+        ];
+    }
+
+    public function polypCountStats(Collection $items): array
+    {
+        $counts = [
+            'Até 1 pólipo' => 0,
+            'Até 2 pólipos' => 0,
+            '3 ou mais pólipos' => 0,
+        ];
+
+        foreach ($items as $item) {
+            $polypCount = count($this->normalizePecas($item));
+
+            if ($polypCount <= 1) {
+                $counts['Até 1 pólipo']++;
+            } elseif ($polypCount <= 2) {
+                $counts['Até 2 pólipos']++;
+            } else {
+                $counts['3 ou mais pólipos']++;
+            }
+        }
+
+        $total = array_sum($counts);
+        $percentages = [];
+        foreach ($counts as $label => $count) {
+            $percentages[$label] = $total > 0 ? round(($count / $total) * 100, 1) : 0;
+        }
+
+        return [
+            'counts' => $counts,
+            'percentages' => $percentages,
+            'total' => $total,
+        ];
+    }
+
     public function parsePolypSizeCategory(array $item): array
     {
         $structuredSizes = $this->extractStructuredPolypSizes($item);
@@ -393,6 +457,47 @@ class LaudoAnalyzer
         $text = $this->normalizeText($this->joinTextFields($item));
 
         return (bool) preg_match('/polip|polipectomia|mucosectomia|adenoma/iu', $text);
+    }
+
+    private function classifyLocation(array $item): string
+    {
+        $location = $item['localizacao'] ?? null;
+
+        if (!is_string($location) || trim($location) === '') {
+            return 'Não informado';
+        }
+
+        $text = $this->normalizeText($location);
+
+        if (preg_match('/retossigmoid|reto\s*sigmoid|retosigmoid/iu', $text)) {
+            return 'Retossigmoide';
+        }
+
+        if (preg_match('/sigmoid/iu', $text)) {
+            return 'Sigmoide';
+        }
+
+        if (preg_match('/\breto\b|retal/iu', $text)) {
+            return 'Reto';
+        }
+
+        if (preg_match('/\bceco\b|cecal/iu', $text)) {
+            return 'Ceco';
+        }
+
+        if (preg_match('/ascendent/iu', $text)) {
+            return 'Ascendente';
+        }
+
+        if (preg_match('/transvers/iu', $text)) {
+            return 'Transverso';
+        }
+
+        if (preg_match('/descendent/iu', $text)) {
+            return 'Descendente';
+        }
+
+        return 'Não informado';
     }
 
     private function joinTextFields(array $item): string
