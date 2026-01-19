@@ -287,3 +287,186 @@ Formato padrão do objeto json:
     }
   }
 },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+========================== PROMPT CODEX PARA CRIAR O SISTEMA ==========================
+
+Você é o Codex. Crie um sistema completo em Laravel 11 + Blade usando Bootstrap 5 via Vite para analisar laudos de pacientes armazenados SOMENTE em um arquivo JSON (sem banco SQL). O arquivo JSON é editado manualmente e fica em: storage/app/dadospacientes.json.
+
+OBJETIVO
+- Ler o JSON e gerar dashboards/tabelas de análise epidemiológica/histopatológica.
+- Alguns pacientes podem ter mais de uma peça histológica (múltiplos laudos/entradas no JSON) e alguns laudos podem conter múltiplos diagnósticos (campo "diagnosticos": array), além do campo "diagnostico": string.
+- O sistema deve normalizar os dados em memória (Collections) e produzir tabelas e estatísticas.
+
+STACK E REQUISITOS
+- Laravel 11
+- Blade
+- Bootstrap 5 com Vite (SCSS opcional)
+- Rotas web somente (sem API obrigatória)
+- Sem migrations e sem banco de dados
+- Leitura do JSON via Storage facade
+- Painel principal em /dashboard
+- Layout com navbar, container, cards e tabelas responsivas
+
+FORMATO DO JSON (baseado no arquivo de exemplo)
+Cada item do array representa UM REGISTRO DE LAUDO, com chaves possíveis:
+- paciente: { nome, idade, prontuario }
+- laudo: { peca, data, cid }
+- material: string (às vezes descreve pólipo/biopsia/peca etc.)
+- localizacao: string (ex.: "Cólon descendente", "reto", "sigmoide/reto", etc.)
+- diagnostico: string (opcional)
+- diagnosticos: array de strings (opcional)
+- atipia: string (opcional) (ex.: "Ausente")
+- displasia: string (opcional) (ex.: "Leve", "Moderada", "Leve e focal", "displasia de baixo grau"...)
+- outros campos opcionais (helicobacter_pylori, margens etc.)
+
+PÁGINAS/TELAS (5 blocos conforme solicitado)
+1) Tabela Geral (Todos os pacientes/laudos)
+- Tabela com colunas:
+  - Prontuário
+  - Nome
+  - Idade
+  - Sexo (se existir no JSON; se não existir, mostrar "Não informado")
+  - Peça (laudo.peca)
+  - Data do laudo
+  - CID
+  - Material
+  - Localização
+  - Diagnóstico(s) (se "diagnosticos" existir, listar em bullets; senão usar "diagnostico")
+  - Atipia/Displasia (exibir o que existir)
+  - Classificação Histológica (resultado do parser, ver regras)
+  - Grau de Atipia (resultado do parser, ver regras)
+  - Categoria de Tamanho do Pólipo (resultado do parser, ver regras)
+- Suporte a busca (client-side simples com JS) e paginação simples (server-side opcional usando LengthAwarePaginator manual).
+
+2) Tabela por Sexo (percentuais de polipectomias)
+- Objetivo: percentuais de polipectomias em Feminino vs Masculino.
+- Regra: contar PROCEDIMENTOS relacionados a pólipo (polipectomia/mucosectomia/pólipo/peça/biopsia quando for de pólipo) por sexo.
+- Se o JSON não tiver sexo, a tabela deve aparecer mas com "Não informado" e alertar no topo que sexo não está no dataset.
+
+3) Tabela de Idade (média, mediana e extremos)
+- Calcular:
+  - média de idades
+  - mediana de idades
+  - menor idade + nome do paciente (mais jovem)
+  - maior idade + nome do paciente (mais velho)
+- Considerar a idade em cada registro; se um mesmo paciente aparecer várias vezes, consolidar por prontuário (se existir) ou por nome: usar a primeira idade encontrada para aquele paciente e ignorar duplicadas para estatística de pacientes únicos.
+- Também exibir N total de pacientes únicos.
+
+4) Tabela de Tipo Histológico
+- Classificar cada registro em uma das classes:
+  A) PÓLIPO (benigno/neoplásico sem carcinoma)
+  B) INFLAMATÓRIO / NÃO NEOPLÁSICO (ex.: mucosa com infiltrado, gastrite, tecido de granulação, hiperplásico etc.)
+  C) ADENOCARCINOMA / CÂNCER (qualquer menção a adenocarcinoma/carcinoma/neoplasia maligna)
+- Exibir contagens e percentuais (sobre total de registros relacionados a lesões/pólipos e também sobre total geral; deixar claro no cabeçalho).
+- Regras de parsing devem olhar material + diagnostico(s) + cid quando útil.
+
+5) Tabela de Graus de Atipia
+- Objetivo: classificar grau de atipia/displasia em:
+  - Alto grau
+  - Moderado / Médio
+  - Baixo grau
+  - Ausente / Sem atipia
+  - Não informado
+- Regras:
+  - Se campo "atipia" existir e contiver "ausente" => Ausente/Sem atipia
+  - Se "displasia" ou texto do diagnóstico contiver:
+    * "alto grau", "pouco diferenciado", "displasia de alto grau" => Alto grau
+    * "moderada", "moderadamente diferenciado", "médio" => Moderado/Médio
+    * "leve", "baixo grau", "bem diferenciado", "displasia leve", "displasia de baixo grau" => Baixo grau
+  - Se não existir nada => Não informado
+
+OBSERVAÇÃO CRÍTICA: TAMANHO DO PÓLIPO (maior eixo)
+- O tamanho nem sempre vem como “Pólipo”. Pode vir como:
+  "Peça", "Polipectomia", "Mucosectomia", "Foram recebidas peças...", "Biópsia: 03 mm x 04 mm x 08 mm"
+- Implementar um parser robusto para encontrar medidas em mm no texto de:
+  - material
+  - diagnostico/diagnosticos
+  - qualquer campo textual do item (varrer todas as strings do objeto)
+- Regras:
+  - Detectar padrões como:
+    * "8 mm"
+    * "08mm"
+    * "03 mm x 04 mm x 08 mm"
+    * "3x4x8mm"
+    * "3 mm X 4 mm X 8 mm"
+  - Extrair TODOS os números em mm e usar SEMPRE o MAIOR como "maior eixo" daquele registro.
+  - Se encontrar cm (ex.: 1,2 cm), converter para mm.
+- Categorias:
+  2.1 até 5 mm
+  2.2 de 5 a 9 mm
+  2.3 10 mm ou mais
+- Se não encontrar tamanho => "Não informado"
+
+ARQUITETURA
+- Criar um serviço: app/Services/LaudoJsonRepository.php
+  - method: all(): Collection
+  - lê Storage::json('dadospacientes.json') com fallback e validação
+- Criar um serviço: app/Services/LaudoAnalyzer.php
+  - methods:
+    - normalize(Collection $items): Collection (padroniza campos, garante arrays, etc.)
+    - uniquePatients(Collection $items): Collection
+    - statsBySex(Collection $items): array
+    - ageStats(Collection $items): array (media, mediana, min, max, contagem)
+    - histologyStats(Collection $items): array
+    - atypiaStats(Collection $items): array
+    - parsePolypSizeCategory(array $item): array { maior_eixo_mm|null, categoria }
+    - classifyHistology(array $item): string (POLIPO/INFLAMATORIO/CANCER/INDEFINIDO)
+    - classifyAtypia(array $item): string (ALTO/MEDIO/BAIXO/AUSENTE/NAO_INFORMADO)
+- As classificações devem ser baseadas em palavras-chave com regex case-insensitive e remoção de acentos quando útil.
+
+CONTROLLERS E ROTAS
+- routes/web.php:
+  - Route::get('/', redirect to /dashboard)
+  - Route::get('/dashboard', [DashboardController::class, 'index'])
+- app/Http/Controllers/DashboardController.php:
+  - carrega items do repo
+  - passa para o analyzer
+  - retorna view('dashboard', compact(...))
+
+VIEWS
+- resources/views/layouts/app.blade.php:
+  - incluir Bootstrap via Vite
+  - navbar com links âncora para as seções: Geral, Sexo, Idade, Histologia, Atipia
+- resources/views/dashboard.blade.php:
+  - mostrar 5 cards/seções
+  - tabelas com table-responsive
+  - badges para categorias (sem exagero)
+  - no topo: resumo rápido (N registros, N pacientes únicos, N pólipos com tamanho identificado etc.)
+
+VITE + BOOTSTRAP 5
+- Instalar bootstrap via npm e configurar resources/js/app.js e resources/scss/app.scss
+- Importar bootstrap e inicializar tooltips se quiser
+- Rodar build dev
+
+EXTRAS IMPORTANTES
+- Dataset pode conter campos ausentes: sempre usar null-safe e default "Não informado".
+- Consolidar múltiplos diagnósticos: se existir "diagnosticos" (array) usar; senão usar "diagnostico".
+- “Paciente com mais de uma peça”: tratar como múltiplos registros, mas permitir agrupar por prontuário/nome quando fizer estatística de pacientes únicos.
+
+ENTREGA
+- Forneça:
+  - Estrutura de pastas e arquivos criados
+  - Código completo dos principais arquivos (routes, controller, services, views, vite config)
+  - Instruções de execução (composer install, npm install, php artisan serve, npm run dev)
+  - Um exemplo de JSON esperado (baseado no arquivo real)
+  - Garantir que o sistema rode “do zero” sem banco.
+
+AGORA IMPLEMENTE TUDO.
