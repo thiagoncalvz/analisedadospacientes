@@ -230,6 +230,78 @@ class LaudoAnalyzer
         ];
     }
 
+    public function locationStats(Collection $items): array
+    {
+        $counts = [
+            'Ceco' => 0,
+            'Ascendente' => 0,
+            'Transverso' => 0,
+            'Descendente' => 0,
+            'Sigmoide' => 0,
+            'Retossigmoide' => 0,
+            'Reto' => 0,
+            'Não informado' => 0,
+        ];
+
+        foreach ($items as $item) {
+            $locations = $this->extractLocations($item);
+
+            if (empty($locations)) {
+                $counts['Não informado']++;
+                continue;
+            }
+
+            foreach ($locations as $location) {
+                $counts[$location] = ($counts[$location] ?? 0) + 1;
+            }
+        }
+
+        $total = array_sum($counts);
+        $percentages = [];
+        foreach ($counts as $label => $count) {
+            $percentages[$label] = $total > 0 ? round(($count / $total) * 100, 1) : 0;
+        }
+
+        return [
+            'counts' => $counts,
+            'percentages' => $percentages,
+            'total' => $total,
+        ];
+    }
+
+    public function polypCountStats(Collection $items): array
+    {
+        $counts = [
+            'Até 1 pólipo' => 0,
+            'Até 2 pólipos' => 0,
+            '3 ou mais pólipos' => 0,
+        ];
+
+        foreach ($items as $item) {
+            $polypCount = count($this->normalizePecas($item));
+
+            if ($polypCount <= 1) {
+                $counts['Até 1 pólipo']++;
+            } elseif ($polypCount <= 2) {
+                $counts['Até 2 pólipos']++;
+            } else {
+                $counts['3 ou mais pólipos']++;
+            }
+        }
+
+        $total = array_sum($counts);
+        $percentages = [];
+        foreach ($counts as $label => $count) {
+            $percentages[$label] = $total > 0 ? round(($count / $total) * 100, 1) : 0;
+        }
+
+        return [
+            'counts' => $counts,
+            'percentages' => $percentages,
+            'total' => $total,
+        ];
+    }
+
     public function parsePolypSizeCategory(array $item): array
     {
         $structuredSizes = $this->extractStructuredPolypSizes($item);
@@ -393,6 +465,80 @@ class LaudoAnalyzer
         $text = $this->normalizeText($this->joinTextFields($item));
 
         return (bool) preg_match('/polip|polipectomia|mucosectomia|adenoma/iu', $text);
+    }
+
+    private function extractLocations(array $item): array
+    {
+        $texts = $this->extractLocationTexts($item);
+        $locations = [];
+
+        foreach ($texts as $text) {
+            $locations = array_merge($locations, $this->locationsFromText($text));
+        }
+
+        $locations = array_values(array_unique($locations));
+
+        return $locations;
+    }
+
+    private function extractLocationTexts(array $item): array
+    {
+        $texts = [];
+
+        if (!empty($item['localizacao']) && is_string($item['localizacao'])) {
+            $texts[] = $item['localizacao'];
+        }
+
+        foreach ($this->normalizePecas($item) as $peca) {
+            $estruturado = $peca['estruturado'] ?? [];
+            $descricaoOrigem = $estruturado['descricao_origem'] ?? null;
+
+            if (is_string($descricaoOrigem) && trim($descricaoOrigem) !== '') {
+                $texts[] = $descricaoOrigem;
+            }
+        }
+
+        return $texts;
+    }
+
+    private function locationsFromText(string $text): array
+    {
+        $normalized = $this->normalizeText($text);
+        $locations = [];
+
+        if ($normalized === '') {
+            return $locations;
+        }
+
+        if (preg_match('/retossigmoid|reto\s*sigmoid|retosigmoid/iu', $normalized)) {
+            $locations[] = 'Retossigmoide';
+        }
+
+        if (preg_match('/sigmoid/iu', $normalized)) {
+            $locations[] = 'Sigmoide';
+        }
+
+        if (preg_match('/\breto\b|retal/iu', $normalized)) {
+            $locations[] = 'Reto';
+        }
+
+        if (preg_match('/\bceco\b|cecal/iu', $normalized)) {
+            $locations[] = 'Ceco';
+        }
+
+        if (preg_match('/ascendent/iu', $normalized)) {
+            $locations[] = 'Ascendente';
+        }
+
+        if (preg_match('/transvers/iu', $normalized)) {
+            $locations[] = 'Transverso';
+        }
+
+        if (preg_match('/descendent/iu', $normalized)) {
+            $locations[] = 'Descendente';
+        }
+
+        return $locations;
     }
 
     private function joinTextFields(array $item): string
