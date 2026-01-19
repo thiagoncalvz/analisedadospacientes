@@ -11,6 +11,22 @@
         <div class="col-md-4">
             <div class="card shadow-sm h-100">
                 <div class="card-body">
+                    <h6 class="text-muted">Laudos de endoscopia</h6>
+                    <div class="display-6 fw-semibold"><?php echo e($endoscopyItemsCount); ?></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card shadow-sm h-100">
+                <div class="card-body">
+                    <h6 class="text-muted">Laudos válidos (sem endoscopia)</h6>
+                    <div class="display-6 fw-semibold"><?php echo e($validItemsCount); ?></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card shadow-sm h-100">
+                <div class="card-body">
                     <h6 class="text-muted">Pacientes únicos</h6>
                     <div class="display-6 fw-semibold"><?php echo e($uniquePatientsCount); ?></div>
                 </div>

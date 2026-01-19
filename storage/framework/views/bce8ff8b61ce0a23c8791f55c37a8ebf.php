@@ -24,6 +24,8 @@
                     <li class="nav-item"><a class="nav-link" href="#idade">Idade</a></li>
                     <li class="nav-item"><a class="nav-link" href="#histologia">Histológica</a></li>
                     <li class="nav-item"><a class="nav-link" href="#atipia">Atipia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#localizacao">Localização</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#numero-polipos">Número de Pólipos</a></li>
                     <li class="nav-item"><a class="nav-link" href="#geral">Geral</a></li>
                 </ul>
             </div>
