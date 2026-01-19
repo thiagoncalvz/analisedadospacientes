@@ -73,6 +73,29 @@ class LaudoAnalyzer
         return collect(array_values($unique));
     }
 
+    public function isEndoscopy(array $item): bool
+    {
+        $candidates = [
+            data_get($item, 'exame.estruturado.tipo'),
+            data_get($item, 'exame.literal.tipo'),
+            data_get($item, 'laudo_literal_completo.tipo'),
+            data_get($item, 'material'),
+        ];
+
+        foreach ($candidates as $value) {
+            if (!is_string($value) || $value === '') {
+                continue;
+            }
+
+            $normalized = $this->normalizeText($value);
+            if (str_contains($normalized, 'endoscop')) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
     public function statsBySex(Collection $items): array
     {
         $counts = [

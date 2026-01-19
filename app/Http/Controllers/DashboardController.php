@@ -13,8 +13,10 @@ class DashboardController extends Controller
     public function index(Request $request, LaudoJsonRepository $repository, LaudoAnalyzer $analyzer): View
     {
         $items = $analyzer->normalize($repository->all());
+        $endoscopyItems = $items->filter(fn ($item) => $analyzer->isEndoscopy($item));
+        $validItems = $items->reject(fn ($item) => $analyzer->isEndoscopy($item));
 
-        $enriched = $items->map(function ($item) use ($analyzer) {
+        $enriched = $validItems->map(function ($item) use ($analyzer) {
             $size = $analyzer->parsePolypSizeCategory($item);
 
             return array_merge($item, [
@@ -37,19 +39,21 @@ class DashboardController extends Controller
             ]
         );
 
-        $uniquePatients = $analyzer->uniquePatients($items);
-        $ageStats = $analyzer->ageStats($items);
-        $sexStats = $analyzer->statsBySex($items);
-        $histologyStats = $analyzer->histologyStats($items);
-        $atypiaStats = $analyzer->atypiaStats($items);
-        $locationStats = $analyzer->locationStats($items);
-        $polypCountStats = $analyzer->polypCountStats($items);
+        $uniquePatients = $analyzer->uniquePatients($validItems);
+        $ageStats = $analyzer->ageStats($validItems);
+        $sexStats = $analyzer->statsBySex($validItems);
+        $histologyStats = $analyzer->histologyStats($validItems);
+        $atypiaStats = $analyzer->atypiaStats($validItems);
+        $locationStats = $analyzer->locationStats($validItems);
+        $polypCountStats = $analyzer->polypCountStats($validItems);
 
         $polypSizedCount = $enriched->filter(fn ($item) => $item['polyp_size']['maior_eixo_mm'] !== null)->count();
 
         return view('dashboard', [
             'items' => $paginated,
             'totalItems' => $items->count(),
+            'endoscopyItemsCount' => $endoscopyItems->count(),
+            'validItemsCount' => $validItems->count(),
             'uniquePatientsCount' => $uniquePatients->count(),
             'polypSizedCount' => $polypSizedCount,
             'ageStats' => $ageStats,
